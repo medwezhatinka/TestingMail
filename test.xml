@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuiteAllGroups" parallel="false">
+        <test name="Test">
+         <classes>
+            <class name="com.mycompany.testimgmail.Tests"/>
+             <class name="com.mycompany.testimgmail.FirefoxTests"/>
+         </classes>
+    </test>
+   </suite>

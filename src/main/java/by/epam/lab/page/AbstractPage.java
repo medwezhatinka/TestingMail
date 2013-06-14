@@ -4,10 +4,12 @@
  */
 package by.epam.lab.page;
 
+import by.epam.lab.element.ExtendedDecorator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.DefaultFieldDecorator;
 
 /**
  *
@@ -15,10 +17,10 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class AbstractPage {
    private WebDriver driver;
-
+   
     public AbstractPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(new ExtendedDecorator(driver), this);
     }
     
      
@@ -30,6 +32,9 @@ public class AbstractPage {
         driver.close();
     }
      
+    public String getLocation(){
+        return driver.getCurrentUrl();
+    }
    public WebElement findByXpath(String xpath){
        return  driver.findElement(By.xpath(xpath));
    }

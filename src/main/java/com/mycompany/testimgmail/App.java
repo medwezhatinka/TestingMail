@@ -1,8 +1,11 @@
 package com.mycompany.testimgmail;
 
+import by.epam.lab.element.ExtendedDecorator;
 import by.epam.lab.page.LoginPage;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
+import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
 
 /**
  * Hello world!
@@ -20,6 +23,6 @@ public class App
         System.out.println("Запустил");
         LoginPage loginPage = new LoginPage(firefox);
         //System.out.println(loginPage.getName());
-        loginPage.getGaia_loginform().fillEmail("medwezhatinka@gmail.com").fillPassword("559283medwedik").submit();
+        loginPage.Login("medwezhatinka@gmail.com", "559283medwedik");
     }
 }
