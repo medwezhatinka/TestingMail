@@ -4,12 +4,10 @@
  */
 package by.epam.lab.page;
 
-import by.epam.lab.element.Form;
-import org.openqa.selenium.By;
+import by.epam.lab.element.LoginForm;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.pagefactory.DefaultFieldDecorator;
 
 /**
  *
@@ -17,16 +15,9 @@ import org.openqa.selenium.support.pagefactory.DefaultFieldDecorator;
  */
 public class LoginPage extends AbstractPage {
 
-    public LoginPage(WebDriver driver) {
-        super(driver);
-    }
-
-   
-@FindBy(id = "signIn")
- private Form f;
     
-   /* @FindBy(id = "gaia_loginform")
-    WebElement form;
+    @FindBy(id = "gaia_loginform")
+    LoginForm form;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -34,18 +25,16 @@ public class LoginPage extends AbstractPage {
 
     public void Login(String username, String password) {
 
-        WebElement email = form.findElement(By.id("Email"));
-        WebElement passwd = form.findElement(By.id("Passwd"));
-        email.sendKeys(username);
-        passwd.sendKeys(password);
+        form.fillEmail(username);
+        form.fillPassword(password);
         form.submit();
 
     }
-   */ 
-    public void Login(String username, String password) {
-
-           f.click();
-
-    } 
     
+  public String getErrorPasswordMessage(){
+       WebElement error = findByID("errormsg_0_Passwd");
+       return error.getText();
+      
+           
+  }
 }

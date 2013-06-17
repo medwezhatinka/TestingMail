@@ -43,5 +43,9 @@ public class AbstractPage {
        return  driver.findElement(By.cssSelector(css));
    }
    
+   public WebElement findByID(String id){
+       return  driver.findElement(By.id(id));
+   }
+   
    
 }

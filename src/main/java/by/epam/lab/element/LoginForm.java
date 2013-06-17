@@ -4,23 +4,21 @@
  */
 package by.epam.lab.element;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 /**
  *
  * @author Alina_Shumel
  */
-public class LoginForm extends  AbstractElement{
+public class LoginForm extends  AbstractContainer{
 
     @FindBy(id="Email")
     WebElement  Email;
     @FindBy(id="Passwd")
     WebElement Passwd;
     
-    //WebElement signIn;
+    WebElement signIn;
     
    
     
@@ -44,8 +42,9 @@ public class LoginForm extends  AbstractElement{
     }
     
     public void submit(){
-      //  signIn.click();
-        wrappedElement.submit();
-        
+       signIn.click();
+       
     }
+    
+    
 }

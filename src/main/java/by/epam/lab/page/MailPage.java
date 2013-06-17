@@ -22,6 +22,15 @@ public class MailPage extends AbstractPage{
     }
     
     
+    public MailPage Logout(){
+        
+        WebElement menu = findByID("gbg4");
+        menu.click();
+        WebElement logout = findByID("gb_71");
+        logout.click();
+        return this;
+        
+    }
     
    
 }
