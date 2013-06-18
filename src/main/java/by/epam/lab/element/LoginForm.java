@@ -17,8 +17,8 @@ public class LoginForm extends  AbstractContainer{
     WebElement  Email;
     @FindBy(id="Passwd")
     WebElement Passwd;
-    
-    WebElement signIn;
+    @FindBy(id="signIn")
+    Button signIn;
     
    
     

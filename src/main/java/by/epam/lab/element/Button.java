@@ -10,9 +10,9 @@ import org.openqa.selenium.WebElement;
  *
  * @author Alina_Shumel
  */
-public class Form extends AbstractElement{
+public class Button extends AbstractElement{
 
-    public Form(WebElement wrappedElement) {
+    public Button(WebElement wrappedElement) {
         super(wrappedElement);
     }
    

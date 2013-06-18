@@ -6,6 +6,7 @@ package com.mycompany.testimgmail;
 
 import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.MailPage;
+import by.epam.lab.page.SendMessagePage;
 import static com.mycompany.testimgmail.FirefoxTests.firefox;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -57,7 +58,11 @@ public class Tests extends FirefoxTests{
        
        mailPage.waitfor("//div[text()='COMPOSE']");
        WebElement composeButton = mailPage.findByXpath("//div[text()='COMPOSE']");
-         composeButton.click();
+       composeButton.click();
+       SendMessagePage  page = new SendMessagePage(firefox);
+       page.sendMessage("test.auto.lab@gmail.com", "subject", "some text");
+         
+         mailPage.waitfor("dfd");
      }
      @Test
      public void sendMessageWithEmptyEmail(){
