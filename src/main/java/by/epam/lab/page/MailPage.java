@@ -7,7 +7,6 @@ package by.epam.lab.page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.pagefactory.DefaultFieldDecorator;
 
 /**
  *
@@ -23,11 +22,12 @@ public class MailPage extends AbstractPage{
     
     
     public MailPage Logout(){
-        
+       wait("gbg4");
         WebElement menu = findByID("gbg4");
         menu.click();
         WebElement logout = findByID("gb_71");
         logout.click();
+        wait("gaia_loginform");
         return this;
         
     }
