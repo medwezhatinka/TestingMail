@@ -6,12 +6,7 @@ package by.epam.lab.page;
 
 import by.epam.lab.element.html.MessageSendTable;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.openqa.selenium.WebDriver;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Pattern;
-import org.sikuli.script.Screen;
 import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 /**
