@@ -8,14 +8,6 @@ import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.MailPage;
 import by.epam.lab.page.SendMessagePage;
 import static com.mycompany.testimgmail.FirefoxTests.firefox;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.sikuli.script.FindFailed;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
