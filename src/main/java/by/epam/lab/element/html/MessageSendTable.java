@@ -6,7 +6,9 @@ package by.epam.lab.element.html;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.yandex.qatools.htmlelements.annotations.Block;
 import ru.yandex.qatools.htmlelements.element.Button;
 import ru.yandex.qatools.htmlelements.element.HtmlElement;
@@ -27,6 +29,13 @@ public class MessageSendTable extends HtmlElement{
     private Button sendBtn;
     @FindBy(xpath = "//div[@aria-label='Compose reply']/iframe")
     private WebElement iframe;
+    @FindBy(xpath = "//table[@class='cf Ht']/tbody/tr/td[2]/img[@alt='Close']")
+    private WebElement closeButton;
+    @FindBy(xpath = "//table[@class='IZ']/tbody/tr/td[4]/div")
+    private  Button attachFile;
+    
+    //wG J-Z-I J-J5-Ji T-I-ax7
+   
     
 
     public WebElement getIframe() {
@@ -52,7 +61,17 @@ public class MessageSendTable extends HtmlElement{
         
    }
     
+    public  void close(){
+        closeButton.click();
+    }
     public void send(){
         sendBtn.click();
     }
+    
+    
+    public void attachFileClick(){
+        attachFile.click();
+    }
+   
 }
+    

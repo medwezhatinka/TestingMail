@@ -5,33 +5,71 @@
 package by.epam.lab.page;
 
 import by.epam.lab.element.html.MessageSendTable;
-import org.openqa.selenium.By;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 /**
  *
  * @author Alina_Shumel
  */
-public class SendMessagePage {
+public class SendMessagePage extends AbstractPageHtml {
 
-    private WebDriver driver;
-            
     private MessageSendTable newMessage;
 
     public SendMessagePage(WebDriver driver) {
-        this.driver = driver;
-         HtmlElementLoader.populatePageObject(this, driver);
+        super(driver);
+        HtmlElementLoader.populatePageObject(this, driver);
+    }
+
+    public void sendMessage(String toEmail, String subject, String body) {
+        newMessage.fillTo(toEmail).fillSubject(subject);
+        switchTo(newMessage.getIframe());
+        findByTagName("body").sendKeys(body);
+        switchToDefaultContext();
+        newMessage.send();
+
+
+    }
+
+    public void waitForSuccessfullSending() {
+        waitforPresentText("div.vh", "Your message has been sent.");
+    }
+
+    public void sendMessageWithoutAdresse(String subject, String body) {
+        newMessage.fillSubject(subject);
+        switchTo(newMessage.getIframe());
+        findByTagName("body").sendKeys(body);
+        switchToDefaultContext();
+        newMessage.send();
+
+    }
+
+    public void closeAndSave() {
+        newMessage.close();
     }
     
-    
-    public void sendMessage(String toEmail, String subject, String body){
-       newMessage.fillTo(toEmail).fillSubject(subject);
-       driver.switchTo().frame(newMessage.getIframe());
-       driver.findElement(By.tagName("body")).sendKeys(body);
-       driver.switchTo().defaultContent();
+    public  void sendMessageWithAttachedFile(String toEmail, String subject, String body,String path){
+         newMessage.fillTo(toEmail).fillSubject(subject);
+        switchTo(newMessage.getIframe());
+        findByTagName("body").sendKeys(body);
+        switchToDefaultContext();
+        newMessage.attachFileClick();
+        try {
+            Runtime.getRuntime().exec("cmd /c" + "test.au3");
+        } catch (IOException ex) {
+            System.out.println("КОСЯК");
+        }
+        
+        long time2 =System.currentTimeMillis()+ 5000;
+         while (time2 > System.currentTimeMillis()) {             
+             
+         }
         newMessage.send();
-      // newMessage.fillSubject(subject).fillText(body).send();
     }
 }

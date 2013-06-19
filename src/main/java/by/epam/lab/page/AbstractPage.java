@@ -5,11 +5,14 @@
 package by.epam.lab.page;
 
 import by.epam.lab.element.ExtendedDecorator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
@@ -57,4 +60,36 @@ public class AbstractPage {
           WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
    }
+    
+    
+    public void reload(){
+       driver.navigate().refresh();
+    }
+    
+    
+     
+    public void acceptAllert(){
+       try{
+        driver.switchTo().alert().accept();
+        
+       }
+       catch(Exception ex){
+           
+       }
+        
+    }
+    
+    public  void waitforPresentText(String xpath,String text){
+       WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.textToBePresentInElement(By.xpath(xpath), text)); 
+    }
+    
+     public  void waitforNotVisible(String css){
+       WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(css))); 
+    }
+         
+     
+     
+
 }

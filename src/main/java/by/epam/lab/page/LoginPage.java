@@ -28,6 +28,7 @@ public class LoginPage extends AbstractPage {
         form.fillEmail(username);
         form.fillPassword(password);
         form.submit();
+        
 
     }
     
