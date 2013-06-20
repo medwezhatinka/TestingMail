@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  * @author Alina_Shumel
  */
-public class AbstractPage {
+public class AbstractPage implements IAbstractPage{
    private WebDriver driver;
    
     public AbstractPage(WebDriver driver) {
@@ -87,6 +87,42 @@ public class AbstractPage {
      public  void waitforNotVisible(String css){
        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(css))); 
+    }
+
+    public WebElement findByName(String name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public WebElement findByTagName(String tagName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void pause(long timeout) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void waitForClickable(String xpath) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public boolean elementIsPresent(String xpath) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void switchTo(WebElement webElement) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void switchToDefaultContext() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getAllertTextAndAccept() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
          
      

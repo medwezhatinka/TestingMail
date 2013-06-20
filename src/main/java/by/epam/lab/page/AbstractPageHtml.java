@@ -4,24 +4,17 @@
  */
 package by.epam.lab.page;
 
-import by.epam.lab.element.ExtendedDecorator;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
  * @author Alina_Shumel
  */
-public class AbstractPageHtml {
+public class AbstractPageHtml implements IAbstractPage{
      private WebDriver driver;
    
     public AbstractPageHtml(WebDriver driver) {
@@ -73,7 +66,7 @@ public class AbstractPageHtml {
         wait.until(ExpectedConditions.textToBePresentInElement(By.cssSelector(css), text)); 
     }
      
-     private void pause(long timeout){
+     public void pause(long timeout){
          long time = System.currentTimeMillis()+ timeout;
           while (System.currentTimeMillis()< time){
              
@@ -128,6 +121,10 @@ public class AbstractPageHtml {
        // pause(5000);
         acceptAllert();
        return message.toString();
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
  
     

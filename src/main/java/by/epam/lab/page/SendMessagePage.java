@@ -22,26 +22,29 @@ public class SendMessagePage extends AbstractPageHtml {
         HtmlElementLoader.populatePageObject(this, driver);
     }
 
-    public void sendMessage(String toEmail, String subject, String body) {
+    public SendMessagePage sendMessage(String toEmail, String subject, String body) {
         newMessage.fillTo(toEmail).fillSubject(subject);
         switchTo(newMessage.getIframe());
         findByTagName("body").sendKeys(body);
         switchToDefaultContext();
         newMessage.send();
+        return this;
 
 
     }
 
-    public void waitForSuccessfullSending() {
+    public MailPage waitForSuccessfullSending() {
         waitforPresentText("div.vh", "Your message has been sent.");
+        return new MailPage(getDriver());
     }
 
-    public void sendMessageWithoutAdresse(String subject, String body) {
+    public SendMessagePage sendMessageWithoutAdresse(String subject, String body) {
         newMessage.fillSubject(subject);
         switchTo(newMessage.getIframe());
         findByTagName("body").sendKeys(body);
         switchToDefaultContext();
         newMessage.send();
+        return this;
 
     }
 

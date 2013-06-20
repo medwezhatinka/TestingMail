@@ -23,11 +23,13 @@ public class LoginPage extends AbstractPage {
         super(driver);
     }
 
-    public void Login(String username, String password) {
+    public MailPage Login(String username, String password) {
 
         form.fillEmail(username);
         form.fillPassword(password);
         form.submit();
+        waitfor("//div[text()='COMPOSE']");
+        return new MailPage(getDriver());
         
 
     }

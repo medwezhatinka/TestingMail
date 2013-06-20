@@ -28,10 +28,11 @@ public class MailPage extends AbstractPage{
     }
     
     
-    public MailPage  composeClick(){
+    public SendMessagePage  composeClick(){
         
         composeButton.click();
-        return this;
+        waitfor("//table[@class='cf Ht']/tbody/tr/td/div");
+        return new SendMessagePage(getDriver());
         
     }
     

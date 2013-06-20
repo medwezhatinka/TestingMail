@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="TestSuiteAllGroups" parallel="false">
-        <test name="Test">
-         <classes>
-            <class name="com.mycompany.testimgmail.Tests"/>
-             <class name="com.mycompany.testimgmail.FirefoxTests"/>
-         </classes>
+    <test name="Test">
+        <classes>
+            <class name="by.epam.lab.test.AutentificationSuccessfull"/>
+            <class name="by.epam.lab.test.LogoutSuccessfull"/>
+            <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
+            <class name="by.epam.lab.test.SendTextMessage"/>
+            <class name="by.epam.lab.test.SendMessageWithEmptyEmail"/>
+            <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>
+        </classes>
     </test>
-   </suite>
+</suite>
