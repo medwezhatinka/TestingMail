@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
  */
 public class LogoutSuccessfull  extends FirefoxTests{
     
-    @Test(enabled=false)
+    @Test(enabled=false, groups = {"autentification"}, dependsOnMethods = {"autentificationSuccesfulltst"})
      public void logoutSuccessfultst(){
     
        LoginPage loginPage = new LoginPage(firefox);

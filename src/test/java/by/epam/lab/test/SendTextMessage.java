@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
  */
 public class SendTextMessage extends FirefoxTests{
   
-     @Test(enabled=false)
+     @Test(enabled=false, groups = {"send text"}, dependsOnGroups = {"autentification"})
      public void  sendTextMessagests(){
         
         LoginPage loginPage = new LoginPage(firefox);

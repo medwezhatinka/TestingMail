@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
  */
 public class SengMessageWithIncorrectEmail  extends FirefoxTests{
     
-     @Test(enabled = false)
+     @Test(enabled = false, groups = {"send text"}, dependsOnGroups = {"autentification"})
      public void sendMessageWithIncorrectEmailtst(){
         
        LoginPage loginPage = new LoginPage(firefox);

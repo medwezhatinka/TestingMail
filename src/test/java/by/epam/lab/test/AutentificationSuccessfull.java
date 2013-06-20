@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class AutentificationSuccessfull extends FirefoxTests{
     
     
-     @Test(enabled=false)
+     @Test(enabled=false, groups = {"autentification"})
      public void autentificationSuccesfulltst() {
       
       LoginPage loginPage = new LoginPage(firefox);

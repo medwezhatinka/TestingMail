@@ -13,9 +13,10 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
+
 public class SendMessageWithAttachedFile extends FirefoxTests{
     
-    @Test(enabled= false)
+    @Test(enabled= false, groups = {"attach file"}, dependsOnGroups = {"autentification"})
      public void sendMessageWithAttachedFile(){
          
          LoginPage loginPage = new LoginPage(firefox);
