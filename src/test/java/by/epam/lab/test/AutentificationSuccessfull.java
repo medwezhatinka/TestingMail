@@ -13,16 +13,16 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-public class AutentificationSuccessfull extends FirefoxTests{
+public class AutentificationSuccessfull extends FirefoxTests implements TestData, Group{
     
     
-     @Test(enabled=false, groups = {"autentification"})
+     @Test(enabled=false, groups = {AUTENTIFICATION})
      public void autentificationSuccesfulltst() {
       
       LoginPage loginPage = new LoginPage(firefox);
-      loginPage.open("http://mail.google.com");
-      MailPage mailPage = loginPage.Login("test.auto.lab", "testautolab");
-      Assert.assertTrue(mailPage.getLocation().contains("https://mail.google.com/mail/"), "location : " + mailPage.getLocation());
+      loginPage.open(START_URL);
+      MailPage mailPage = loginPage.Login(CORRECT_EMAIL_PART_TEST, CORRECT_PASSWORD_TEST);
+      Assert.assertTrue(mailPage.getLocation().contains(MAIL_PAGE_LOCATION), "location : " + mailPage.getLocation());
       mailPage.logout();
  
       }   

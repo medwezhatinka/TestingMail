@@ -13,17 +13,16 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-public class LogoutSuccessfull  extends FirefoxTests{
+public class LogoutSuccessfull  extends FirefoxTests implements  TestData, Group, Method{
     
-    @Test(enabled=false, groups = {"autentification"}, dependsOnMethods = {"autentificationSuccesfulltst"})
+    @Test(enabled=false, groups = {AUTENTIFICATION}, dependsOnMethods = {AUTORISATION_SUCCESSFUL})
      public void logoutSuccessfultst(){
     
        LoginPage loginPage = new LoginPage(firefox);
-       loginPage.open("http://www.gmail.com");
-       loginPage.Login("test.auto.lab@gmail.com", "testautolab"); 
-       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab"); 
+       loginPage.open(START_URL);
+       MailPage mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST); 
        mailPage.logout();
-       Assert.assertTrue(mailPage.getLocation().contains("https://accounts.google.com/ServiceLogin"), "location : " + mailPage.getLocation());
+       Assert.assertTrue(mailPage.getLocation().contains(LOGIN_PAGE_LOCATION), "location : " + mailPage.getLocation());
       
      }
 }

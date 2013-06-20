@@ -12,17 +12,16 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-public class AutentificationWithInvalidPassword extends FirefoxTests{
+public class AutentificationWithInvalidPassword extends FirefoxTests implements  TestData, Group{
  
     
     
-    @Test(enabled=false, groups = {"autentification"})
+    @Test(enabled=false, groups = {AUTENTIFICATION})
      public void autentificationFailedtst(){
        
        LoginPage loginPage = new LoginPage(firefox);
-       loginPage.open("http://www.gmail.com");
-       loginPage.Login("test.auto.lab@gmail.com", "testautolab123"); 
-       Assert.assertEquals(loginPage.getErrorPasswordMessage(), 
-  "The username or password you entered is incorrect. ?");
+       loginPage.open(START_URL);
+       loginPage.Login(CORRECT_EMAIL_TEST, INCORRECT_PASSWORD_TEST); 
+       Assert.assertEquals(loginPage.getErrorPasswordMessage(), MESSAGE_INCORRECT_PASSWORD_OR_EMAIL);
      }
 }

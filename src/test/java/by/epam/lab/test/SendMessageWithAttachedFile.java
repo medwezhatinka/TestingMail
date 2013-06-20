@@ -14,15 +14,15 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 
-public class SendMessageWithAttachedFile extends FirefoxTests{
+public class SendMessageWithAttachedFile extends FirefoxTests implements TestData, Group{
     
-    @Test(enabled= false, groups = {"attach file"}, dependsOnGroups = {"autentification"})
+    @Test(enabled= false, groups = {}, dependsOnGroups = {AUTENTIFICATION})
      public void sendMessageWithAttachedFile(){
          
          LoginPage loginPage = new LoginPage(firefox);
-       loginPage.open("http://www.gmail.com");
+       loginPage.open(START_URL);
        SendMessagePage  page = loginPage
-               .Login("test.auto.lab@gmail.com", "testautolab")
+               .Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
                .composeClick();
        page.sendMessageWithAttachedFile("test.auto.lab@gmail.com", "subject", "some text", "../pic/trash.png");
       
