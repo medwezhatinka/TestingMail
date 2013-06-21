@@ -15,12 +15,12 @@ import org.testng.annotations.Test;
  */
 public class LogoutSuccessfull  extends FirefoxTests implements  TestData, Group, Method{
     
-    @Test(enabled=false, groups = {AUTENTIFICATION}, dependsOnMethods = {AUTORISATION_SUCCESSFUL})
+    @Test(enabled=false, groups = {AUTENTIFICATION}, dependsOnMethods = {"autentificationSuccesfulltst"})
      public void logoutSuccessfultst(){
     
        LoginPage loginPage = new LoginPage(firefox);
        loginPage.open(START_URL);
-       MailPage mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST); 
+       MailPage mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST).waitForSuccessfulLogin(); 
        mailPage.logout();
        Assert.assertTrue(mailPage.getLocation().contains(LOGIN_PAGE_LOCATION), "location : " + mailPage.getLocation());
       

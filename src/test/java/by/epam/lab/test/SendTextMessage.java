@@ -23,7 +23,7 @@ public class SendTextMessage extends FirefoxTests{
        loginPage.open("http://www.gmail.com");
        
        
-       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab");
+       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
       
       
        SendMessagePage  page =  mailPage.composeClick();

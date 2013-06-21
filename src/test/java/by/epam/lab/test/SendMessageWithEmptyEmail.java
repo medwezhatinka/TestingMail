@@ -21,7 +21,7 @@ public class SendMessageWithEmptyEmail extends FirefoxTests{
         
          LoginPage loginPage = new LoginPage(firefox);
       loginPage.open("http://www.gmail.com");
-       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab");
+       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
        SendMessagePage  page =  mailPage.composeClick();
        page.sendMessageWithoutAdresse("subject", "some text");
        Assert.assertEquals(page.getAllertTextAndAccept(), "ErrorPlease specify at least one recipient.");

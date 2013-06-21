@@ -16,43 +16,47 @@ import org.testng.annotations.BeforeSuite;
  */
 public abstract  class FirefoxTests {
     
-   protected   FirefoxDriver firefox;
+   protected  static FirefoxDriver firefox;
 
-    public FirefoxDriver getFirefox() {
+   
+    public static FirefoxDriver getFirefox() {
         return firefox;
     }
     
    
    
    
-//   @BeforeSuite
-//   public  void setUpSuite() throws Exception {
-//       firefox = new FirefoxDriver();
-//        System.out.println("Какогото ХЕРА Я ЗАПУСТИЛ BEFORE SUITE");
-//      
-//    }
-//   
-//   @AfterSuite
-//    public  void tearDownSuite() throws Exception {
-//        firefox.quit();
-//        System.out.println("Какогото ХЕРА Я ЗАПУСТИЛ АФТЕР SUITE");
-//        
-//    }
+   @BeforeSuite
+   public static void setUpSuite() throws Exception {
+       firefox = new FirefoxDriver();
+          
+       
+      
+    }
+   
+   @AfterSuite
+    public static void tearDownSuite() throws Exception {
+        firefox.quit();
+        
+       
+        
+    }
    
    
     @BeforeClass
-    public  void setUpClass() throws Exception {
+    public static void setUpClass() throws Exception {
      
-     
-       firefox = new FirefoxDriver();
+   
+   
                
          
     }
 
     @AfterClass
-    public  void tearDownClass() throws Exception {
-        firefox.quit();
-         
+    public static void tearDownClass() throws Exception {
+        
+        
+        
        
     }
 }

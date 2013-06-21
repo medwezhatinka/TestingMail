@@ -16,12 +16,12 @@ public class AutentificationWithInvalidPassword extends FirefoxTests implements 
  
     
     
-    @Test(enabled=false, groups = {AUTENTIFICATION})
-     public void autentificationFailedtst(){
+    @Test(enabled=true, groups = {AUTENTIFICATION})
+     public static void autentificationFailedtst(){
        
        LoginPage loginPage = new LoginPage(firefox);
        loginPage.open(START_URL);
-       loginPage.Login(CORRECT_EMAIL_TEST, INCORRECT_PASSWORD_TEST); 
+           loginPage.Login(CORRECT_EMAIL_TEST, INCORRECT_PASSWORD_TEST); 
        Assert.assertEquals(loginPage.getErrorPasswordMessage(), MESSAGE_INCORRECT_PASSWORD_OR_EMAIL);
      }
 }

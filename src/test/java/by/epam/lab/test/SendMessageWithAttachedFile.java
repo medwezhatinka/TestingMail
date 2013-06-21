@@ -22,7 +22,7 @@ public class SendMessageWithAttachedFile extends FirefoxTests implements TestDat
          LoginPage loginPage = new LoginPage(firefox);
        loginPage.open(START_URL);
        SendMessagePage  page = loginPage
-               .Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
+               .Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST).waitForSuccessfulLogin()
                .composeClick();
        page.sendMessageWithAttachedFile("test.auto.lab@gmail.com", "subject", "some text", "../pic/trash.png");
       

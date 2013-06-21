@@ -21,7 +21,7 @@ public class SengMessageWithIncorrectEmail  extends FirefoxTests{
         
        LoginPage loginPage = new LoginPage(firefox);
        loginPage.open("http://www.gmail.com");
-       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab");
+       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
        SendMessagePage  page =  mailPage.composeClick();
        page.sendMessage("incorrect_email","subject", "some text");
        Assert.assertEquals(page.getAllertTextAndAccept(), "ErrorThe address \"incorrect_email\" in the \"To\" field was not recognized. Please make sure that all addresses are properly formed.");
