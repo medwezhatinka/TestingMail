@@ -25,14 +25,22 @@ public class App
     public static void main( String[] args )
     {
         try {
+            Object[][] obj =  new Object[1][];
             Workbook workbook = WorkbookFactory.create(new FileInputStream("testdata.xlsx")); 
-          Sheet sheet = workbook.getSheet("global");
+          Sheet sheet = workbook.getSheet("autentification");
            for (int i = 0; i < sheet.getLastRowNum(); i++) {
-               if ("Username".equals(sheet.getRow(i).getCell(0).toString())) {
+               if ("AutentificationSuccessful".equals(sheet.getRow(i).getCell(0).toString())) {
                   
-                   sheet.getRow(i).getLastCellNum();
+                   int count = sheet.getRow(i).getLastCellNum();
+                   obj[0]= new Object[count-1];
+                   for (int j = 1; j < count; j++) {
+                      obj[0][j-1]= sheet.getRow(i).getCell(j).toString();
+                   }
                }
            }
+            for (int i = 0; i < obj[0].length; i++) {
+                System.out.println(obj[0][i]);
+            }
            
    //        System.out.println( "Hello World!" );
    //       FirefoxDriver firefox = new FirefoxDriver();
