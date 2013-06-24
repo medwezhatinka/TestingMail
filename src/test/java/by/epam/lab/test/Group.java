@@ -12,4 +12,5 @@ public interface  Group {
     
     String AUTENTIFICATION = "autentification";
     String ATTACH_FILE = "attach file";
+    String SEND_TEXT = "send text";
 }

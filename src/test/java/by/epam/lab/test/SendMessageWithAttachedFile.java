@@ -7,16 +7,17 @@ package by.epam.lab.test;
 import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.MailPage;
 import by.epam.lab.page.SendMessagePage;
+import static by.epam.lab.test.Group.AUTENTIFICATION;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author Alina_Shumel
  */
-
+ @Test(enabled= false, groups = {}, dependsOnGroups = {AUTENTIFICATION})
 public class SendMessageWithAttachedFile extends FirefoxTests implements TestData, Group{
     
-    @Test(enabled= false, groups = {}, dependsOnGroups = {AUTENTIFICATION})
+   
      public void sendMessageWithAttachedFile(){
          
          LoginPage loginPage = new LoginPage(firefox);

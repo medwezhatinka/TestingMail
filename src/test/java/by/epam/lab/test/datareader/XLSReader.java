@@ -24,7 +24,7 @@ public class XLSReader {
            Object[][] obj =  new Object[1][];
              Workbook workbook = WorkbookFactory.create(new FileInputStream(filename)); 
             Sheet sheet = workbook.getSheet(sheetName);
-            for (int i = 0; i < sheet.getLastRowNum(); i++) {
+            for (int i = 0; i <= sheet.getLastRowNum(); i++) {
                 if (className.equals(sheet.getRow(i).getCell(0).toString())) {
                    
                     int count = sheet.getRow(i).getLastCellNum();

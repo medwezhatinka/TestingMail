@@ -27,9 +27,9 @@ public class App
         try {
             Object[][] obj =  new Object[1][];
             Workbook workbook = WorkbookFactory.create(new FileInputStream("testdata.xlsx")); 
-          Sheet sheet = workbook.getSheet("autentification");
-           for (int i = 0; i < sheet.getLastRowNum(); i++) {
-               if ("AutentificationSuccessful".equals(sheet.getRow(i).getCell(0).toString())) {
+          Sheet sheet = workbook.getSheet("global");
+           for (int i = 0; i <= sheet.getLastRowNum(); i++) {
+               if ("Password".equals(sheet.getRow(i).getCell(0).toString())) {
                   
                    int count = sheet.getRow(i).getLastCellNum();
                    obj[0]= new Object[count-1];

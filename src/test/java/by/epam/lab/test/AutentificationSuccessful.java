@@ -14,17 +14,17 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-@Test(enabled=true,groups =AUTENTIFICATION )
-public class AutentificationSuccessfull extends FirefoxTests implements TestData, Group{
+@Test(enabled=true,groups =AUTENTIFICATION , dataProviderClass = by.epam.lab.test.Data.class)
+public class AutentificationSuccessful extends FirefoxTests implements TestData, Group{
     
     
   
-     public static void autentificationSuccesfulltst() {
+     public static void autentificationSuccesfulltst(String email, String password, String location) {
       
       LoginPage loginPage = new LoginPage(firefox);
       loginPage.open(START_URL);
-      MailPage mailPage = loginPage.Login(CORRECT_EMAIL_PART_TEST, CORRECT_PASSWORD_TEST).waitForSuccessfulLogin();
-      Assert.assertTrue(mailPage.getLocation().contains(MAIL_PAGE_LOCATION), "location : " + mailPage.getLocation());
+      MailPage mailPage = loginPage.Login(email, password).waitForSuccessfulLogin();
+      Assert.assertTrue(mailPage.getLocation().contains(location), "location : " + mailPage.getLocation());
       mailPage.logout();
  
       }   
