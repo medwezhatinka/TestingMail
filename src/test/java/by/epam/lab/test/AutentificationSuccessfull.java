@@ -6,6 +6,7 @@ package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.MailPage;
+import static by.epam.lab.test.Group.AUTENTIFICATION;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,10 +14,11 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
+@Test(enabled=true,groups =AUTENTIFICATION )
 public class AutentificationSuccessfull extends FirefoxTests implements TestData, Group{
     
     
-     @Test(enabled=true, groups = {AUTENTIFICATION})
+  
      public static void autentificationSuccesfulltst() {
       
       LoginPage loginPage = new LoginPage(firefox);

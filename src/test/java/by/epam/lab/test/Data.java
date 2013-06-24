@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.datareader.XLSReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -22,16 +23,8 @@ public class Data {
     
     @DataProvider(name = "data")
 	    public Object[][] getData(Method m) throws IOException, InvalidFormatException {
-         Workbook workbook = WorkbookFactory.create(new FileInputStream("testdata.xlsx")); 
-       Sheet sheet = workbook.getSheet(m.getAnnotation(Test.class).groups()[0]);
-        for (int i = 0; i < sheet.getLastRowNum(); i++) {
-            if (m.getClass().getSimpleName().equals(sheet.getRow(i).getCell(0))) {
-               
-                sheet.getRow(i).getLastCellNum();
-            }
-        }
-   
-        return null;
+        
+        return XLSReader.getData(null, null, null);
     }
     }
    

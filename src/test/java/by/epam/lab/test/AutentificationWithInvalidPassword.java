@@ -5,6 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
+import static by.epam.lab.test.Group.AUTENTIFICATION;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,12 +13,13 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
+  @Test(enabled=true, groups = {AUTENTIFICATION})
 public class AutentificationWithInvalidPassword extends FirefoxTests implements  TestData, Group{
  
     
     
-    @Test(enabled=false, groups = {AUTENTIFICATION})
-     public  void autentificationFailedtst(){
+  
+     public  static void autentificationFailedtst(){
        
        LoginPage loginPage = new LoginPage(firefox);
        loginPage.open(START_URL);

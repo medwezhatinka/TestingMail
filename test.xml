@@ -3,9 +3,10 @@
     <test name="Test">
         <classes>
             <class name="by.epam.lab.test.AutentificationSuccessfull"/>
-<!--           
+         
             <class name="by.epam.lab.test.LogoutSuccessfull"/>
             <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
+            <!--  
             <class name="by.epam.lab.test.SendTextMessage"/>
             <class name="by.epam.lab.test.SendMessageWithEmptyEmail"/>
             <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>

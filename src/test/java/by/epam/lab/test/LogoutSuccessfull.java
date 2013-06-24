@@ -6,6 +6,7 @@ package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.MailPage;
+import static by.epam.lab.test.Group.AUTENTIFICATION;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,10 +14,11 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-public class LogoutSuccessfull  extends FirefoxTests implements  TestData, Group{
+@Test(enabled=true, groups = {AUTENTIFICATION}, dependsOnMethods = {"by.epam.lab.test.AutentificationSuccessfull.autentificationSuccesfulltst"})
+public class LogoutSuccessfull  extends FirefoxTests implements  TestData{
     
-    @Test(enabled=false, groups = {AUTENTIFICATION}, dependsOnMethods = {"by.epam.lab.test.AutentificationSuccessfull.autentificationSuccesfulltst"})
-     public  void logoutSuccessfultst(){
+    
+     public  static void logoutSuccessfultst(){
     
        LoginPage loginPage = new LoginPage(firefox);
        loginPage.open(START_URL);
