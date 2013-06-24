@@ -70,17 +70,16 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>3.9</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>3.9</version>
-            <type>jar</type>
-        </dependency>
+	<groupId>org.apache.poi</groupId>
+	<artifactId>poi-ooxml</artifactId>
+	<version>3.9</version>
+	<exclusions>
+		<exclusion>
+			<artifactId>xml-apis</artifactId>
+			<groupId>xml-apis</groupId>
+		</exclusion>		
+	</exclusions>
+</dependency>
     </dependencies>
    <build>
         <plugins>

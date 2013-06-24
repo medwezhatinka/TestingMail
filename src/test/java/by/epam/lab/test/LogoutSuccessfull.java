@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class LogoutSuccessfull  extends FirefoxTests implements  TestData, Group{
     
     @Test(enabled=false, groups = {AUTENTIFICATION}, dependsOnMethods = {"by.epam.lab.test.AutentificationSuccessfull.autentificationSuccesfulltst"})
-     public static void logoutSuccessfultst(){
+     public  void logoutSuccessfultst(){
     
        LoginPage loginPage = new LoginPage(firefox);
        loginPage.open(START_URL);

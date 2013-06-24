@@ -16,8 +16,8 @@ public class AutentificationWithInvalidPassword extends FirefoxTests implements 
  
     
     
-    @Test(enabled=true, groups = {AUTENTIFICATION})
-     public static void autentificationFailedtst(){
+    @Test(enabled=false, groups = {AUTENTIFICATION})
+     public  void autentificationFailedtst(){
        
        LoginPage loginPage = new LoginPage(firefox);
        loginPage.open(START_URL);

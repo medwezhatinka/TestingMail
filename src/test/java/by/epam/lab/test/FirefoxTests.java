@@ -5,9 +5,7 @@
 package by.epam.lab.test;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 /**
@@ -16,47 +14,16 @@ import org.testng.annotations.BeforeSuite;
  */
 public abstract  class FirefoxTests {
     
-   protected  static FirefoxDriver firefox;
-
+  protected  static  FirefoxDriver firefox;
+  
+  @BeforeSuite
+  public  static void tearUpSuite(){
+      firefox = new FirefoxDriver();
+  }
    
-    public static FirefoxDriver getFirefox() {
-        return firefox;
-    }
-    
-   
-   
-   
-   @BeforeSuite
-   public static void setUpSuite() throws Exception {
-       firefox = new FirefoxDriver();
-          
-       
-      
-    }
-   
-   @AfterSuite
-    public static void tearDownSuite() throws Exception {
-        firefox.quit();
-        
-       
-        
-    }
-   
-   
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-     
-   
-   
-               
-         
-    }
-
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-        
-        
-        
-       
-    }
+  
+  @AfterSuite
+  public static  void tearDownSuite(){
+      firefox.quit();
+  }
 }
