@@ -16,33 +16,23 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-  @Test(enabled=true, groups = {"send text"}, dependsOnGroups = {"autentification"})
-public class SendTextMessage extends FirefoxTests{
-  
-       MailPage mailPage;
-       SendMessagePage  page;
-       
-      @BeforeMethod
-   public void g(){
-           
-        LoginPage loginPage = new LoginPage(firefox);
-       loginPage.open("http://www.gmail.com");
-       
-       
-     mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
-      
-      
-      page =  mailPage.composeClick();
-       
-   }
-      
-     public void  sendTextMessagests(){
-       
-       page.sendMessage("test.auto.lab@gmail.com", "subject", "some text")
-              .waitForSuccessfullSending()
-              .reload();
-       Assert.assertEquals(mailPage.getMessageAddressee(), "me");
-       mailPage.logout();
-     }
+@Test(enabled = true, groups = {"send text"}, dependsOnGroups = {"autentification"})
+public class SendTextMessage extends FirefoxTests {
 
+    public void sendTextMessagests() {
+        LoginPage loginPage = new LoginPage(firefox);
+        loginPage.open("http://www.gmail.com");
+
+
+        MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
+
+
+        SendMessagePage page = mailPage.composeClick();
+
+        page.sendMessage("test.auto.lab@gmail.com", "subject", "some text")
+                .waitForSuccessfullSending()
+                .reload();
+        Assert.assertEquals(mailPage.getMessageAddressee(), "me");
+        mailPage.logout();
+    }
 }
