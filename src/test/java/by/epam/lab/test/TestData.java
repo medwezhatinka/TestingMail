@@ -22,7 +22,7 @@ public interface TestData {
 
     
    
-    
+    String HOME_PAGE_URL  = "http://www.gmail.com";
     
     
 }

@@ -13,12 +13,12 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-  @Test(enabled=true, groups = {AUTENTIFICATION})
+
 public class AutentificationWithInvalidPassword extends FirefoxTests implements  TestData, Group{
  
     
     
-  
+    @Test(enabled=true, groups = {AUTENTIFICATION})
      public  static void autentificationFailedtst(){
        
        LoginPage loginPage = new LoginPage(firefox);

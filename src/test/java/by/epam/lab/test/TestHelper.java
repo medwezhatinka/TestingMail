@@ -16,22 +16,14 @@ public class TestHelper {
     private String email;
     private String password;
     
-    private static TestHelper instance;
     
-    private TestHelper(){
-        
-    }
-    public  static TestHelper getInstance(){
-        
-        if (instance == null) {
-            instance = new TestHelper();
-            instance.setEmail();
-            instance.setPassword();
-            instance.setUrl();
-            
-        }
-        
-        return instance;
+    
+  
+    public  TestHelper(){
+       setUrl();
+       setEmail();
+       setPassword();;
+      
     }
 
     public String getUrl() {

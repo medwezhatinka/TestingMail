@@ -14,20 +14,20 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-@Test(enabled = true, groups = {"send text"}, dependsOnGroups = {"autentification"})
+
 public class SengMessageWithIncorrectEmail  extends FirefoxTests{
     
-    
+    @Test(enabled = true, groups = {"send text"})//, dependsOnGroups = {"autentification"})
      public void sendMessageWithIncorrectEmailtst(){
         
-       LoginPage loginPage = new LoginPage(firefox);
-       loginPage.open("http://www.gmail.com");
-       MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
+      // LoginPage loginPage = new LoginPage(firefox);
+       //loginPage.open("http://www.gmail.com");
+      // MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
        SendMessagePage  page =  mailPage.composeClick();
        page.sendMessage("incorrect_email","subject", "some text");
        Assert.assertEquals(page.getAllertTextAndAccept(), "ErrorThe address \"incorrect_email\" in the \"To\" field was not recognized. Please make sure that all addresses are properly formed.");
        page.closeAndSave();
-       mailPage.logout();
+     //  mailPage.logout();
         
      }
 }

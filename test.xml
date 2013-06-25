@@ -13,14 +13,40 @@
           
         </classes>
         -->
-       
+    </test>
+  <!--      
+    <test name="Test1">
+        <groups >
+            <run>
+                <include name="send text"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="by.epam.lab.test.SendTextMessage"/>    
+        </classes>
+    </test>
+    <test name="Test2">
+        <groups >
+            <run>
+                <include name="send text"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>    
+        </classes>
+    </test>
+    -->
+    <test name="Test3">
+        <groups >
+            <run>
+                <include name="autentification"/>
+            </run>
+        </groups>
         <classes>
             <class name="by.epam.lab.test.AutentificationSuccessfull"/>
             <class name="by.epam.lab.test.LogoutSuccessfull"/>
             <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
-            <class name="by.epam.lab.test.SendTextMessage"/>
-            <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>
-            <class name="by.epam.lab.test.SendMessageWithEmptyEmail"/>
+            
         </classes>
     </test>
 </suite>

@@ -16,23 +16,18 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-@Test(enabled = true, groups = {"send text"}, dependsOnGroups = {"autentification"})
+
 public class SendTextMessage extends FirefoxTests {
-
+    
+@Test(enabled = true, groups = {"send text"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
-        LoginPage loginPage = new LoginPage(firefox);
-        loginPage.open("http://www.gmail.com");
-
-
-        MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
 
 
         SendMessagePage page = mailPage.composeClick();
-
         page.sendMessage("test.auto.lab@gmail.com", "subject", "some text")
                 .waitForSuccessfullSending()
                 .reload();
         Assert.assertEquals(mailPage.getMessageAddressee(), "me");
-        mailPage.logout();
+      
     }
 }

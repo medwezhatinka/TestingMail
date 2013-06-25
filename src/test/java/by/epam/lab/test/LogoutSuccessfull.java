@@ -14,10 +14,10 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-@Test(enabled=true, groups = {AUTENTIFICATION}, dependsOnMethods = {"by.epam.lab.test.AutentificationSuccessfull.autentificationSuccesfulltst"})
+
 public class LogoutSuccessfull  extends FirefoxTests implements  TestData{
     
-    
+    @Test(enabled=true, groups = {AUTENTIFICATION}, dependsOnMethods = {"by.epam.lab.test.AutentificationSuccessfull.autentificationSuccesfulltst"})
      public  static void logoutSuccessfultst(){
     
        LoginPage loginPage = new LoginPage(firefox);

@@ -14,11 +14,11 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-@Test(enabled=true,groups =AUTENTIFICATION , dataProviderClass = by.epam.lab.test.Data.class)
+
 public class AutentificationSuccessful extends FirefoxTests implements TestData, Group{
     
     
-  
+  @Test(enabled=true,groups =AUTENTIFICATION , dataProviderClass = by.epam.lab.test.Data.class)
      public static void autentificationSuccesfulltst(String email, String password, String location) {
       
       LoginPage loginPage = new LoginPage(firefox);
