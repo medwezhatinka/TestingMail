@@ -5,6 +5,7 @@
 package by.epam.lab.page;
 
 import by.epam.lab.element.html.MessageSendTable;
+import java.io.File;
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
@@ -52,22 +53,27 @@ public class SendMessagePage extends AbstractPageHtml {
         newMessage.close();
     }
     
-    public  void sendMessageWithAttachedFile(String toEmail, String subject, String body,String path){
+    public  void sendMessageWithAttachedFile(String toEmail, String subject, String body,String path) throws InterruptedException{
          newMessage.fillTo(toEmail).fillSubject(subject);
         switchTo(newMessage.getIframe());
         findByTagName("body").sendKeys(body);
         switchToDefaultContext();
         newMessage.attachFileClick();
+         File autoIt = new File("src/main/resources/test3.exe");
         try {
-            Runtime.getRuntime().exec("cmd /c" + "test.au3");
+             Process p = Runtime.getRuntime().exec(
+                autoIt.getAbsolutePath() + " " + path);
+        // ожидание выполнения запроса
+        p.waitFor();
         } catch (IOException ex) {
             System.out.println("КОСЯК");
         }
         
-        long time2 =System.currentTimeMillis()+ 5000;
-         while (time2 > System.currentTimeMillis()) {             
+        waitfor("//div[@aria-label='Attachment: trash.png. Press enter to view the attachment and delete to remove it']");
+       // long time2 =System.currentTimeMillis()+ 10000;
+      //   while (time2 > System.currentTimeMillis()) {             
              
-         }
+      //   }
         newMessage.send();
     }
 }

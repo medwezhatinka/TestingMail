@@ -4,10 +4,10 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.datareader.TestData;
 import by.epam.lab.page.LoginPage;
-import by.epam.lab.page.MailPage;
-import static by.epam.lab.test.Group.AUTENTIFICATION;
-import org.testng.Assert;
+import junit.framework.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 /**
@@ -15,18 +15,18 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 
-public class AutentificationSuccessful extends FirefoxTests implements TestData, Group{
+public class AutentificationSuccessful extends FirefoxTests {
+  
+   
     
-    
-  @Test(enabled=true,groups =AUTENTIFICATION , dataProviderClass = by.epam.lab.test.Data.class)
-     public static void autentificationSuccesfulltst(String email, String password, String location) {
-      
-      LoginPage loginPage = new LoginPage(firefox);
-      loginPage.open(START_URL);
-      MailPage mailPage = loginPage.Login(email, password).waitForSuccessfulLogin();
-      Assert.assertTrue(mailPage.getLocation().contains(location), "location : " + mailPage.getLocation());
-      mailPage.logout();
- 
-      }   
-    
+    @Test(enabled = true, groups = {"autentification"})
+    public void autorization(){
+        
+        loginPage = new LoginPage(firefox);
+        loginPage.open(TestData.HOME_PAGE_URL);
+        mailPage = loginPage.Login(TestData.CORRECT_EMAIL_PART_TEST, TestData.CORRECT_PASSWORD_TEST)
+                .waitForSuccessfulLogin();
+        Assert.assertTrue(mailPage.getLocation().contains(TestData.MAIL_PAGE_LOCATION));
+        mailPage.logout();
+    }
 }

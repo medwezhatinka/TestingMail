@@ -4,12 +4,9 @@
  */
 package by.epam.lab.test;
 
-import by.epam.lab.page.LoginPage;
-import by.epam.lab.page.MailPage;
 import by.epam.lab.page.SendMessagePage;
-import static by.epam.lab.test.FirefoxTests.firefox;
+import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /**
@@ -19,15 +16,17 @@ import org.testng.annotations.Test;
 
 public class SendTextMessage extends FirefoxTests {
     
-@Test(enabled = true, groups = {"send text"})//, dependsOnGroups = {"autentification"})
+    
+    
+@Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
         SendMessagePage page = mailPage.composeClick();
-        page.sendMessage("test.auto.lab@gmail.com", "subject", "some text")
+        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
                 .waitForSuccessfullSending()
                 .reload();
-        Assert.assertEquals(mailPage.getMessageAddressee(), "me");
+        Assert.assertEquals(mailPage.getMessageAddressee(), TestData.ME);
       
     }
 }

@@ -4,9 +4,8 @@
  */
 package by.epam.lab.test;
 
-import by.epam.lab.page.LoginPage;
-import by.epam.lab.page.MailPage;
 import by.epam.lab.page.SendMessagePage;
+import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,17 +16,15 @@ import org.testng.annotations.Test;
 
 public class SengMessageWithIncorrectEmail  extends FirefoxTests{
     
-    @Test(enabled = true, groups = {"send text"})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
      public void sendMessageWithIncorrectEmailtst(){
         
-      // LoginPage loginPage = new LoginPage(firefox);
-       //loginPage.open("http://www.gmail.com");
-      // MailPage mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
+     
        SendMessagePage  page =  mailPage.composeClick();
-       page.sendMessage("incorrect_email","subject", "some text");
-       Assert.assertEquals(page.getAllertTextAndAccept(), "ErrorThe address \"incorrect_email\" in the \"To\" field was not recognized. Please make sure that all addresses are properly formed.");
+       page.sendMessage(TestData.INCORRECT_EMAIL,TestData.SUBJECT, TestData.TEXT);
+       Assert.assertEquals(page.getAllertTextAndAccept(), TestData.INCORRECT_EMAIL_MESSAGE);
        page.closeAndSave();
-     //  mailPage.logout();
+     
         
      }
 }

@@ -4,8 +4,13 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.datareader.TestData;
 import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.MailPage;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -17,16 +22,22 @@ import org.testng.annotations.BeforeSuite;
  * @author Alina_Shumel
  */
 public abstract  class FirefoxTests {
-    
+  public static final Logger log = Logger.getLogger(FirefoxTests.class);
+ protected static String nameFile = "log4j.properties";
+  
+       
   protected  static  FirefoxDriver firefox;
    LoginPage loginPage;
     MailPage mailPage ;
-  
+   
+   
   @BeforeSuite(alwaysRun = true)
-  public  static void tearUpSuite(){
+  public  static void tearUpSuite() throws FileNotFoundException, IOException{
+      PropertyConfigurator.configure(nameFile);
+      log.debug("залогировал");
       firefox = new FirefoxDriver();
-      
-      
+      TestData.initialize();
+    
   }
    
   
@@ -37,14 +48,14 @@ public abstract  class FirefoxTests {
   }
   
   
-  @BeforeClass(groups = "send text")
+  @BeforeClass(groups = "message")
   public  void tearUpClass(){
        System.out.println("before class for send text group");
        loginPage = new LoginPage(firefox);
        loginPage.open(TestData.HOME_PAGE_URL);
   mailPage = loginPage.Login(TestData.CORRECT_EMAIL_TEST, TestData.CORRECT_PASSWORD_TEST).waitForSuccessfulLogin();
 }
-  @AfterClass(groups = "send text")
+  @AfterClass(groups = "message")
   public void tearDownClass(){
     mailPage.logout();
 }
