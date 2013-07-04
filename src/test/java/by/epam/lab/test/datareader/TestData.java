@@ -32,12 +32,12 @@ public class TestData {
     public static String INCORRECT_EMAIL_MESSAGE;
     public static String INCORRECT_EMAIL;
     public static String NO_RECIPIENT_MESSAGE;
-    public static  String SCRIPT_PATH;
+    public static String SCRIPT_PATH;
     public static String SMALL_FILE_PATH;
-     public static String LARGE_FILE_PATH;
-    
-    
-   
+    public static String LARGE_FILE_PATH;
+    public static String LARGE_FILE_MESSAGE;
+    public static String BOLD;
+    public static String NORMAL;
 
     public static void initialize() throws FileNotFoundException, IOException {
         File source = new File(FILENAMEINPUT);
@@ -63,7 +63,11 @@ public class TestData {
         SCRIPT_PATH = p.getProperty("SCRIPT_PATH");
         SMALL_FILE_PATH = p.getProperty("SMALL_FILE_PATH");
         LARGE_FILE_PATH = p.getProperty("LARGE_FILE_PATH");
-        
+        LARGE_FILE_MESSAGE = p.getProperty("LARGE_FILE_MESSAGE");
+        BOLD = p.getProperty("BOLD");
+        NORMAL = p.getProperty("NORMAL");
+
+
 
 
     }

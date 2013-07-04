@@ -13,12 +13,9 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-
-public class SendTextMessage extends FirefoxTests {
+public class UnreadMessageFont extends FirefoxTests{
     
-    
-    
-@Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
@@ -26,7 +23,8 @@ public class SendTextMessage extends FirefoxTests {
         page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
                 .waitForSuccessfullSending()
                 .reload();
-        Assert.assertEquals(mailPage.getMessageAddressee().getText(), TestData.ME);
+        Assert.assertEquals(mailPage.getMessageAddressee().getCssValue("font-weight"), TestData.BOLD);
       
     }
+    
 }

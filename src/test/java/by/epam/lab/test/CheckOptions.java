@@ -13,20 +13,27 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-
-public class SendTextMessage extends FirefoxTests {
+public class CheckOptions extends FirefoxTests{
     
     
-    
-@Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
         SendMessagePage page = mailPage.composeClick();
         page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
                 .waitForSuccessfullSending()
-                .reload();
-        Assert.assertEquals(mailPage.getMessageAddressee().getText(), TestData.ME);
+                .inboxClick();
+        
+              
+          long time1= System.currentTimeMillis()+5000;
+        while(time1> System.currentTimeMillis()){}
+      mailPage.selectMessage();
+        
+        
+        long time= System.currentTimeMillis()+10000;
+        while(time> System.currentTimeMillis()){}
+      
       
     }
 }

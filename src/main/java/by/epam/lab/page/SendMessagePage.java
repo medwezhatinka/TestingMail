@@ -4,6 +4,7 @@
  */
 package by.epam.lab.page;
 
+import by.epam.lab.element.html.LargeFileAllertDialog;
 import by.epam.lab.element.html.MessageSendTable;
 import java.io.File;
 import java.io.IOException;
@@ -19,6 +20,7 @@ import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 public class SendMessagePage extends AbstractPageHtml {
 
     private MessageSendTable newMessage;
+    private LargeFileAllertDialog dialog;
 
     public SendMessagePage(WebDriver driver) {
         super(driver);
@@ -58,7 +60,7 @@ public class SendMessagePage extends AbstractPageHtml {
     private String getFormatSize(File file){
         
          long sizeinbytes = file.length();
-        long size= (long) Math.ceil(sizeinbytes/1000.0);
+        long size= (long) Math.ceil(sizeinbytes/1024.0);
         StringBuilder size_str = new StringBuilder();
         size_str.append("(");
         String _size = String.valueOf(size);
@@ -77,36 +79,56 @@ public class SendMessagePage extends AbstractPageHtml {
         
     }
 
-    private void attachFile(String scriptPath, String filePath) throws IOException, InterruptedException {
-        File attachedFile = new File(filePath);
+    private SendMessagePage attachFile(String scriptPath,  File attachedFile) throws IOException, InterruptedException {
+      
         File autoIt = new File(scriptPath);
 
         Process p = Runtime.getRuntime().exec(
                 autoIt.getAbsolutePath() + " " + "\"" + attachedFile.getAbsolutePath() + "\"");
         // ожидание выполнения запроса
         p.waitFor();
+        return this;
 
-        waitfor("//div[text()='" + attachedFile.getName() + "']/following-sibling::div[text()='"+ getFormatSize(attachedFile)+"']");
-        System.out.println(attachedFile.length());
+     
         
 
     }
+    
+    public SendMessagePage waitforsuccessfulAttach(File attachedFile){
+        waitfor("//div[text()='" + attachedFile.getName() + "']/following-sibling::div[text()='"+ getFormatSize(attachedFile)+"']");
+        System.out.println(attachedFile.length());   
+        return this;
+    }
 
-    public SendMessagePage sendMessageWithAttachedFile(String toEmail, String subject,
-            String body, String script, String path)
+    public SendMessagePage createMessageWithAttachedFile(String toEmail, String subject,
+            String body, String script, File attachFile)
             throws InterruptedException {
         newMessage.fillTo(toEmail).fillSubject(subject);
         switchTo(newMessage.getIframe());
         findByTagName("body").sendKeys(body);
         switchToDefaultContext();
         newMessage.attachFileClick();
+      
         try {
-            attachFile(script, path);
+            attachFile(script, attachFile);
         } catch (IOException ex) {
             Logger.getLogger(SendMessagePage.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        newMessage.send();
+       
         return this;
+    }
+    
+    
+    public SendMessagePage send(){
+         newMessage.send();
+         return this;
+    }
+    
+    public String getAllertTextandClose(){
+        String message = dialog.getMessage();
+        dialog.cancelClick();
+        
+        return  message;
     }
 }
