@@ -37,7 +37,7 @@
             </run>
         </groups>
         <classes>
-   <class name="by.epam.lab.test.CheckOptions"/>
+   <class name="by.epam.lab.test.DeleteFunction"/>
              <!--        <class name="by.epam.lab.test.AttachBigFile"/>       --> 
         </classes>
     </test>

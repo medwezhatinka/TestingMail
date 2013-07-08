@@ -20,7 +20,7 @@ public class AbstractContainer implements IContainer{
     
     
     public boolean isDisplayed() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       return wrappedElement.isDisplayed();
     }
     
     

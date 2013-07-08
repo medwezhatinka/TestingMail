@@ -13,10 +13,10 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-public class CheckOptions extends FirefoxTests{
+public class DeleteFunction extends FirefoxTests{
     
     
-    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+     @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
@@ -27,11 +27,12 @@ public class CheckOptions extends FirefoxTests{
                 mailPage.selectMessage();
                 
                       
-         Assert.assertTrue(mailPage.optionsPresent());
+        mailPage.getMessage();
            
         
           
                   
       
     }
+    
 }

@@ -5,9 +5,13 @@
 package by.epam.lab.page;
 
 import by.epam.lab.element.Button;
+import by.epam.lab.element.OptionsPanel;
+import by.epam.lab.element.message.Message;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
@@ -25,6 +29,8 @@ public class MailPage extends AbstractPage {
     @FindBy(xpath = "//div[@class='ajl aib lKgBkb']/div/div/div/div/div/div/div/div/span/a")
     @CacheLookup
     private Button inbox;
+    @FindBy(xpath = "//div[@class='nH aqK']")
+    private OptionsPanel options;
 
     public MailPage(WebDriver driver) {
         super(driver);
@@ -43,11 +49,11 @@ public class MailPage extends AbstractPage {
 
 
     }
-    
-    public String getText(WebElement webElement){
-       webElement.getText();
+
+    public String getText(WebElement webElement) {
+        webElement.getText();
         return null;
-        
+
     }
 
     public MailPage logout() {
@@ -64,21 +70,43 @@ public class MailPage extends AbstractPage {
 
 
     }
-    
-    
-    public MailPage openMessage(){
-      getMessageAddressee().click();
+
+    public MailPage openMessage() {
+        getMessageAddressee().click();
         return this;
     }
-    
-    public MailPage inboxClick(){
+
+    public MailPage inboxClick() {
         inbox.click();
         return this;
     }
-    
-   public MailPage selectMessage(){
-       
-       messageTabe.findElement(By.xpath("//tr/td[2]/div/div")).click();
-       return this;
+
+    public MailPage selectMessage() {
+
+        messageTabe.findElement(By.xpath("//tr/td[2]/div/div")).click();
+        return this;
+    }
+
+    public boolean optionsPresent() {
+
+        options.moveToSelect(getDriver());
+
+        if (options.isDisplayed()) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    public Message getMessage() {
+        Message message = new Message();
+        message.setAddressee(messageTabe.findElement(By.xpath("//tr/td[5]/div/span")).getText());
+        message.setSubject(messageTabe.findElement(By.xpath("//tr/td[6]/div//div/div/span")).getText());
+        message.setText(messageTabe.findElement(By.xpath("//tr/td[6]/div//div/div/span[2]")).getText());
+        message.setTime(messageTabe.findElement(By.xpath("//tr/td[8]/span")).getText());
+
+        return message;
+
     }
 }
