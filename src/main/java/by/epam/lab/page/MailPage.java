@@ -31,6 +31,13 @@ public class MailPage extends AbstractPage {
     private Button inbox;
     @FindBy(xpath = "//div[@class='nH aqK']")
     private OptionsPanel options;
+    
+    @FindBy(css = "div.n6 span")
+    private WebElement more;
+    
+     @FindBy(xpath = "//a[@title='Trash']")
+    private WebElement trash;
+    
 
     public MailPage(WebDriver driver) {
         super(driver);
@@ -108,5 +115,15 @@ public class MailPage extends AbstractPage {
 
         return message;
 
+    }
+    
+    
+    public TrashPage goToTrashPage(){
+        more.click();
+        waitfor("//a[@title='Trash']");
+        trash.click();
+        
+       return  new TrashPage(getDriver());
+        
     }
 }

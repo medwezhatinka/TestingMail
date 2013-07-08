@@ -5,6 +5,7 @@
 package by.epam.lab.page;
 
 import by.epam.lab.element.MailTable;
+import by.epam.lab.element.message.Message;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,6 +24,15 @@ public class TrashPage extends AbstractPage{
     }
     
     
-    
+   public Message getMessage(){
+       Message message = new Message();
+       message.setAddressee(messageTabe.addressee.getText());
+       message.setSubject(messageTabe.subject.getText());
+       message.setText(messageTabe.text.getText());
+       message.setTime(messageTabe.time.getText());
+       
+       return message;
+       
+   } 
     
 }
