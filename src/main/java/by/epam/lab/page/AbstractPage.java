@@ -5,14 +5,11 @@
 package by.epam.lab.page;
 
 import by.epam.lab.element.ExtendedDecorator;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
@@ -123,6 +120,11 @@ public class AbstractPage implements IAbstractPage{
 
     public WebDriver getDriver() {
         return driver;
+    }
+
+    public void waitForElement(WebElement webElement) {
+      WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOf(webElement)); 
     }
          
      

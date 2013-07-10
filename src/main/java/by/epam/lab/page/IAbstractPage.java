@@ -52,4 +52,6 @@ public interface IAbstractPage {
     public String getAllertTextAndAccept();
     
     public WebDriver getDriver();
+    
+    public void waitForElement(WebElement webElement);
 }

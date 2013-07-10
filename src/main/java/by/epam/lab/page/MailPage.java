@@ -38,6 +38,11 @@ public class MailPage extends AbstractPage {
      @FindBy(xpath = "//a[@title='Trash']")
     private WebElement trash;
     
+     @FindBy(xpath = "//div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div/div/span[@class='nU n1']/a")
+    private WebElement spam;
+     
+     @FindBy(xpath = "//div/div/div/div[2]/div/div/div/span/a[@title='All Mail']")
+    private WebElement allMail;
 
     public MailPage(WebDriver driver) {
         super(driver);
@@ -120,10 +125,52 @@ public class MailPage extends AbstractPage {
     
     public TrashPage goToTrashPage(){
         more.click();
-        waitfor("//a[@title='Trash']");
+        waitForElement(trash);
         trash.click();
-        
+         waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
        return  new TrashPage(getDriver());
         
+    }
+    
+     public SpamPage goToSpamPage(){
+        more.click();
+        waitForElement(spam);
+        spam.click();
+        waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
+        
+       return  new SpamPage(getDriver());
+        
+    }
+     
+      public AllMailPage goToAllMailPage(){
+        more.click();
+        waitForElement(allMail);
+        allMail.click();
+        waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
+        
+       return  new AllMailPage(getDriver());
+        
+    }
+ 
+    public MailPage deleteMessage(){
+        
+         options.moveToSelect(getDriver());
+
+        options.clickDelete();
+        return this;
+    }
+    
+    public MailPage reportSpam(){
+        
+      options.moveToSelect(getDriver());
+
+        options.reportSpam();
+        return this;   
+    }
+    
+    public MailPage archiveMessage(){
+          options.moveToSelect(getDriver());
+          options.archiveClick();
+        return this;
     }
 }

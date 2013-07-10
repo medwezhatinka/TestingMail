@@ -6,21 +6,17 @@ package by.epam.lab.page;
 
 import by.epam.lab.element.MailTable;
 import by.epam.lab.element.message.Message;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 /**
  *
  * @author Alina_Shumel
  */
-public class TrashPage extends AbstractPage{
-
-    
+public class AllMailPage extends AbstractPage{
     @FindBy(xpath = "//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]")
     private MailTable messageTabe;
-    public TrashPage(WebDriver driver) {
+    public AllMailPage(WebDriver driver) {
         super(driver);
     }
     

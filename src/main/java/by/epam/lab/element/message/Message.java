@@ -92,6 +92,11 @@ public class Message {
         }
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Message{" + "addressee=" + addressee + ", subject=" + subject + ", text=" + text + ", time=" + time + '}';
+    }
    
    
    

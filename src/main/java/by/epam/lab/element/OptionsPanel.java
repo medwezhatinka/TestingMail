@@ -58,6 +58,18 @@ public class OptionsPanel   extends AbstractContainer{
     }
 
   
+    public void clickDelete(){
+        
+        delete.click();
+    }
     
+    public void reportSpam(){
+        
+        report_spam.click();
+    }
     
+    public void archiveClick(){
+        
+        archive.click();
+    }
 }

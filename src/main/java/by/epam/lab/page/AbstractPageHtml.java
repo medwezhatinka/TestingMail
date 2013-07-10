@@ -126,6 +126,10 @@ public class AbstractPageHtml implements IAbstractPage{
     public WebDriver getDriver() {
         return driver;
     }
+
+    public void waitForElement(WebElement webElement) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
  
     
 }
