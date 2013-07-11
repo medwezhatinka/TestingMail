@@ -44,4 +44,19 @@ public class LoginPage extends AbstractPage {
       
            
   }
+  
+  public String getErrorEmailMessage(){
+       WebElement error = findByID("errormsg_0_Email");
+       return error.getText();
+      
+           
+  }
+  public LoginPage inputPassword(String password){
+   form.fillPassword(password);
+      return this;
+  }
+  
+  public void loginClick(){
+      form.submit();
+  }
 }

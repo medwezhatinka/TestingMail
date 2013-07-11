@@ -6,7 +6,7 @@ package by.epam.lab.test;
 
 import by.epam.lab.element.message.Message;
 import by.epam.lab.page.SendMessagePage;
-import by.epam.lab.page.TrashPage;
+import by.epam.lab.page.SpamPage;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,9 +15,9 @@ import org.testng.annotations.Test;
  *
  * @author Alina_Shumel
  */
-public class DeleteFunction extends FirefoxTests {
-
-    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+public class ReportSpam extends FirefoxTests{
+    
+     @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
@@ -29,19 +29,16 @@ public class DeleteFunction extends FirefoxTests {
 
 
         Message inputMessage = mailPage.getMessage();
-        System.out.println(inputMessage.toString());
-        mailPage.deleteMessage();
-        
-        
-        
 
-        TrashPage trashPage = mailPage.goToTrashPage();
-
+        mailPage.reportSpam();
         
-       
-        Message moveMessage = trashPage.getMessage();
-        System.out.println(moveMessage.toString());
-        Assert.assertTrue(inputMessage.equals(moveMessage));
+      
+        
+       SpamPage spamPage = mailPage.goToSpamPage();
+  
+        
+        
+        Assert.assertTrue(inputMessage.equals(spamPage.getMessage()));
 
 
 

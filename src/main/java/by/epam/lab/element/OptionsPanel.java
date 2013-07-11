@@ -4,6 +4,7 @@
  */
 package by.epam.lab.element;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -71,5 +72,12 @@ public class OptionsPanel   extends AbstractContainer{
     public void archiveClick(){
         
         archive.click();
+    }
+    
+    
+    public void selectMessages(String status,WebDriver driver){
+        
+        new Actions(driver).moveToElement(select).click().build().perform();
+        driver.findElement(By.xpath(".//div[text()='"+ status +"']")).click();
     }
 }

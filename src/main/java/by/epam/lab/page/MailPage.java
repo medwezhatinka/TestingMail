@@ -6,11 +6,12 @@ package by.epam.lab.page;
 
 import by.epam.lab.element.Button;
 import by.epam.lab.element.OptionsPanel;
+import by.epam.lab.element.Table;
 import by.epam.lab.element.message.Message;
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -43,6 +44,17 @@ public class MailPage extends AbstractPage {
      
      @FindBy(xpath = "//div/div/div/div[2]/div/div/div/span/a[@title='All Mail']")
     private WebElement allMail;
+     
+     
+   
+      @FindBy(xpath = "//div[@class='nH']/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[3]/div")
+    private WebElement setting;
+       @FindBy(xpath = "//div[@id='ms']/div")
+      private WebElement setting_setting;
+     
+     
+       @FindBy(xpath = "//table[@class='F cf zt']")
+    private Table messages;
 
     public MailPage(WebDriver driver) {
         super(driver);
@@ -173,4 +185,54 @@ public class MailPage extends AbstractPage {
           options.archiveClick();
         return this;
     }
+    
+    public boolean checkReadMessageSelected(){
+    List<List<WebElement>> messageList  =   messages.getRows();
+        for (List<WebElement> list : messageList) {
+                     
+            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("700") 
+                    &&   list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true") ) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+     public boolean checkUnreadMessageSelected(){
+     List<List<WebElement>> messageList  =   messages.getRows();
+        for (List<WebElement> list : messageList) {
+                  
+            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("400") 
+                    &&   list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true") ) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    public void selectRead(){
+        
+         options.moveToSelect(getDriver());
+         options.selectMessages("Read", getDriver());
+    }
+    
+     public void selectUnread(){
+        
+         options.moveToSelect(getDriver());
+         options.selectMessages("Unread", getDriver());
+    }
+     
+     
+     public void openSettings(){
+         
+         new Actions(getDriver())
+                 .moveToElement(setting)
+                 .click()
+                 .moveToElement(setting_setting)
+                 .click()
+                 .build()
+                 .perform();
+     }
+    // ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", button); 
 }
