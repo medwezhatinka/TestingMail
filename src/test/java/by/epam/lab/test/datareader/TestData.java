@@ -38,6 +38,7 @@ public class TestData {
     public static String LARGE_FILE_MESSAGE;
     public static String BOLD;
     public static String NORMAL;
+    public static String SIGNATURE;
 
     public static void initialize() throws FileNotFoundException, IOException {
         File source = new File(FILENAMEINPUT);
@@ -66,6 +67,7 @@ public class TestData {
         LARGE_FILE_MESSAGE = p.getProperty("LARGE_FILE_MESSAGE");
         BOLD = p.getProperty("BOLD");
         NORMAL = p.getProperty("NORMAL");
+        SIGNATURE = p.getProperty("SIGNATURE");
 
 
 

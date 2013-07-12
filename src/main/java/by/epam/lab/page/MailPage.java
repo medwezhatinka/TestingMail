@@ -7,14 +7,17 @@ package by.epam.lab.page;
 import by.epam.lab.element.Button;
 import by.epam.lab.element.OptionsPanel;
 import by.epam.lab.element.Table;
+import by.epam.lab.element.TextInput;
 import by.epam.lab.element.message.Message;
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 /**
  *
@@ -47,7 +50,7 @@ public class MailPage extends AbstractPage {
      
      
    
-      @FindBy(xpath = "//div[@class='nH']/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[3]/div")
+      @FindBy(xpath = "//div[@class='nH']/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div")
     private WebElement setting;
        @FindBy(xpath = "//div[@id='ms']/div")
       private WebElement setting_setting;
@@ -55,7 +58,9 @@ public class MailPage extends AbstractPage {
      
        @FindBy(xpath = "//table[@class='F cf zt']")
     private Table messages;
-
+       
+     
+       
     public MailPage(WebDriver driver) {
         super(driver);
     }
@@ -96,6 +101,7 @@ public class MailPage extends AbstractPage {
     }
 
     public MailPage openMessage() {
+      waitForElement(getMessageAddressee());
         getMessageAddressee().click();
         return this;
     }
@@ -225,7 +231,7 @@ public class MailPage extends AbstractPage {
      
      
      public void openSettings(){
-         
+       
          new Actions(getDriver())
                  .moveToElement(setting)
                  .click()
@@ -234,5 +240,40 @@ public class MailPage extends AbstractPage {
                  .build()
                  .perform();
      }
-    // ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", button); 
+     
+     
+   
+//      @FindBy(xpath = "//input[@name='sx_sg']")
+//       private WebElement signature_on;
+//
+//       @FindBy(xpath = "//div[@aria-label='Signature']/iframe")
+//       private WebElement signature_iframe;
+//       
+//       @FindBy(tagName = "body")
+//       private  TextInput signature_input;
+//       
+//     //   @FindBy(tagName = "//div[@class='rU']/button[1]")
+//       @FindBy(how=How.XPATH,using="//button[text()='Save Changes']") 
+//       private WebElement save_changes;
+//       
+//   
+// 
+//    
+//      public void addSignature(){
+//         ((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView();", signature_on); 
+//         signature_on.click();
+//         switchTo(signature_iframe);
+//         signature_input.sendKeys("signature la la la la");
+//         switchToDefaultContext();
+//     }
+//      
+//      
+//      public void save_changes(){
+//        ((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView();", save_changes);
+//        new Actions(getDriver()).moveToElement(save_changes).click().build().perform();
+//       
+//      }
+    
+     
+     
 }

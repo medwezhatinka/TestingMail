@@ -106,17 +106,16 @@ public class AbstractPage implements IAbstractPage{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void switchTo(WebElement webElement) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      public void switchTo(WebElement webElement){
+        
+         driver.switchTo().frame(webElement);
     }
-
-    public void switchToDefaultContext() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+     
+      public void switchToDefaultContext(){
+        
+        driver.switchTo().defaultContent();
     }
-
-    public String getAllertTextAndAccept() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+     
 
     public WebDriver getDriver() {
         return driver;
@@ -125,6 +124,10 @@ public class AbstractPage implements IAbstractPage{
     public void waitForElement(WebElement webElement) {
       WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(webElement)); 
+    }
+
+    public String getAllertTextAndAccept() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
          
      
