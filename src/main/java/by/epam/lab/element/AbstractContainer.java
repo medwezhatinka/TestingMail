@@ -17,7 +17,9 @@ public class AbstractContainer implements IContainer{
     public AbstractContainer(WebElement wrappedElement) {
         this.wrappedElement = wrappedElement;
     }
-    
+     public WebElement getWrappedElement() {
+        return wrappedElement;
+    }
     
     public boolean isDisplayed() {
        return wrappedElement.isDisplayed();

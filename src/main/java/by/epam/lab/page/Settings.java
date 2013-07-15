@@ -4,6 +4,7 @@
  */
 package by.epam.lab.page;
 
+import by.epam.lab.element.AddEmailWindow;
 import by.epam.lab.element.Button;
 import by.epam.lab.element.Table;
 import by.epam.lab.element.TextInput;
@@ -37,13 +38,30 @@ public class Settings extends AbstractPage{
      @FindBy(how=How.XPATH,using="//button[text()='Save Changes']") 
        private Button save_changes;
        
-     //Forwarding and POP/IMAP
+  
      
        @FindBy(how=How.XPATH,using="//a[text()='Forwarding and POP/IMAP']") 
        private WebElement tab;
        
+       
+       @FindBy(xpath = "//input[@value='Add a forwarding address']")
+       private Button add_address;
+       
+       @FindBy(xpath = "//body/div[@class='Kj-JD']")
+       private AddEmailWindow emailAddWindow;
+       
+       
+       @FindBy(xpath = "//div[@class='nH Tv1JD']/div/table/tbody/tr[1]/td[2]/div/div[3]/table/tbody/tr[4]/td[2]/input[@value='Verify']")
+       private Button verify;
+       
+        @FindBy(xpath = "//div[@class='nH Tv1JD']/div/table/tbody/tr[1]/td[2]/div/div[3]/table/tbody/tr[4]/td[2]/input[1]")
+       private TextInput verify_code;
+       
      @FindBy(xpath = "//table[@class='F cf zt']")
        private Table messageTable;
+     
+     
+     
      
      
     public Settings(WebDriver driver) {
@@ -88,6 +106,30 @@ public class Settings extends AbstractPage{
           waitForElement(title);
           tab.click();
           
-         waitForElement(messageTable.getWrappedElement()); 
+       
+      }
+      
+      
+      public void addForwardingAddress(String address) throws InterruptedException{
+          add_address.click();
+          Thread.sleep(5000);
+        //  waitForElement(emailAddWindow.getWrappedElement());
+          emailAddWindow.inputEmail(address)
+                  .clickNext();
+          
+      Thread.sleep(5000);
+          emailAddWindow.clickProceed(getDriver());
+          waitForElement(emailAddWindow.getOk().getWrappedElement());
+          emailAddWindow.clickOk();
+          waitForElement(verify.getWrappedElement());
+                  
+      }
+      
+      
+      public void verifyCode(String code){
+          
+         verify_code.sendKeys(code);
+          System.out.println(verify_code.getWrappedElement().getAttribute("value"));
+         verify.click();
       }
 }

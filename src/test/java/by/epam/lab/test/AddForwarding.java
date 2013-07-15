@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 public class AddForwarding extends FirefoxTests{
     
      @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
-    public void signAdd() {
+    public void signAdd() throws InterruptedException {
         
       
        
@@ -28,6 +28,9 @@ public class AddForwarding extends FirefoxTests{
        
       Settings settings = new Settings(firefox);
        settings.openForwardingTab();
+       
+       settings.addForwardingAddress("medwezhatinka@gmail.com");
+       settings.verifyCode("99999");
        
     }
     
