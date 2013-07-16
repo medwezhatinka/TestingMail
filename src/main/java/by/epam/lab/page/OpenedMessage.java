@@ -23,7 +23,8 @@ public class OpenedMessage extends AbstractPage{
      
    @FindBy(xpath = "//span[@class='HOEnZb adL']/font/div/div")
     private WebElement signature;
-   
+    @FindBy(xpath = "//div[@class='gs']/div[6]/div")
+   private WebElement messageBody;
    
    
    
@@ -32,6 +33,11 @@ public class OpenedMessage extends AbstractPage{
        showAllContent.click();
       waitForElement(signature);
        return signature.getText();
+   }
+   
+   public String getMessageText(){
+       
+       return messageBody.getText();
    }
    
 }

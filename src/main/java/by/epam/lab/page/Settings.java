@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -56,6 +57,15 @@ public class Settings extends AbstractPage{
        
         @FindBy(xpath = "//div[@class='nH Tv1JD']/div/table/tbody/tr[1]/td[2]/div/div[3]/table/tbody/tr[4]/td[2]/input[1]")
        private TextInput verify_code;
+        
+        
+        
+         @FindBy(xpath = "//input[@value='Proceed']")
+   private Button proceed;
+   
+   @FindBy(xpath = "//iframe[@class='ds']")
+   private WebElement form;
+   
        
      @FindBy(xpath = "//table[@class='F cf zt']")
        private Table messageTable;
@@ -73,7 +83,7 @@ public class Settings extends AbstractPage{
          waitForElement(title);
          ((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView();", signature_on); 
          signature_on.click();
-         switchTo(signature_iframe);
+           switchTo(signature_iframe);
          signature_input.sendKeys(signature);
          switchToDefaultContext();
      }
@@ -108,7 +118,13 @@ public class Settings extends AbstractPage{
           
        
       }
-      
+        public Settings clickProceed(WebDriver driver){
+      driver.switchTo().frame(form);
+       proceed.click();
+       driver.switchTo().defaultContent();
+       return this;
+   }
+   
       
       public void addForwardingAddress(String address) throws InterruptedException{
           add_address.click();
@@ -118,7 +134,7 @@ public class Settings extends AbstractPage{
                   .clickNext();
           
       Thread.sleep(5000);
-          emailAddWindow.clickProceed(getDriver());
+          clickProceed(getDriver());
           waitForElement(emailAddWindow.getOk().getWrappedElement());
           emailAddWindow.clickOk();
           waitForElement(verify.getWrappedElement());
@@ -127,7 +143,13 @@ public class Settings extends AbstractPage{
       
       
       public void verifyCode(String code){
-          
+          new Actions(getDriver())
+                  .moveToElement(verify_code.getWrappedElement())
+                  .click()
+                  .sendKeys(Keys.chord(Keys.DELETE))
+                  .build().
+                  perform();
+    
          verify_code.sendKeys(code);
           System.out.println(verify_code.getWrappedElement().getAttribute("value"));
          verify.click();

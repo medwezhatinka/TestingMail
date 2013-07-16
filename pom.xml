@@ -63,6 +63,12 @@
             <artifactId>htmlelements-java</artifactId>
             <version>1.11</version>
         </dependency>
+        <dependency>
+            <groupId>org.easytesting</groupId>
+            <artifactId>fest-swing-testng</artifactId>
+            <version>1.2</version>
+        </dependency>
+        
        <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
@@ -99,10 +105,15 @@
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+                            <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter, org.fest.swing.testng.listener.ScreenshotOnFailureListener</value>
                             <outputDirectory>${basedir}/report</outputDirectory>
                         </property>
                     </properties>
+                         
+                       <systemPropertyVariables>
+                         <org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output>
+                       </systemPropertyVariables>
+                    
                 </configuration>
             </plugin>
         </plugins>

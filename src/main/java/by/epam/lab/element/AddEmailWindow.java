@@ -27,12 +27,7 @@ public class AddEmailWindow extends  AbstractContainer{
    private  Button next;
    
    
-   @FindBy(xpath = "//input[@value='Proceed']")
-   private Button proceed;
-   
-   @FindBy(xpath = "//iframe[@class='ds']")
-   private WebElement form;
-   
+  
     @FindBy(name = "ok")
    private  Button ok;
    
@@ -50,13 +45,7 @@ public class AddEmailWindow extends  AbstractContainer{
        return this;
    }
     
-   public AddEmailWindow clickProceed(WebDriver driver){
-      driver.switchTo().frame(form);
-       proceed.click();
-       driver.switchTo().defaultContent();
-       return this;
-   }
-   
+ 
    
    public AddEmailWindow clickOk(){
        ok.click();
@@ -71,10 +60,7 @@ public class AddEmailWindow extends  AbstractContainer{
         return next;
     }
 
-    public Button getProceed() {
-        return proceed;
-    }
-
+  
     public Button getOk() {
         return ok;
     }
