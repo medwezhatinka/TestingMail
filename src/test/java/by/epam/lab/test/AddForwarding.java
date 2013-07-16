@@ -46,9 +46,10 @@ public class AddForwarding extends FirefoxTests{
  settings = new Settings(firefox);
        settings.openForwardingTab();
        settings.verifyCode(code);
+       settings.forwardOn();
+       settings.save_changes();
        
-       
-       long time = System.currentTimeMillis()+ 50000000;
+       long time = System.currentTimeMillis()+ 5000;
      while(time > System.currentTimeMillis()){}
        
       

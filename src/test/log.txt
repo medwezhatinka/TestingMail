@@ -22,3 +22,6 @@
 17:16:09,679 ERROR main TestListener:onTestFailure:42 - signAdd
 17:20:01,063 ERROR main TestListener:onTestFailure:42 - signAdd
 17:21:13,546 ERROR main TestListener:onTestFailure:42 - signAdd
+17:50:30,811 ERROR main TestListener:onTestFailure:42 - signAdd
+17:52:55,881 ERROR main TestListener:onTestFailure:42 - signAdd
+17:55:25,542 ERROR main TestListener:onTestFailure:42 - signAdd

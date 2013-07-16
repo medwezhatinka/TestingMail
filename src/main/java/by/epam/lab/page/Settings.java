@@ -71,7 +71,8 @@ public class Settings extends AbstractPage{
        private Table messageTable;
      
      
-     
+     @FindBy(name = "sx_em")
+     private WebElement forwarding_on;
      
      
     public Settings(WebDriver driver) {
@@ -153,5 +154,13 @@ public class Settings extends AbstractPage{
          verify_code.sendKeys(code);
           System.out.println(verify_code.getWrappedElement().getAttribute("value"));
          verify.click();
+      }
+      
+      
+      
+      
+      public void forwardOn(){
+          waitForElement(forwarding_on);
+          forwarding_on.click();
       }
 }
