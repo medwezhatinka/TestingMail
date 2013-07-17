@@ -30,6 +30,11 @@ public class TestListener extends TestListenerAdapter{
    
  public static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(TestListener.class);
     
+ 
+ 
+ 
+ 
+ 
     @Override
     public void onTestSuccess(ITestResult tr) {
        
@@ -39,7 +44,9 @@ public class TestListener extends TestListenerAdapter{
     
     @Override
     public  void onTestFailure(ITestResult testResult){
-         log.error(testResult.getMethod().getMethodName());
+       
+        log.error(testResult.getMethod().getMethodName());
+       
         try {
        
             Robot _robot = new Robot();
@@ -52,10 +59,10 @@ public class TestListener extends TestListenerAdapter{
             Reporter.log("<img src=\"file:///"+workDir+dateNow+".JPG\" alt=\"\"/><br />");
          
         } catch (AWTException ex) {
-            log.log(Priority.ERROR, ex, ex);
+        //    log.log(Priority.ERROR, ex, ex);
           //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-             log.log(Priority.ERROR, ex, ex);
+         //    log.log(Priority.ERROR, ex, ex);
           //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

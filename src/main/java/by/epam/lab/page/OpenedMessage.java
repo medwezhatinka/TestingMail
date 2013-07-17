@@ -36,7 +36,7 @@ public class OpenedMessage extends AbstractPage{
    }
    
    public String getMessageText(){
-       
+       waitForElement(messageBody);
        return messageBody.getText();
    }
    

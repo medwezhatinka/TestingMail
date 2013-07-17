@@ -93,6 +93,27 @@ public class Message {
         return true;
     }
 
+    
+    
+    public boolean equalsContent(Object obj){
+       if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Message other = (Message) obj;
+        if ((this.addressee == null) ? (other.addressee != null) : !this.addressee.equals(other.addressee)) {
+            return false;
+        }
+        if ((this.subject == null) ? (other.subject != null) : !this.subject.equals(other.subject)) {
+            return false;
+        }
+        if ((this.text == null) ? (other.text != null) : !this.text.equals(other.text)) {
+            return false;
+        }
+        return true;
+    }
     @Override
     public String toString() {
         return "Message{" + "addressee=" + addressee + ", subject=" + subject + ", text=" + text + ", time=" + time + '}';

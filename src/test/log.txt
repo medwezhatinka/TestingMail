@@ -25,3 +25,46 @@
 17:50:30,811 ERROR main TestListener:onTestFailure:42 - signAdd
 17:52:55,881 ERROR main TestListener:onTestFailure:42 - signAdd
 17:55:25,542 ERROR main TestListener:onTestFailure:42 - signAdd
+11:42:04,627 ERROR main TestListener:onTestFailure:47 - signAdd
+11:47:22,835 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:47:22,835 ERROR main TestListener:onTestFailure:48 - signAdd
+11:50:02,845 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:50:02,845 ERROR main TestListener:onTestFailure:48 - signAdd
+11:52:45,818 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:52:45,818 ERROR main TestListener:onTestFailure:48 - signAdd
+11:52:45,818 ERROR main TestListener:onTestFailure:49 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:54:27,889 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:54:27,905 ERROR main TestListener:onTestFailure:48 - signAdd
+11:54:27,905 ERROR main TestListener:onTestFailure:49 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+12:06:20,533 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+12:06:20,533 ERROR main TestListener:onTestFailure:48 - signAdd
+12:51:39,658 ERROR main TestListener:onTestFailure:48 - signAdd
+12:55:24,944 ERROR main TestListener:onTestFailure:48 - signAdd
+13:00:51,078 ERROR main TestListener:onTestFailure:48 - signAdd
+13:04:53,894 ERROR main TestListener:onTestFailure:48 - signAdd
+13:07:15,434 ERROR main TestListener:onTestFailure:48 - signAdd
+13:09:38,435 ERROR main TestListener:onTestFailure:48 - signAdd
+13:15:41,400 ERROR main TestListener:onTestFailure:48 - signAdd
+13:17:22,046 ERROR main TestListener:onTestFailure:48 - signAdd
+13:19:52,366 ERROR main TestListener:onTestFailure:48 - signAdd
+13:37:35,356 ERROR main TestListener:onTestFailure:48 - signAdd
+13:58:24,714 ERROR main TestListener:onTestFailure:48 - signAdd
+14:02:14,998 ERROR main TestListener:onTestFailure:48 - signAdd
+14:04:36,754 ERROR main TestListener:onTestFailure:48 - signAdd
+14:17:59,948 ERROR main TestListener:onTestFailure:48 - signAdd
+14:22:19,991 ERROR main TestListener:onTestFailure:48 - signAdd
+14:24:05,664 ERROR main TestListener:onTestFailure:48 - signAdd
+14:28:29,828 ERROR main TestListener:onTestFailure:48 - signAdd
+14:37:11,835 ERROR main TestListener:onTestFailure:48 - signAdd
+14:42:44,110 ERROR main TestListener:onTestFailure:48 - signAdd
+14:44:50,040 ERROR main TestListener:onTestFailure:48 - signAdd
+14:47:32,538 ERROR main TestListener:onTestFailure:48 - signAdd
+15:48:54,940 ERROR main TestListener:onTestFailure:48 - signAdd
+15:52:42,329 ERROR main TestListener:onTestFailure:48 - signAdd
+16:06:10,875 ERROR main TestListener:onTestFailure:48 - signAdd
+16:09:04,500 ERROR main TestListener:onTestFailure:48 - signAdd
+16:10:23,332 ERROR main TestListener:onTestFailure:48 - signAdd
+16:13:32,551 ERROR main TestListener:onTestFailure:48 - signAdd
+16:16:17,676 ERROR main TestListener:onTestFailure:48 - signAdd
+16:21:17,225 ERROR main TestListener:onTestFailure:48 - signAdd
+16:27:29,024 ERROR main TestListener:onTestFailure:48 - signAdd

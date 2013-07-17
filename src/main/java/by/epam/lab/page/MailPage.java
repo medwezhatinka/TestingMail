@@ -7,17 +7,14 @@ package by.epam.lab.page;
 import by.epam.lab.element.Button;
 import by.epam.lab.element.OptionsPanel;
 import by.epam.lab.element.Table;
-import by.epam.lab.element.TextInput;
 import by.epam.lab.element.message.Message;
 import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 /**
  *
@@ -35,32 +32,21 @@ public class MailPage extends AbstractPage {
     private Button inbox;
     @FindBy(xpath = "//div[@class='nH aqK']")
     private OptionsPanel options;
-    
     @FindBy(css = "div.n6 span")
     private WebElement more;
-    
-     @FindBy(xpath = "//a[@title='Trash']")
+    @FindBy(xpath = "//a[@title='Trash']")
     private WebElement trash;
-    
-     @FindBy(xpath = "//div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div/div/span[@class='nU n1']/a")
+    @FindBy(xpath = "//div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div/div/span[@class='nU n1']/a")
     private WebElement spam;
-     
-     @FindBy(xpath = "//div/div/div/div[2]/div/div/div/span/a[@title='All Mail']")
+    @FindBy(xpath = "//div/div/div/div[2]/div/div/div/span/a[@title='All Mail']")
     private WebElement allMail;
-     
-     
-   
-      @FindBy(xpath = "//div[@class='nH']/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div")
+    @FindBy(xpath = "//div[@class='nH']/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div")
     private WebElement setting;
-       @FindBy(xpath = "//div[@id='ms']/div")
-      private WebElement setting_setting;
-     
-     
-       @FindBy(xpath = "//table[@class='F cf zt']")
+    @FindBy(xpath = "//div[@id='ms']/div")
+    private WebElement setting_setting;
+    @FindBy(xpath = "//table[@class='F cf zt']")
     private Table messages;
-       
-     
-       
+
     public MailPage(WebDriver driver) {
         super(driver);
     }
@@ -101,7 +87,7 @@ public class MailPage extends AbstractPage {
     }
 
     public MailPage openMessage() {
-      waitForElement(getMessageAddressee());
+        waitForElement(getMessageAddressee());
         getMessageAddressee().click();
         return this;
     }
@@ -139,110 +125,118 @@ public class MailPage extends AbstractPage {
         return message;
 
     }
-    
-    
-    public TrashPage goToTrashPage(){
+
+    public TrashPage goToTrashPage() {
         more.click();
         waitForElement(trash);
         trash.click();
-         waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
-       return  new TrashPage(getDriver());
-        
+        waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
+        return new TrashPage(getDriver());
+
     }
-    
-     public SpamPage goToSpamPage(){
+
+    public SpamPage goToSpamPage() {
         more.click();
         waitForElement(spam);
         spam.click();
         waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
-        
-       return  new SpamPage(getDriver());
-        
+
+        return new SpamPage(getDriver());
+
     }
-     
-      public AllMailPage goToAllMailPage(){
+
+    public AllMailPage goToAllMailPage() {
         more.click();
         waitForElement(allMail);
         allMail.click();
         waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
-        
-       return  new AllMailPage(getDriver());
-        
+
+        return new AllMailPage(getDriver());
+
     }
- 
-    public MailPage deleteMessage(){
-        
-         options.moveToSelect(getDriver());
+
+    public MailPage deleteMessage() {
+
+        options.moveToSelect(getDriver());
 
         options.clickDelete();
         return this;
     }
-    
-    public MailPage reportSpam(){
-        
-      options.moveToSelect(getDriver());
+
+    public MailPage reportSpam() {
+
+        options.moveToSelect(getDriver());
 
         options.reportSpam();
-        return this;   
-    }
-    
-    public MailPage archiveMessage(){
-          options.moveToSelect(getDriver());
-          options.archiveClick();
         return this;
     }
-    
-    public boolean checkReadMessageSelected(){
-    List<List<WebElement>> messageList  =   messages.getRows();
+
+    public MailPage archiveMessage() {
+        options.moveToSelect(getDriver());
+        options.archiveClick();
+        return this;
+    }
+
+    public boolean checkReadMessageSelected() {
+        List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
-                     
-            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("700") 
-                    &&   list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true") ) {
+
+            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("700")
+                    && list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true")) {
                 return false;
             }
         }
-        
+
         return true;
     }
-     public boolean checkUnreadMessageSelected(){
-     List<List<WebElement>> messageList  =   messages.getRows();
+
+    public boolean checkUnreadMessageSelected() {
+        List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
-                  
-            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("400") 
-                    &&   list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true") ) {
+
+            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("400")
+                    && list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true")) {
                 return false;
             }
         }
-        
+
         return true;
     }
-    
-    public void selectRead(){
-        
-         options.moveToSelect(getDriver());
-         options.selectMessages("Read", getDriver());
+
+    public void selectRead() {
+
+        options.moveToSelect(getDriver());
+        options.selectMessages("Read", getDriver());
     }
-    
-     public void selectUnread(){
-        
-         options.moveToSelect(getDriver());
-         options.selectMessages("Unread", getDriver());
+
+    public void selectUnread() {
+
+        options.moveToSelect(getDriver());
+        options.selectMessages("Unread", getDriver());
     }
-     
-     
-     public void openSettings(){
-       
-         new Actions(getDriver())
-                 .moveToElement(setting)
-                 .click()
-                 .moveToElement(setting_setting)
-                 .click()
-                 .build()
-                 .perform();
-     }
-     
-     
-   
+
+    public void openSettings() {
+
+        new Actions(getDriver())
+                .moveToElement(setting)
+                .click()
+                .moveToElement(setting_setting)
+                .click()
+                .build()
+                .perform();
+    }
+
+    public void waitForMessageFrom(String addressee, long seconds) {
+        long time = System.currentTimeMillis() + seconds * 1000;
+        while (time > System.currentTimeMillis()) {
+            if (!addressee.equals(messages.getCellAt(0, 4).findElement(By.xpath(".//span")).getText())) {
+               
+              
+            } else {
+                break;
+            }
+        }
+    }
 //      @FindBy(xpath = "//input[@name='sx_sg']")
 //       private WebElement signature_on;
 //
@@ -273,7 +267,4 @@ public class MailPage extends AbstractPage {
 //        new Actions(getDriver()).moveToElement(save_changes).click().build().perform();
 //       
 //      }
-    
-     
-     
 }

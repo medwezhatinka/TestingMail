@@ -8,6 +8,6 @@ package by.epam.lab.element;
  *
  * @author Alina_Shumel
  */
-public interface IContainer {
+public interface IContainer{
     boolean isDisplayed();
 }

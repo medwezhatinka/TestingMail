@@ -34,6 +34,7 @@ public class AddEmailWindow extends  AbstractContainer{
    
    
    public AddEmailWindow inputEmail(String email){
+       
          this.email.sendKeys(email);
          return this;
          

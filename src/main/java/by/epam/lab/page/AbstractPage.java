@@ -6,6 +6,7 @@ package by.epam.lab.page;
 
 import by.epam.lab.element.ExtendedDecorator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -19,12 +20,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AbstractPage implements IAbstractPage{
    private WebDriver driver;
    
+    final static String JSstr = "var result = document.evaluate(\"%s\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);" +  
+    "result.singleNodeValue.click(); "+
+    "return;"; 
+   
     public AbstractPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(new ExtendedDecorator(driver), this);
     }
     
      
+    
+    
+    
+
+ 
+ public static void javaScriptClick(String xPath, WebDriver driver){
+        ((JavascriptExecutor) driver).executeScript(String.format(JSstr, xPath));
+ }
+    
     public void open(String url){
          driver.navigate().to(url);
     }
