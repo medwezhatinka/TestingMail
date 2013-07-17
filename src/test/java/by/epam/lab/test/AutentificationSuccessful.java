@@ -8,13 +8,14 @@ import by.epam.lab.test.datareader.TestData;
 import by.epam.lab.page.LoginPage;
 import junit.framework.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author Alina_Shumel
  */
-
+@Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class AutentificationSuccessful extends FirefoxTests {
   
    

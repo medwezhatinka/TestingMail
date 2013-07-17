@@ -10,12 +10,14 @@ import static by.epam.lab.test.FirefoxTests.firefox;
 import by.epam.lab.test.datareader.TestData;
 import java.io.File;
 import org.junit.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author Alina_Shumel
  */
+@Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class AttachBigFile extends FirefoxTests{
     
     @Test(enabled = true, groups = {"send text"})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")

@@ -8,12 +8,14 @@ import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.test.datareader.TestData;
 import java.io.File;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author Alina_Shumel
  */
+@Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class SendMessageWithAttachedFile extends FirefoxTests {
 
     @Test(enabled = true, groups = {"send text"})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")

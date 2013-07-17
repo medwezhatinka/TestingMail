@@ -10,13 +10,14 @@ import static by.epam.lab.test.Group.AUTENTIFICATION;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author Alina_Shumel
  */
-
+@Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class LogoutSuccessfull  extends FirefoxTests {
     
     

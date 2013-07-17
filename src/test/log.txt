@@ -68,3 +68,11 @@
 16:16:17,676 ERROR main TestListener:onTestFailure:48 - signAdd
 16:21:17,225 ERROR main TestListener:onTestFailure:48 - signAdd
 16:27:29,024 ERROR main TestListener:onTestFailure:48 - signAdd
+18:02:34,100 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+18:02:48,206 ERROR main TestListener:onTestFailure:48 - autorization
+18:03:02,219 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+18:03:15,591 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:04:05,721 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:04:18,562 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:04:32,700 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:05:38,842 ERROR main TestListener:onTestFailure:48 - sendMessageWithAttachedFile

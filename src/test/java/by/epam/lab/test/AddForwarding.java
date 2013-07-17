@@ -59,8 +59,6 @@ public class AddForwarding extends FirefoxTests {
                 .waitForSuccessfullSending()
                 .logout();
 
-
-         
         
         mailPage = loginPage.Login("test.auto.lab@gmail.com", "testautolab").waitForSuccessfulLogin();
         

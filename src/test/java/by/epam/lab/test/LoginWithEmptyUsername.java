@@ -8,12 +8,14 @@ import by.epam.lab.page.LoginPage;
 import static by.epam.lab.test.FirefoxTests.firefox;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 /**
  *
  * @author Alina_Shumel
  */
+@Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class LoginWithEmptyUsername extends FirefoxTests{
     @Test(enabled=true, groups = {"autentification"})
      public   void autentificationFailedtst(){
