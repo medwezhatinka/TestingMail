@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestSuiteAllGroups" parallel="false">
-     
-     <test name="all">
+<suite name="TestSuiteAllGroups" parallel="false" >
+   
+  
+
+<!--
+   <test name="all">
          <classes>
              <class name="by.epam.lab.test.AddSignature"/>
                  <class name="by.epam.lab.test.ArchiveFunction"/>
@@ -27,21 +30,46 @@
          </classes>
      
 </test>
- 
-   <!--
-    <test name="Test1">
+-->
+  
+    <test name="autentification">
         <groups >
             <run>
-                <include name="message"/>
+                <include name="autentification"/>
+          
             </run>
         </groups>
         <classes>
+            <class name="by.epam.lab.test.AutentificationSuccessful"/>
+            <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
+            <class name="by.epam.lab.test.LogoutSuccessfull"/>
+            <class name="by.epam.lab.test.LoginWithEmptyCreditations"/>
+            <class name="by.epam.lab.test.LoginWithEmptyUsername"/>
+            <class name="by.epam.lab.test.LoginWithQuotedUsername"/>
             <class name="by.epam.lab.test.SendTextMessage"/>   
-            <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>
-            <class name="by.epam.lab.test.SendMessageWithEmptyEmail"/>
         </classes>
     </test>
--->
+
+ <test name="Test2">
+        <groups >
+            <run>
+                        
+                <include name="message"/>
+                     
+            </run>
+        </groups>
+        <classes>
+        
+            <class name="by.epam.lab.test.SendTextMessage"/> 
+             <class name="by.epam.lab.test.AutentificationSuccessful"/>
+            <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
+            <class name="by.epam.lab.test.LogoutSuccessfull"/>
+            <class name="by.epam.lab.test.LoginWithEmptyCreditations"/>
+            <class name="by.epam.lab.test.LoginWithEmptyUsername"/>
+            <class name="by.epam.lab.test.LoginWithQuotedUsername"/>
+            <class name="by.epam.lab.test.SendTextMessage"/>     
+        </classes>
+    </test>
  <!--   
     <test name="Test2">
         <groups >

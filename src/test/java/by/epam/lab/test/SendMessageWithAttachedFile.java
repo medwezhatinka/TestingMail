@@ -18,13 +18,13 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class SendMessageWithAttachedFile extends FirefoxTests {
 
-    @Test(enabled = true, groups = {"send text"})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")
+    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")
     public void sendMessageWithAttachedFile() throws InterruptedException {
         File attachFile = new File(TestData.SMALL_FILE_PATH);
-        loginPage = new LoginPage(firefox);
-        loginPage.open(TestData.START_URL);
-        mailPage = loginPage
-                .Login(TestData.CORRECT_EMAIL_TEST, TestData.CORRECT_PASSWORD_TEST).waitForSuccessfulLogin();
+    //    loginPage = new LoginPage(firefox);
+     //   loginPage.open(TestData.START_URL);
+     //   mailPage = loginPage
+   //             .Login(TestData.CORRECT_EMAIL_TEST, TestData.CORRECT_PASSWORD_TEST).waitForSuccessfulLogin();
 
         SendMessagePage page = mailPage
                 .composeClick();
@@ -38,7 +38,7 @@ public class SendMessageWithAttachedFile extends FirefoxTests {
         org.testng.Assert.assertEquals(mailPage.getMessageAddressee().getText(), TestData.ME);
 
 
-        mailPage.logout();
+     //   mailPage.logout();
 
     }
 }

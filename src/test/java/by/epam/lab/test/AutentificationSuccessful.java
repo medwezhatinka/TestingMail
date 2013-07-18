@@ -7,7 +7,6 @@ package by.epam.lab.test;
 import by.epam.lab.test.datareader.TestData;
 import by.epam.lab.page.LoginPage;
 import junit.framework.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 

@@ -19,7 +19,7 @@ public class SendTextMessage extends FirefoxTests {
     
     
     
-@Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+@Test(enabled = true, groups = {"message"}, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
