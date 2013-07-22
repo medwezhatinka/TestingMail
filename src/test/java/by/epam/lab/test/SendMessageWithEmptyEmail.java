@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class SendMessageWithEmptyEmail extends FirefoxTests{
+public class SendMessageWithEmptyEmail extends MessagePreparation{
  
      @Test(enabled = true, groups = {"message"})//,dependsOnGroups = { "autentification"})
      public void sendMessageWithEmptyEmailtst(){

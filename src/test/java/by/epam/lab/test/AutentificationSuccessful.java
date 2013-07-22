@@ -5,8 +5,8 @@
 package by.epam.lab.test;
 
 import by.epam.lab.test.datareader.TestData;
-import by.epam.lab.page.LoginPage;
 import junit.framework.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -15,18 +15,21 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class AutentificationSuccessful extends FirefoxTests {
-  
-   
-    
-    @Test(enabled = true, groups = {"autentification"})
-    public void autorization(){
-        
-        loginPage = new LoginPage(firefox);
-        loginPage.open(TestData.HOME_PAGE_URL);
-        mailPage = loginPage.Login(TestData.CORRECT_EMAIL_PART_TEST, TestData.CORRECT_PASSWORD_TEST)
+public class AutentificationSuccessful extends LoginPreparation {
+
+    @AfterClass(groups = Group.AUTENTIFICATION)
+    @Override
+    public void tearDownClass() {
+        mailPage.logout();
+    }
+
+    @Test(enabled = true, groups = {Group.AUTENTIFICATION})
+    public void autorization() {
+
+        mailPage = loginPage
+                .Login(TestData.CORRECT_EMAIL_PART_TEST, TestData.CORRECT_PASSWORD_TEST)
                 .waitForSuccessfulLogin();
         Assert.assertTrue(mailPage.getLocation().contains(TestData.MAIL_PAGE_LOCATION));
-        mailPage.logout();
+
     }
 }

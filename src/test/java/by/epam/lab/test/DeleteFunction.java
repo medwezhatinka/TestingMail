@@ -9,6 +9,7 @@ import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.page.TrashPage;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -17,36 +18,34 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class DeleteFunction extends FirefoxTests {
+public class DeleteFunction extends MessagePreparation {
 
     @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
-        SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
-                .waitForSuccessfullSending()
-                .reload();
+      
         mailPage.selectMessage();
-
-
-        Message inputMessage = mailPage.getMessage();
-        System.out.println(inputMessage.toString());
+       Message inputMessage = mailPage.getMessage();
         mailPage.deleteMessage();
-        
-        
-        
 
         TrashPage trashPage = mailPage.goToTrashPage();
-
-        
        
         Message moveMessage = trashPage.getMessage();
-        System.out.println(moveMessage.toString());
+     
         Assert.assertTrue(inputMessage.equals(moveMessage));
 
 
 
 
+    }
+    @BeforeMethod(groups = Group.MESSAGE)
+    @Override
+    public void tearUpMethod() {
+
+          SendMessagePage page = mailPage.composeClick();
+        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
+                .waitForSuccessfullSending()
+                .reload();
     }
 }

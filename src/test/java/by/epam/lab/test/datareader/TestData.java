@@ -39,6 +39,8 @@ public class TestData {
     public static String BOLD;
     public static String NORMAL;
     public static String SIGNATURE;
+    public static String ENTER_EMAIL_MESSAGE;
+    public  static  String QUOTED_USERNAME;
 
     public static void initialize() throws FileNotFoundException, IOException {
         File source = new File(FILENAMEINPUT);
@@ -68,6 +70,8 @@ public class TestData {
         BOLD = p.getProperty("BOLD");
         NORMAL = p.getProperty("NORMAL");
         SIGNATURE = p.getProperty("SIGNATURE");
+        ENTER_EMAIL_MESSAGE = p.getProperty("ENTER_EMAIL_MESSAGE");
+        QUOTED_USERNAME = p.getProperty("QUOTED_USERNAME");
 
 
 

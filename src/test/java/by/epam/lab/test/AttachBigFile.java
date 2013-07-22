@@ -10,6 +10,7 @@ import static by.epam.lab.test.FirefoxTests.firefox;
 import by.epam.lab.test.datareader.TestData;
 import java.io.File;
 import org.junit.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -18,24 +19,30 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class AttachBigFile extends FirefoxTests{
+public class AttachBigFile extends MessagePreparation{
     
-    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")
+     File attachFile;
+    
+    @Test(enabled = true, groups = {Group.MESSAGE})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")
     public void allertDialogMessageAssertion() throws InterruptedException {
-        File attachFile = new File(TestData.LARGE_FILE_PATH);
-   //     loginPage = new LoginPage(firefox);
-      //  loginPage.open(TestData.START_URL);
-     //   mailPage = loginPage
-     //           .Login(TestData.CORRECT_EMAIL_TEST, TestData.CORRECT_PASSWORD_TEST).waitForSuccessfulLogin();
-
+       
+ 
         SendMessagePage page = mailPage
                 .composeClick();
         page.createMessageWithAttachedFile(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT,
                 TestData.TEXT, TestData.SCRIPT_PATH, attachFile);
         
-            Assert.assertEquals(page.getAllertTextandClose(), TestData.LARGE_FILE_MESSAGE);
+         Assert.assertEquals(page.getAllertTextandClose(), TestData.LARGE_FILE_MESSAGE);
 
-     //   mailPage.logout();
+     
 
     }
+    @BeforeMethod(groups = Group.MESSAGE)
+    @Override
+    public void tearUpMethod() {
+
+       attachFile = new File(TestData.LARGE_FILE_PATH);
+
+    }
+
 }

@@ -9,6 +9,7 @@ import by.epam.lab.page.AllMailPage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -17,18 +18,12 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class ReadMessageSelected extends FirefoxTests{
+public class ReadMessageSelected extends MessagePreparation{
      @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
-        SendMessagePage page = mailPage.composeClick();
-        
        
-        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
-                .waitForSuccessfullSending()
-                .reload();
-      
          mailPage.selectRead();
         Assert.assertTrue( mailPage.checkReadMessageSelected());
 
@@ -37,4 +32,14 @@ public class ReadMessageSelected extends FirefoxTests{
 
     }
     
+     @BeforeMethod(groups = Group.MESSAGE)
+    @Override
+    public void tearUpMethod() {
+
+         SendMessagePage page = mailPage.composeClick();
+        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
+                .waitForSuccessfullSending()
+              .reload();
+
+    }
 }

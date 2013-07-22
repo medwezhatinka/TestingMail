@@ -5,6 +5,7 @@
 package by.epam.lab.page;
 
 import by.epam.lab.element.ExtendedDecorator;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -144,7 +145,9 @@ public class AbstractPage implements IAbstractPage{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
          
-     
-     
+     public void timeout(int seconds){
+         long time = System.currentTimeMillis()+seconds*1000;
+         while(time > System.currentTimeMillis()){}
+     } 
 
 }

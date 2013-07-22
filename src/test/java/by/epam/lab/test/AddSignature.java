@@ -10,6 +10,8 @@ import by.epam.lab.page.Settings;
 import static by.epam.lab.test.FirefoxTests.firefox;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -18,38 +20,46 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class AddSignature extends FirefoxTests{
-    
-    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+public class AddSignature extends MessagePreparation {
+
+    private Settings settings;
+
+    @Test(enabled = true, groups = {Group.MESSAGE})//, dependsOnGroups = {"autentification"})
     public void signAdd() {
-        
-      
-       
-        mailPage.openSettings();
-        
-       
-      Settings settings = new Settings(firefox);
-        
-        settings.addSignature(TestData.SIGNATURE);
-        settings.save_changes();
-      
+
+
+
+
         SendMessagePage page = mailPage.composeClick();
         page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
                 .waitForSuccessfullSending()
                 .reload();
-        mailPage.openMessage(); 
+        mailPage.openMessage();
         OpenedMessage openedMessage = new OpenedMessage(firefox);
-      Assert.assertEquals(openedMessage.getSignatureText(), TestData.SIGNATURE);  
-      
-      
-      mailPage.inboxClick();
-       mailPage.openSettings();
-    
-         settings = new Settings(firefox);
-        
-        settings.deleteSignature();
-        settings.save_changes();
-    }
-    
+        Assert.assertEquals(openedMessage.getSignatureText(), TestData.SIGNATURE);
 
+
+    }
+
+    @BeforeMethod(groups = Group.MESSAGE)
+    @Override
+    public void tearUpMethod() {
+
+        settings = mailPage.openSettings();
+        settings.addSignature(TestData.SIGNATURE)
+                .save_changes();
+
+    }
+
+    @AfterMethod(groups = Group.MESSAGE)
+    @Override
+    public void tearDownMethod() {
+
+        mailPage.inboxClick();
+        settings = mailPage.openSettings();
+        settings.deleteSignature()
+                .save_changes();
+
+
+    }
 }

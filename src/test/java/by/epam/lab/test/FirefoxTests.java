@@ -48,15 +48,5 @@ public abstract  class FirefoxTests {
   }
   
   
-  @BeforeClass(groups = "message")
-  public  void tearUpClass(){
-       System.out.println("before class for send text group");
-       loginPage = new LoginPage(firefox);
-       loginPage.open(TestData.HOME_PAGE_URL);
-  mailPage = loginPage.Login(TestData.CORRECT_EMAIL_TEST, TestData.CORRECT_PASSWORD_TEST).waitForSuccessfulLogin();
-}
-  @AfterClass(groups = "message")
-  public void tearDownClass(){
-    mailPage.logout();
-}
+  
 }

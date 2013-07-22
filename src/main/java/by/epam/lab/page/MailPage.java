@@ -215,7 +215,7 @@ public class MailPage extends AbstractPage {
         options.selectMessages("Unread", getDriver());
     }
 
-    public void openSettings() {
+    public Settings openSettings() {
 
         new Actions(getDriver())
                 .moveToElement(setting)
@@ -224,6 +224,7 @@ public class MailPage extends AbstractPage {
                 .click()
                 .build()
                 .perform();
+        return new Settings(getDriver());
     }
 
     public void waitForMessageFrom(String addressee, long seconds) {
