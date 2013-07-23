@@ -5,7 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
-import static by.epam.lab.test.FirefoxTests.firefox;
+import static by.epam.lab.test.FirefoxTests.driver;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -19,26 +19,32 @@ import org.testng.annotations.BeforeMethod;
 public class MessagePreparation extends FirefoxTests{
     
     
-    @BeforeClass(groups = "message")
+    @BeforeClass(groups = MESSAGE)
   public  void tearUpClass(){
-       System.out.println("before class for send text group");
-       loginPage = new LoginPage(firefox);
-       loginPage.open(TestData.HOME_PAGE_URL);
-  mailPage = loginPage.Login(TestData.CORRECT_EMAIL_TEST, TestData.CORRECT_PASSWORD_TEST).waitForSuccessfulLogin();
+       
+       loginPage = new LoginPage(driver);
+       loginPage.open(HOME_PAGE_URL);
+  mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
+          .waitForSuccessfulLogin();
 }
-  @AfterClass(groups = "message")
+  @AfterClass(groups = MESSAGE)
   public void tearDownClass(){
     mailPage.logout();
 }
   
-  @BeforeMethod(groups = "message")
+  @BeforeMethod(groups = MESSAGE)
   public void tearUpMethod()
   {
-      System.out.println("BEFORE METHOD!");
+     
+      /*
+       * 
+       */
   }
   
-  @AfterMethod(groups = "message")
+  @AfterMethod(groups = MESSAGE)
   public void tearDownMethod(){
-      
+     /*
+      * 
+      */ 
   }
 }

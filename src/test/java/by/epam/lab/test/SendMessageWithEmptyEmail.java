@@ -4,10 +4,7 @@
  */
 package by.epam.lab.test;
 
-import by.epam.lab.page.LoginPage;
-import by.epam.lab.page.MailPage;
 import by.epam.lab.page.SendMessagePage;
-import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -19,13 +16,13 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class SendMessageWithEmptyEmail extends MessagePreparation{
  
-     @Test(enabled = true, groups = {"message"})//,dependsOnGroups = { "autentification"})
+     @Test(enabled = true, groups = {MESSAGE})//,dependsOnGroups = { "autentification"})
      public void sendMessageWithEmptyEmailtst(){
         
    
        SendMessagePage  page =  mailPage.composeClick();
-       page.sendMessageWithoutAdresse(TestData.CORRECT_EMAIL_TEST, TestData.TEXT);
-       Assert.assertEquals(page.getAllertTextAndAccept(), TestData.NO_RECIPIENT_MESSAGE);
+       page.sendMessageWithoutAdresse(CORRECT_EMAIL_TEST, TEXT);
+       Assert.assertEquals(page.getAllertTextAndAccept(), NO_RECIPIENT_MESSAGE);
 
      }
 }

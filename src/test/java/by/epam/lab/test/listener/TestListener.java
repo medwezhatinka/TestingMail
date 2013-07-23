@@ -4,7 +4,6 @@
  */
 package by.epam.lab.test.listener;
 
-import by.epam.lab.test.FirefoxTests;
 import java.awt.AWTException;
 import java.awt.Rectangle;
 import java.awt.Robot;
@@ -14,8 +13,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import org.apache.log4j.Priority;
 import org.testng.ITestResult;
@@ -38,15 +35,15 @@ public class TestListener extends TestListenerAdapter{
     @Override
     public void onTestSuccess(ITestResult tr) {
        
-        log.log(Priority.INFO, "Test: '"+tr.getMethod().getMethodName()+"' - PASSED");
+        log.log(Priority.INFO, "Test: '"+tr.getMethod().getTestClass().getName()+"' - PASSED");
     }
     
     
     @Override
     public  void onTestFailure(ITestResult testResult){
        
-        log.error(testResult.getMethod().getMethodName());
-       
+        //log.error(testResult.getMethod().getMethodName());
+        log.log(Priority.INFO, "Test: '"+testResult.getMethod().getTestClass().getName()+"' - FAILED");
         try {
        
             Robot _robot = new Robot();

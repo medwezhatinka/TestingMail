@@ -22,7 +22,7 @@ public class ArchiveFunction extends MessagePreparation {
 
     Message inputMessage;
 
-    @Test(enabled = true, groups = {Group.MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
@@ -36,7 +36,7 @@ public class ArchiveFunction extends MessagePreparation {
 
     }
 
-    @BeforeMethod(groups = Group.MESSAGE)
+    @BeforeMethod(groups =MESSAGE)
     @Override
     public void tearUpMethod() {
 

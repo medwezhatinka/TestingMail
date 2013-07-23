@@ -5,8 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
-import static by.epam.lab.test.FirefoxTests.firefox;
-import by.epam.lab.test.datareader.TestData;
+import static by.epam.lab.test.FirefoxTests.driver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -16,13 +15,13 @@ import org.testng.annotations.BeforeClass;
  */
 public class LoginPreparation extends FirefoxTests {
 
-    @BeforeClass(groups = Group.AUTENTIFICATION)
+    @BeforeClass(groups =AUTENTIFICATION)
     public void tearUpClass() {
-        loginPage = new LoginPage(firefox);
-        loginPage.open(TestData.HOME_PAGE_URL);
+        loginPage = new LoginPage(driver);
+        loginPage.open(HOME_PAGE_URL);
 
     }
-     @AfterClass(groups = Group.AUTENTIFICATION)
+     @AfterClass(groups = AUTENTIFICATION)
   public void tearDownClass(){
   /*
    * nothing to do

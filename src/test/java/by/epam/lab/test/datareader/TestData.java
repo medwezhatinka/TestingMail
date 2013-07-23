@@ -40,7 +40,14 @@ public class TestData {
     public static String NORMAL;
     public static String SIGNATURE;
     public static String ENTER_EMAIL_MESSAGE;
-    public  static  String QUOTED_USERNAME;
+    public static String QUOTED_USERNAME;
+    public static String CORRECT_EMAIL_TESTOID;// = "testoid2013@gmail.com";
+    public static String CORRECT_PASSWORD_TESTOID;// = "559283test";
+    public static String CORRECT_EMAIL_TESTEROVSKI;
+    public static String CORRECT_PASSWORD_TESTEROVSKI;
+   public static String NAME;
+   public static String  CONFIRMATION_CODE;
+    public static String  FONT_WEIGHT;
 
     public static void initialize() throws FileNotFoundException, IOException {
         File source = new File(FILENAMEINPUT);
@@ -72,7 +79,13 @@ public class TestData {
         SIGNATURE = p.getProperty("SIGNATURE");
         ENTER_EMAIL_MESSAGE = p.getProperty("ENTER_EMAIL_MESSAGE");
         QUOTED_USERNAME = p.getProperty("QUOTED_USERNAME");
-
+        CORRECT_EMAIL_TESTOID = p.getProperty("CORRECT_EMAIL_TESTOID");
+        CORRECT_PASSWORD_TESTOID = p.getProperty("CORRECT_PASSWORD_TESTOID");
+        CORRECT_EMAIL_TESTEROVSKI = p.getProperty("CORRECT_EMAIL_TESTEROVSKI");
+        CORRECT_PASSWORD_TESTEROVSKI = p.getProperty("CORRECT_PASSWORD_TESTEROVSKI");
+        NAME = p.getProperty("NAME");
+        CONFIRMATION_CODE = p.getProperty("CONFIRMATION_CODE");
+        FONT_WEIGHT = p.getProperty("FONT_WEIGHT");
 
 
 

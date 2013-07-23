@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class DeleteFunction extends MessagePreparation {
 
-    @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
@@ -39,12 +39,12 @@ public class DeleteFunction extends MessagePreparation {
 
 
     }
-    @BeforeMethod(groups = Group.MESSAGE)
+    @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
 
           SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
+        page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
                 .waitForSuccessfullSending()
                 .reload();
     }

@@ -4,10 +4,7 @@
  */
 package by.epam.lab.test;
 
-import by.epam.lab.test.datareader.TestData;
 import by.epam.lab.page.LoginPage;
-import static by.epam.lab.test.FirefoxTests.firefox;
-import static by.epam.lab.test.Group.AUTENTIFICATION;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -25,17 +22,17 @@ public class LogoutSuccessfull extends LoginPreparation {
 
 
         mailPage.logout();
-        Assert.assertTrue(mailPage.getLocation().contains(TestData.MAIL_PAGE_LOCATION), "location : " + mailPage.getLocation());
+        Assert.assertTrue(mailPage.getLocation().contains(MAIL_PAGE_LOCATION), "location : " + mailPage.getLocation());
 
     }
 
     @BeforeClass(groups = Group.AUTENTIFICATION)
     @Override
     public void tearUpClass() {
-        loginPage = new LoginPage(firefox);
-        loginPage.open(TestData.HOME_PAGE_URL);
+        loginPage = new LoginPage(driver);
+        loginPage.open(HOME_PAGE_URL);
         mailPage = loginPage
-                .Login(TestData.CORRECT_EMAIL_TEST, TestData.CORRECT_PASSWORD_TEST)
+                .Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
                 .waitForSuccessfulLogin();
 
     }

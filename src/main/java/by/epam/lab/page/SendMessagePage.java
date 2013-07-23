@@ -57,27 +57,7 @@ public class SendMessagePage extends AbstractPageHtml {
         newMessage.close();
     }
     
-    private String getFormatSize(File file){
-        
-         long sizeinbytes = file.length();
-        long size= (long) Math.ceil(sizeinbytes/1024.0);
-        StringBuilder size_str = new StringBuilder();
-        size_str.append("(");
-        String _size = String.valueOf(size);
-          System.out.println(sizeinbytes);
-        System.out.println(size);
-        if (size > 999) {
-           size_str.append(_size.substring(0, 1));
-           size_str.append(",");
-           size_str.append(_size.substring(1, _size.length()));
-        }else{
-            size_str.append(_size);
-        }
-        size_str.append("K)");
-        return size_str.toString();
-        
-        
-    }
+   
 
     private SendMessagePage attachFile(String scriptPath,  File attachedFile) throws IOException, InterruptedException {
       
@@ -95,14 +75,14 @@ public class SendMessagePage extends AbstractPageHtml {
     }
     
     public SendMessagePage waitforsuccessfulAttach(File attachedFile){
-        waitfor("//div[text()='" + attachedFile.getName() + "']/following-sibling::div[text()='"+ getFormatSize(attachedFile)+"']");
+        waitfor("//div[text()='" + attachedFile.getName() + "']/following-sibling::div[text()='"+ Logic.getFormatSize(attachedFile)+"']");
         System.out.println(attachedFile.length());   
         return this;
     }
 
     public SendMessagePage createMessageWithAttachedFile(String toEmail, String subject,
             String body, String script, File attachFile)
-            throws InterruptedException {
+           {
         newMessage.fillTo(toEmail).fillSubject(subject);
         switchTo(newMessage.getIframe());
         findByTagName("body").sendKeys(body);
@@ -112,6 +92,8 @@ public class SendMessagePage extends AbstractPageHtml {
         try {
             attachFile(script, attachFile);
         } catch (IOException ex) {
+            Logger.getLogger(SendMessagePage.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
             Logger.getLogger(SendMessagePage.class.getName()).log(Level.SEVERE, null, ex);
         }
 

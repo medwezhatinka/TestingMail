@@ -7,7 +7,7 @@ package by.epam.lab.test;
 import by.epam.lab.page.OpenedMessage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.page.Settings;
-import static by.epam.lab.test.FirefoxTests.firefox;
+import static by.epam.lab.test.FirefoxTests.driver;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -24,34 +24,34 @@ public class AddSignature extends MessagePreparation {
 
     private Settings settings;
 
-    @Test(enabled = true, groups = {Group.MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void signAdd() {
 
 
 
 
         SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
+        page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
                 .waitForSuccessfullSending()
                 .reload();
         mailPage.openMessage();
-        OpenedMessage openedMessage = new OpenedMessage(firefox);
-        Assert.assertEquals(openedMessage.getSignatureText(), TestData.SIGNATURE);
+        OpenedMessage openedMessage = new OpenedMessage(driver);
+        Assert.assertEquals(openedMessage.getSignatureText(), SIGNATURE);
 
 
     }
 
-    @BeforeMethod(groups = Group.MESSAGE)
+    @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
 
         settings = mailPage.openSettings();
-        settings.addSignature(TestData.SIGNATURE)
+        settings.addSignature(SIGNATURE)
                 .save_changes();
 
     }
 
-    @AfterMethod(groups = Group.MESSAGE)
+    @AfterMethod(groups = MESSAGE)
     @Override
     public void tearDownMethod() {
 

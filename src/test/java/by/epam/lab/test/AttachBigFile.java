@@ -4,10 +4,7 @@
  */
 package by.epam.lab.test;
 
-import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.SendMessagePage;
-import static by.epam.lab.test.FirefoxTests.firefox;
-import by.epam.lab.test.datareader.TestData;
 import java.io.File;
 import org.junit.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -23,25 +20,25 @@ public class AttachBigFile extends MessagePreparation{
     
      File attachFile;
     
-    @Test(enabled = true, groups = {Group.MESSAGE})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")
-    public void allertDialogMessageAssertion() throws InterruptedException {
+    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
+    public void allertDialogMessageAssertion() {
        
  
         SendMessagePage page = mailPage
                 .composeClick();
-        page.createMessageWithAttachedFile(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT,
-                TestData.TEXT, TestData.SCRIPT_PATH, attachFile);
+        page.createMessageWithAttachedFile(CORRECT_EMAIL_TEST, SUBJECT,
+                TEXT, SCRIPT_PATH, attachFile);
         
-         Assert.assertEquals(page.getAllertTextandClose(), TestData.LARGE_FILE_MESSAGE);
+         Assert.assertEquals(page.getAllertTextandClose(), LARGE_FILE_MESSAGE);
 
      
 
     }
-    @BeforeMethod(groups = Group.MESSAGE)
+    @BeforeMethod(groups =MESSAGE)
     @Override
     public void tearUpMethod() {
 
-       attachFile = new File(TestData.LARGE_FILE_PATH);
+       attachFile = new File(LARGE_FILE_PATH);
 
     }
 

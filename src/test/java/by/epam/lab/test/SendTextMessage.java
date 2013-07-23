@@ -18,22 +18,22 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class SendTextMessage extends MessagePreparation {
     
-     SendMessagePage page;
+   SendMessagePage  page;
     
-@Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+@Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
      
-        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
+        page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
                 .waitForSuccessfullSending()
                 .reload();
-        Assert.assertEquals(mailPage.getMessageAddressee().getText(), TestData.ME);
+        Assert.assertEquals(mailPage.getMessageAddressee().getText(), ME);
       
     }
-@BeforeMethod(groups = Group.MESSAGE)
-    @Override
-    public void tearUpMethod() {
+@BeforeMethod(groups = MESSAGE)
+   
+    public  void tearUpMethod1() {
 
         page = mailPage.composeClick();
        

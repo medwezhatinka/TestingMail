@@ -12,30 +12,28 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 /**
  *
  * @author Alina_Shumel
  */
-public abstract  class FirefoxTests {
+public abstract  class FirefoxTests extends TestData implements Group{
   public static final Logger log = Logger.getLogger(FirefoxTests.class);
  protected static String nameFile = "log4j.properties";
   
        
-  protected  static  FirefoxDriver firefox;
-   LoginPage loginPage;
-    MailPage mailPage ;
+  protected  static  FirefoxDriver driver;
+  LoginPage loginPage;
+ MailPage mailPage ;
    
    
   @BeforeSuite(alwaysRun = true)
   public  static void tearUpSuite() throws FileNotFoundException, IOException{
       PropertyConfigurator.configure(nameFile);
-      log.debug("залогировал");
-      firefox = new FirefoxDriver();
+     
+      driver = new FirefoxDriver();
       TestData.initialize();
     
   }
@@ -44,8 +42,9 @@ public abstract  class FirefoxTests {
   
   @AfterSuite(alwaysRun = true)
   public static  void tearDownSuite(){
-      firefox.quit();
+      driver.quit();
   }
+  
   
   
   

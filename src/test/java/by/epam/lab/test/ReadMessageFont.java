@@ -5,7 +5,6 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.SendMessagePage;
-import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -18,25 +17,25 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class ReadMessageFont extends  MessagePreparation{
     
-     @Test(enabled = true, groups = {"message"})//, dependsOnGroups = {"autentification"})
+     @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
 
 
      
-        mailPage.openMessage().inboxClick().getMessageAddressee().getCssValue("font-weight");
+        mailPage.openMessage().inboxClick().getMessageAddressee().getCssValue(FONT_WEIGHT);
         Assert.assertEquals( mailPage.openMessage()
                 .inboxClick()
                 .getMessageAddressee()
-                .getCssValue("font-weight"), TestData.NORMAL);
+                .getCssValue(FONT_WEIGHT), NORMAL);
       
     }
              
-@BeforeMethod(groups = Group.MESSAGE)
+@BeforeMethod(groups =  MESSAGE)
     @Override
     public void tearUpMethod() {
 
          SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
+        page.sendMessage( CORRECT_EMAIL_TEST,  SUBJECT,  TEXT)
                 .waitForSuccessfullSending()
               .reload();
 

@@ -130,3 +130,258 @@
 16:12:17,889 ERROR main TestListener:onTestFailure:48 - signAdd
 16:19:36,274 ERROR main TestListener:onTestFailure:48 - signAdd
 18:03:29,185 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+10:04:10,156 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+11:51:00,867  INFO main TestListener:onTestSuccess:41 - Test: 'autorization' - PASSED
+11:51:05,698  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:11,400  INFO main TestListener:onTestSuccess:41 - Test: 'logoutSuccessfultst' - PASSED
+11:52:12,758  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:14,240  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:15,953  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:27,883  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:52:46,743  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:52:59,445  INFO main TestListener:onTestSuccess:41 - Test: 'allertDialogMessageAssertion' - PASSED
+11:53:21,500  INFO main TestListener:onTestSuccess:41 - Test: 'signAdd' - PASSED
+11:53:45,145  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:03,770  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:22,257  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:40,278  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:59,465  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:55:21,139  INFO main TestListener:onTestSuccess:41 - Test: 'sendMessageWithAttachedFile' - PASSED
+11:55:34,837  INFO main TestListener:onTestSuccess:41 - Test: 'sendMessageWithEmptyEmailtst' - PASSED
+11:55:49,733  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:56:11,376  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:56:24,903  INFO main TestListener:onTestSuccess:41 - Test: 'sendMessageWithIncorrectEmailtst' - PASSED
+11:58:07,523  INFO Forwarding getElementText on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,523  INFO Forwarding getElementText on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,514  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,514  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737 ERROR main TestListener:onTestFailure:48 - signAdd
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+12:04:53,509  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:04:58,166  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:05:05,948  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:05:07,261  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:05:08,698  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:05:10,480  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:05:19,184  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+12:10:58,676  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:11:03,503  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:11:11,094  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:11:12,453  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:11:13,921  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:11:15,576  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:11:38,768  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+12:14:52,018  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:14:56,828  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:15:08,338  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:15:10,025  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:15:11,461  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:15:13,663  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:15:22,222  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:25:58,402  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+12:26:31,510  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+12:26:56,572  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:27:04,915  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:27:11,243  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:27:25,368  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+12:27:45,414  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+12:27:51,039  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:27:52,945  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:27:55,163  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:28:04,851  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:28:26,923  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+12:28:51,900  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+12:29:10,160  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+12:29:48,055  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+12:30:02,035  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+12:30:18,015  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:30:34,619  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+12:30:50,724  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+12:31:10,030  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+12:31:21,074  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:40:52,381  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:40:57,050  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:41:05,359  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:41:07,999  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:41:09,951  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:41:11,731  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:42:34,929  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:42:39,911  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:42:46,908  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:42:48,298  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:42:49,610  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:42:51,188  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:43:02,885  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:46:16,237  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:46:23,703  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:46:31,090  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:46:32,339  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:46:33,636  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:46:35,385  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:46:48,566  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:46:59,327  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:47:01,982  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:49:40,333  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:49:46,986  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:49:55,795  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:49:57,263  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:49:59,262  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:50:01,011  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:51:53,476  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:51:58,271  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:52:05,471  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:52:07,079  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:52:08,594  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:52:10,375  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:52:27,624  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:52:42,304  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:52:49,722  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:55:31,629  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:55:37,733  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:55:46,294  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:55:47,561  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:55:48,970  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:55:51,380  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:56:06,264  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:56:16,233  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:56:18,785  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:57:56,614  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:58:01,632  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:58:08,415  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:58:09,994  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:58:11,838  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:58:13,573  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:58:25,453  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:59:44,373  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+13:04:15,748  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+13:04:34,574  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+13:04:42,730  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+13:05:06,181  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+13:05:50,990  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+13:06:40,564  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+13:09:41,916  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+13:09:46,743  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+13:09:53,992  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+13:09:55,241  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+13:09:56,600  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+13:09:58,178  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+13:10:10,050  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+13:10:29,061  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+13:10:40,730  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+13:11:01,538  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+13:11:25,204  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+13:11:43,887  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+13:12:01,820  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+13:12:19,925  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+13:12:38,060  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+13:13:21,718  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - FAILED
+13:13:35,605  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+13:13:51,256  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+13:14:12,374  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+13:14:26,901  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+13:15:57,998  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+16:54:31,128  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:54:37,795  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:54:46,108  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:54:47,599  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:54:49,058  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:54:51,583  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:55:08,038  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:55:31,709  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:55:45,639  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+16:56:12,620  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+16:56:40,985  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+16:57:05,829  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+16:57:25,652  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+16:57:48,150  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+16:58:12,306  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+16:58:36,587  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+16:58:53,077  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+16:59:29,937  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+16:59:51,168  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+17:00:07,017  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+17:00:22,474  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+17:53:48,227  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+17:53:54,070  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+17:54:02,615  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+17:54:03,974  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+17:54:08,551  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+17:54:10,520  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+17:54:23,814  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+17:54:42,982  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+17:54:57,011  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+17:55:21,787  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+17:55:44,814  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+17:56:05,888  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+17:56:26,290  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+17:56:48,645  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+17:57:09,516  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+17:57:34,980  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+17:57:50,055  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+17:58:09,505  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+17:58:33,969  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+17:58:48,669  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+18:00:16,129  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
