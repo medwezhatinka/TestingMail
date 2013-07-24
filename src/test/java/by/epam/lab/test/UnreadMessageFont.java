@@ -15,26 +15,22 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class UnreadMessageFont extends MessagePreparation{
-         SendMessagePage page;
+public class UnreadMessageFont extends MessagePreparation {
+
+    SendMessagePage page;
+
     @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
-
-
-       
         page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
                 .waitForSuccessfullSending()
                 .reload();
         Assert.assertEquals(mailPage.getMessageAddressee().getCssValue(FONT_WEIGHT), BOLD);
-      
+
     }
-    
+
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-
-    page = mailPage.composeClick();
-       
-
+        page = mailPage.composeClick();
     }
 }

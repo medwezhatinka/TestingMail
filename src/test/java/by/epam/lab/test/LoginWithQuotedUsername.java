@@ -17,11 +17,9 @@ public class LoginWithQuotedUsername extends LoginPreparation {
 
     @Test(enabled = true, groups = {AUTENTIFICATION})
     public void autentificationFailedtst() {
-
-
         loginPage.Login(QUOTED_USERNAME, CORRECT_PASSWORD_TEST);
         Assert.assertEquals(loginPage.getErrorPasswordMessage(),
-               MESSAGE_INCORRECT_PASSWORD_OR_EMAIL);
+                MESSAGE_INCORRECT_PASSWORD_OR_EMAIL);
 
     }
 }

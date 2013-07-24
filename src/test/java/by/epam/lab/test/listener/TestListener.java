@@ -23,44 +23,38 @@ import org.testng.TestListenerAdapter;
  *
  * @author Alina_Shumel
  */
-public class TestListener extends TestListenerAdapter{
-   
- public static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(TestListener.class);
-    
- 
- 
- 
- 
- 
+public class TestListener extends TestListenerAdapter {
+
+    public static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(TestListener.class);
+
     @Override
     public void onTestSuccess(ITestResult tr) {
-       
-        log.log(Priority.INFO, "Test: '"+tr.getMethod().getTestClass().getName()+"' - PASSED");
+
+        log.log(Priority.INFO, "Test: '" + tr.getMethod().getTestClass().getName() + "' - PASSED");
     }
-    
-    
+
     @Override
-    public  void onTestFailure(ITestResult testResult){
-       
+    public void onTestFailure(ITestResult testResult) {
+
         //log.error(testResult.getMethod().getMethodName());
-        log.log(Priority.INFO, "Test: '"+testResult.getMethod().getTestClass().getName()+"' - FAILED");
+        log.log(Priority.INFO, "Test: '" + testResult.getMethod().getTestClass().getName() + "' - FAILED");
         try {
-       
+
             Robot _robot = new Robot();
             Calendar currentDate = Calendar.getInstance();
-            String workDir = System.getProperty("user.dir")+"\\screenshos\\";
+            String workDir = System.getProperty("user.dir") + "\\screenshos\\";
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMMdd_HH_mm_ss");
             String dateNow = dateFormat.format(currentDate.getTime());
             BufferedImage screenshot = _robot.createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
-            ImageIO.write(screenshot, "JPG", new File(workDir+dateNow+".jpg"));
-            Reporter.log("<img src=\"file:///"+workDir+dateNow+".JPG\" alt=\"\"/><br />");
-         
+            ImageIO.write(screenshot, "JPG", new File(workDir + dateNow + ".jpg"));
+            Reporter.log("<img src=\"file:///" + workDir + dateNow + ".JPG\" alt=\"\"/><br />");
+
         } catch (AWTException ex) {
-        //    log.log(Priority.ERROR, ex, ex);
-          //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
+            //    log.log(Priority.ERROR, ex, ex);
+            //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-         //    log.log(Priority.ERROR, ex, ex);
-          //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
+            //    log.log(Priority.ERROR, ex, ex);
+            //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

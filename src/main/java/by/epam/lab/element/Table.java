@@ -13,18 +13,16 @@ import org.openqa.selenium.WebElement;
  *
  * @author Alina_Shumel
  */
-public class Table extends AbstractElement{
+public class Table extends AbstractElement {
 
     public Table(WebElement wrappedElement) {
         super(wrappedElement);
     }
- 
-    
-     public List<WebElement> getRowsElement() {
+
+    public List<WebElement> getRowsElement() {
         return getWrappedElement().findElements(By.xpath(".//tr"));
     }
 
-    
     public List<List<WebElement>> getRows() {
         List<List<WebElement>> rows = new ArrayList<List<WebElement>>();
         List<WebElement> rowElements = getWrappedElement().findElements(By.xpath(".//tr"));
@@ -34,7 +32,6 @@ public class Table extends AbstractElement{
         return rows;
     }
 
-   
     public List<List<WebElement>> getColumns() {
         List<List<WebElement>> columns = new ArrayList<List<WebElement>>();
         List<List<WebElement>> rows = getRows();
@@ -55,9 +52,7 @@ public class Table extends AbstractElement{
         return columns;
     }
 
-   
     public WebElement getCellAt(int i, int j) {
         return getRows().get(i).get(j);
     }
-
 }

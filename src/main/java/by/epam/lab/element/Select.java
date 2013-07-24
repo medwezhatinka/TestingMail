@@ -12,22 +12,21 @@ import org.openqa.selenium.WebElement;
  *
  * @author Alina_Shumel
  */
-public class Select extends AbstractElement{
+public class Select extends AbstractElement {
 
     public Select(WebElement wrappedElement) {
         super(wrappedElement);
     }
-   
-    public List<WebElement> getOptions(){
+
+    public List<WebElement> getOptions() {
         return wrappedElement.findElements(By.tagName("option"));
     }
-    
-    public void select(int position){
-    WebElement element;
+
+    public void select(int position) {
+        WebElement element;
         List<WebElement> options = getOptions();
-        if (position-1 < options.size()) {
-            
-            element =  options.get(position-1);
+        if (position - 1 < options.size()) {
+            element = options.get(position - 1);
             element.click();
         }
     }

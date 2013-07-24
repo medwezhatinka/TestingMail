@@ -4,9 +4,7 @@
  */
 package by.epam.lab.test;
 
-import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.SendMessagePage;
-import by.epam.lab.test.datareader.TestData;
 import java.io.File;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -21,7 +19,7 @@ public class SendMessageWithAttachedFile extends MessagePreparation {
     @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")
     public void sendMessageWithAttachedFile() throws InterruptedException {
         File attachFile = new File(SMALL_FILE_PATH);
-    
+
 
         SendMessagePage page = mailPage
                 .composeClick();
@@ -32,10 +30,10 @@ public class SendMessageWithAttachedFile extends MessagePreparation {
                 .waitForSuccessfullSending()
                 .reload();
 
-        org.testng.Assert.assertEquals(mailPage.getMessageAddressee().getText(),ME);
+        org.testng.Assert.assertEquals(mailPage.getMessageAddressee().getText(), ME);
 
 
-    
+
 
     }
 }

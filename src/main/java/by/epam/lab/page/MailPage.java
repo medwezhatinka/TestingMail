@@ -231,41 +231,9 @@ public class MailPage extends AbstractPage {
         long time = System.currentTimeMillis() + seconds * 1000;
         while (time > System.currentTimeMillis()) {
             if (!addressee.equals(messages.getCellAt(0, 4).findElement(By.xpath(".//span")).getText())) {
-               
-              
             } else {
                 break;
             }
         }
     }
-//      @FindBy(xpath = "//input[@name='sx_sg']")
-//       private WebElement signature_on;
-//
-//       @FindBy(xpath = "//div[@aria-label='Signature']/iframe")
-//       private WebElement signature_iframe;
-//       
-//       @FindBy(tagName = "body")
-//       private  TextInput signature_input;
-//       
-//     //   @FindBy(tagName = "//div[@class='rU']/button[1]")
-//       @FindBy(how=How.XPATH,using="//button[text()='Save Changes']") 
-//       private WebElement save_changes;
-//       
-//   
-// 
-//    
-//      public void addSignature(){
-//         ((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView();", signature_on); 
-//         signature_on.click();
-//         switchTo(signature_iframe);
-//         signature_input.sendKeys("signature la la la la");
-//         switchToDefaultContext();
-//     }
-//      
-//      
-//      public void save_changes(){
-//        ((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView();", save_changes);
-//        new Actions(getDriver()).moveToElement(save_changes).click().build().perform();
-//       
-//      }
 }

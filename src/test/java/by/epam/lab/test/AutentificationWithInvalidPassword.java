@@ -4,7 +4,6 @@
  */
 package by.epam.lab.test;
 
-import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

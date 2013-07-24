@@ -19,25 +19,16 @@ public class UnreadMessageSelected extends MessagePreparation {
 
     @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
-
-
-
         mailPage.selectUnread();
         Assert.assertTrue(mailPage.checkUnreadMessageSelected());
-
-
-
-
     }
 
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-
         SendMessagePage page = mailPage.composeClick();
         page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
                 .waitForSuccessfullSending()
                 .reload();
-
     }
 }

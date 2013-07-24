@@ -14,11 +14,9 @@ import org.testng.Reporter;
  */
 public class TestNGAppender extends AppenderSkeleton {
 
-    
-    
     @Override
     protected void append(LoggingEvent event) {
-        Reporter.log(getLayout().format(event)+"<br/>");
+        Reporter.log(getLayout().format(event) + "<br/>");
     }
 
     public void close() {

@@ -24,30 +24,20 @@ public class ArchiveFunction extends MessagePreparation {
 
     @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void sendTextMessagests() {
-
-
         mailPage.archiveMessage();
         AllMailPage allMailPage = mailPage.goToAllMailPage();
         Message moveMessage = allMailPage.getMessage();
         Assert.assertTrue(inputMessage.equals(moveMessage));
-
-
-
-
     }
 
-    @BeforeMethod(groups =MESSAGE)
+    @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-
         SendMessagePage page = mailPage.composeClick();
         page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
                 .waitForSuccessfullSending()
                 .reload();
         mailPage.selectMessage();
         inputMessage = mailPage.getMessage();
-
     }
-
-    
 }

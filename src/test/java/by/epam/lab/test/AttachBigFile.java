@@ -16,30 +16,22 @@ import org.testng.annotations.Test;
  * @author Alina_Shumel
  */
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
-public class AttachBigFile extends MessagePreparation{
-    
-     File attachFile;
-    
+public class AttachBigFile extends MessagePreparation {
+
+    File attachFile;
+
     @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
     public void allertDialogMessageAssertion() {
-       
- 
         SendMessagePage page = mailPage
                 .composeClick();
         page.createMessageWithAttachedFile(CORRECT_EMAIL_TEST, SUBJECT,
                 TEXT, SCRIPT_PATH, attachFile);
-        
-         Assert.assertEquals(page.getAllertTextandClose(), LARGE_FILE_MESSAGE);
-
-     
-
+        Assert.assertEquals(page.getAllertTextandClose(), LARGE_FILE_MESSAGE);
     }
-    @BeforeMethod(groups =MESSAGE)
+
+    @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-
-       attachFile = new File(LARGE_FILE_PATH);
-
+        attachFile = new File(LARGE_FILE_PATH);
     }
-
 }

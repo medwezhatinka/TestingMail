@@ -4,7 +4,6 @@
  */
 package by.epam.lab.element.html;
 
-import by.epam.lab.element.Button;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.htmlelements.annotations.Block;
@@ -15,24 +14,22 @@ import ru.yandex.qatools.htmlelements.element.TextBlock;
  *
  * @author Alina_Shumel
  */
-@Block(@FindBy(css = "div.Kj-JD"))
-public class LargeFileAllertDialog extends HtmlElement{
+@Block(
+        @FindBy(css = "div.Kj-JD"))
+public class LargeFileAllertDialog extends HtmlElement {
+
     @FindBy(css = "span.Kj-JD-K7-K0")
     private TextBlock message;
-   
-    
-    //don't work with Type Button
-    @FindBy(css= "span.Kj-JD-K7-Jq")
+    @FindBy(css = "span.Kj-JD-K7-Jq")
     private WebElement cancel;
-    
-    
-    public String  getMessage(){
-      String message1 =  message.getText();
+
+    public String getMessage() {
+        String message1 = message.getText();
         System.out.println(message1);
         return message1;
     }
-    
-    public void cancelClick(){
+
+    public void cancelClick() {
         cancel.click();
     }
 }

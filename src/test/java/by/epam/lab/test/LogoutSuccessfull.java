@@ -19,11 +19,8 @@ public class LogoutSuccessfull extends LoginPreparation {
 
     @Test(enabled = true, groups = {AUTENTIFICATION})//, dependsOnMethods = {"by.epam.lab.test.AutentificationSuccessfull.autentificationSuccesfulltst"})
     public void logoutSuccessfultst() {
-
-
         mailPage.logout();
         Assert.assertTrue(mailPage.getLocation().contains(MAIL_PAGE_LOCATION), "location : " + mailPage.getLocation());
-
     }
 
     @BeforeClass(groups = Group.AUTENTIFICATION)
@@ -34,6 +31,5 @@ public class LogoutSuccessfull extends LoginPreparation {
         mailPage = loginPage
                 .Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
                 .waitForSuccessfulLogin();
-
     }
 }

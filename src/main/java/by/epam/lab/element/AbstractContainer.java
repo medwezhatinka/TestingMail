@@ -4,29 +4,25 @@
  */
 package by.epam.lab.element;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  *
  * @author Alina_Shumel
  */
-public class AbstractContainer implements IContainer{
+public class AbstractContainer implements IContainer {
 
     protected WebElement wrappedElement;
 
     public AbstractContainer(WebElement wrappedElement) {
         this.wrappedElement = wrappedElement;
     }
-     public WebElement getWrappedElement() {
+
+    public WebElement getWrappedElement() {
         return wrappedElement;
     }
-    
+
     public boolean isDisplayed() {
-       return wrappedElement.isDisplayed();
+        return wrappedElement.isDisplayed();
     }
-    
-    
 }

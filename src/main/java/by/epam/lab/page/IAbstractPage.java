@@ -50,8 +50,8 @@ public interface IAbstractPage {
     public void acceptAllert();
 
     public String getAllertTextAndAccept();
-    
+
     public WebDriver getDriver();
-    
+
     public void waitForElement(WebElement webElement);
 }

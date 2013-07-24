@@ -19,33 +19,24 @@ import org.testng.annotations.BeforeSuite;
  *
  * @author Alina_Shumel
  */
-public abstract  class FirefoxTests extends TestData implements Group{
-  public static final Logger log = Logger.getLogger(FirefoxTests.class);
- protected static String nameFile = "log4j.properties";
-  
-       
-  protected  static  FirefoxDriver driver;
-  LoginPage loginPage;
- MailPage mailPage ;
-   
-   
-  @BeforeSuite(alwaysRun = true)
-  public  static void tearUpSuite() throws FileNotFoundException, IOException{
-      PropertyConfigurator.configure(nameFile);
-     
-      driver = new FirefoxDriver();
-      TestData.initialize();
-    
-  }
-   
-  
-  
-  @AfterSuite(alwaysRun = true)
-  public static  void tearDownSuite(){
-      driver.quit();
-  }
-  
-  
-  
-  
+public abstract class FirefoxTests extends TestData implements Group {
+
+    public static final Logger log = Logger.getLogger(FirefoxTests.class);
+    protected static String nameFile = "log4j.properties";
+    protected static FirefoxDriver driver;
+    LoginPage loginPage;
+    MailPage mailPage;
+
+    @BeforeSuite(alwaysRun = true)
+    public static void tearUpSuite() throws FileNotFoundException, IOException {
+        PropertyConfigurator.configure(nameFile);
+        driver = new FirefoxDriver();
+        TestData.initialize();
+
+    }
+
+    @AfterSuite(alwaysRun = true)
+    public static void tearDownSuite() {
+        driver.quit();
+    }
 }

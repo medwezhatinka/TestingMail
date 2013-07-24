@@ -15,19 +15,19 @@ import org.testng.annotations.BeforeClass;
  */
 public class LoginPreparation extends FirefoxTests {
 
-    @BeforeClass(groups =AUTENTIFICATION)
+    @BeforeClass(groups = AUTENTIFICATION)
     public void tearUpClass() {
         loginPage = new LoginPage(driver);
         loginPage.open(HOME_PAGE_URL);
 
     }
-     @AfterClass(groups = AUTENTIFICATION)
-  public void tearDownClass(){
-  /*
-   * nothing to do
-   * before/after class not work 
-   * without override annotation
-   */
-        
+
+    @AfterClass(groups = AUTENTIFICATION)
+    public void tearDownClass() {
+        /*
+         * nothing to do
+         * before/after class not work 
+         * without override annotation
+         */
     }
 }

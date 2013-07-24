@@ -45,9 +45,9 @@ public class TestData {
     public static String CORRECT_PASSWORD_TESTOID;// = "559283test";
     public static String CORRECT_EMAIL_TESTEROVSKI;
     public static String CORRECT_PASSWORD_TESTEROVSKI;
-   public static String NAME;
-   public static String  CONFIRMATION_CODE;
-    public static String  FONT_WEIGHT;
+    public static String NAME;
+    public static String CONFIRMATION_CODE;
+    public static String FONT_WEIGHT;
 
     public static void initialize() throws FileNotFoundException, IOException {
         File source = new File(FILENAMEINPUT);

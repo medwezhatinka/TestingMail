@@ -8,8 +8,8 @@ package by.epam.lab.test;
  *
  * @author Alina_Shumel
  */
-public interface  Group {
-    
+public interface Group {
+
     String AUTENTIFICATION = "autentification";
     String ATTACH_FILE = "attach file";
     String MESSAGE = "message";

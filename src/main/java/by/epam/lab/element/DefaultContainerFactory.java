@@ -14,12 +14,13 @@ import java.util.logging.Logger;
 import org.openqa.selenium.WebElement;
 
 public class DefaultContainerFactory implements IContainerFactory {
+
     @Override
     public <C extends IContainer> C create(final Class<C> containerClass, final WebElement wrappedElement) {
         try {
             return containerClass
-                        .getDeclaredConstructor(WebElement.class)
-                        .newInstance(wrappedElement);
+                    .getDeclaredConstructor(WebElement.class)
+                    .newInstance(wrappedElement);
         } catch (InstantiationException ex) {
             Logger.getLogger(DefaultContainerFactory.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
@@ -34,6 +35,6 @@ public class DefaultContainerFactory implements IContainerFactory {
             Logger.getLogger(DefaultContainerFactory.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
-    
+
     }
 }

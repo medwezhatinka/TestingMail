@@ -10,12 +10,12 @@ import org.openqa.selenium.WebElement;
  *
  * @author Alina_Shumel
  */
-public class TextInput extends AbstractElement{
+public class TextInput extends AbstractElement {
 
     public TextInput(WebElement wrappedElement) {
         super(wrappedElement);
     }
-    
+
     public void clear() {
         getWrappedElement().clear();
     }
@@ -29,7 +29,7 @@ public class TextInput extends AbstractElement{
         getWrappedElement().sendKeys(keys);
     }
 
-       /**
+    /**
      * Retrieves the text entered into this text input.
      *
      * @return Text entered into the text input.

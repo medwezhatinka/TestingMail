@@ -15,7 +15,7 @@ import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 /**
  *
- * @author Alina_Shumel 
+ * @author Alina_Shumel
  */
 public class SendMessagePage extends AbstractPageHtml {
 
@@ -56,39 +56,35 @@ public class SendMessagePage extends AbstractPageHtml {
     public void closeAndSave() {
         newMessage.close();
     }
-    
-   
 
-    private SendMessagePage attachFile(String scriptPath,  File attachedFile) throws IOException, InterruptedException {
-      
+    private SendMessagePage attachFile(String scriptPath, File attachedFile) throws IOException, InterruptedException {
+
         File autoIt = new File(scriptPath);
 
         Process p = Runtime.getRuntime().exec(
                 autoIt.getAbsolutePath() + " " + "\"" + attachedFile.getAbsolutePath() + "\"");
-        // ожидание выполнения запроса
         p.waitFor();
         return this;
 
-     
-        
+
+
 
     }
-    
-    public SendMessagePage waitforsuccessfulAttach(File attachedFile){
-        waitfor("//div[text()='" + attachedFile.getName() + "']/following-sibling::div[text()='"+ Logic.getFormatSize(attachedFile)+"']");
-        System.out.println(attachedFile.length());   
+
+    public SendMessagePage waitforsuccessfulAttach(File attachedFile) {
+        waitfor("//div[text()='" + attachedFile.getName() + "']/following-sibling::div[text()='" + Util.getFormatSize(attachedFile) + "']");
+        System.out.println(attachedFile.length());
         return this;
     }
 
     public SendMessagePage createMessageWithAttachedFile(String toEmail, String subject,
-            String body, String script, File attachFile)
-           {
+            String body, String script, File attachFile) {
         newMessage.fillTo(toEmail).fillSubject(subject);
         switchTo(newMessage.getIframe());
         findByTagName("body").sendKeys(body);
         switchToDefaultContext();
         newMessage.attachFileClick();
-      
+
         try {
             attachFile(script, attachFile);
         } catch (IOException ex) {
@@ -97,20 +93,19 @@ public class SendMessagePage extends AbstractPageHtml {
             Logger.getLogger(SendMessagePage.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-       
+
         return this;
     }
-    
-    
-    public SendMessagePage send(){
-         newMessage.send();
-         return this;
+
+    public SendMessagePage send() {
+        newMessage.send();
+        return this;
     }
-    
-    public String getAllertTextandClose(){
+
+    public String getAllertTextandClose() {
         String message = dialog.getMessage();
         dialog.cancelClick();
-        
-        return  message;
+
+        return message;
     }
 }

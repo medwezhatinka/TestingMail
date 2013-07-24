@@ -9,17 +9,15 @@ package by.epam.lab.element.message;
  * @author Alina_Shumel
  */
 public class Message {
-    
-   private String addressee;
-   private String subject;
-   private String text;
-   private String time;
+
+    private String addressee;
+    private String subject;
+    private String text;
+    private String time;
 
     public Message() {
     }
 
-   
-   
     public Message(String addressee, String subject, String text, String time) {
         this.addressee = addressee;
         this.subject = subject;
@@ -93,10 +91,8 @@ public class Message {
         return true;
     }
 
-    
-    
-    public boolean equalsContent(Object obj){
-       if (obj == null) {
+    public boolean equalsContent(Object obj) {
+        if (obj == null) {
             return false;
         }
         if (getClass() != obj.getClass()) {
@@ -114,12 +110,9 @@ public class Message {
         }
         return true;
     }
+
     @Override
     public String toString() {
         return "Message{" + "addressee=" + addressee + ", subject=" + subject + ", text=" + text + ", time=" + time + '}';
     }
-   
-   
-   
-    
 }

@@ -16,11 +16,10 @@ import org.openqa.selenium.support.pagefactory.ElementLocator;
  *
  * @author Alina_Shumel
  */
-public class ExtendedDecorator extends  DefaultFieldDecorator{
+public class ExtendedDecorator extends DefaultFieldDecorator {
 
-  private IElementFactory elementFactory = new DefaultElementFactory();
+    private IElementFactory elementFactory = new DefaultElementFactory();
     private IContainerFactory containerFactory = new DefaultContainerFactory();
-
 
     public ExtendedDecorator(final SearchContext searchContext) {
         super(new DefaultElementLocatorFactory(searchContext));
@@ -28,7 +27,7 @@ public class ExtendedDecorator extends  DefaultFieldDecorator{
 
     @Override
     public Object decorate(final ClassLoader loader, final Field field) {
-         if (IContainer.class.isAssignableFrom(field.getType())) {
+        if (IContainer.class.isAssignableFrom(field.getType())) {
             return decorateContainer(loader, field);
         }
         if (IElement.class.isAssignableFrom(field.getType())) {
@@ -49,9 +48,8 @@ public class ExtendedDecorator extends  DefaultFieldDecorator{
         PageFactory.initElements(new ExtendedDecorator(wrappedElement), container);
         return container;
     }
+
     private ElementLocator createLocator(final Field field) {
         return factory.createLocator(field);
     }
-
-   
 }

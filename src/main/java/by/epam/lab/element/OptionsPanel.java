@@ -14,70 +14,56 @@ import org.openqa.selenium.support.FindBy;
  *
  * @author Alina_Shumel
  */
-public class OptionsPanel   extends AbstractContainer{
+public class OptionsPanel extends AbstractContainer {
 
     @FindBy(xpath = "//div[@aria-label='Archive']")
     private Button archive;
-     @FindBy(xpath = "//div[@aria-label='Report spam']")
+    @FindBy(xpath = "//div[@aria-label='Report spam']")
     private Button report_spam;
-     @FindBy(xpath = "//div[@aria-label='Delete']")
-    private  Button delete;
-     @FindBy(xpath = "//div[@aria-label='Labels']")
+    @FindBy(xpath = "//div[@aria-label='Delete']")
+    private Button delete;
+    @FindBy(xpath = "//div[@aria-label='Labels']")
     private WebElement labels;
-     @FindBy(xpath = "//div[@aria-label='Move to']")
-    private  WebElement move;
-     
-     @FindBy(xpath = "//div[@aria-label='Select']")
-    private  WebElement select;
-    
-    
-    
+    @FindBy(xpath = "//div[@aria-label='Move to']")
+    private WebElement move;
+    @FindBy(xpath = "//div[@aria-label='Select']")
+    private WebElement select;
+
     public OptionsPanel(WebElement wrappedElement) {
         super(wrappedElement);
     }
 
-    
-    
-    
-    public void moveToSelect(WebDriver driver){
-        new Actions(driver).moveToElement(select).build().perform();
+    public void moveToSelect(WebDriver driver) {
+        new Actions(driver).moveToElement(select).perform();
     }
-    
-    
+
     @Override
     public boolean isDisplayed() {
-        if (archive.isDisplayed() 
+        if (archive.isDisplayed()
                 && report_spam.isDisplayed()
                 && delete.isDisplayed()
                 && labels.isDisplayed()
                 && move.isDisplayed()) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
-  
-    public void clickDelete(){
-        
+    public void clickDelete() {
         delete.click();
     }
-    
-    public void reportSpam(){
-        
+
+    public void reportSpam() {
         report_spam.click();
     }
-    
-    public void archiveClick(){
-        
+
+    public void archiveClick() {
         archive.click();
     }
-    
-    
-    public void selectMessages(String status,WebDriver driver){
-        
-        new Actions(driver).moveToElement(select).click().build().perform();
-        driver.findElement(By.xpath(".//div[text()='"+ status +"']")).click();
+
+    public void selectMessages(String status, WebDriver driver) {
+        new Actions(driver).moveToElement(select).click().perform();
+        driver.findElement(By.xpath(".//div[text()='" + status + "']")).click();
     }
 }

@@ -12,32 +12,27 @@ import org.openqa.selenium.support.FindBy;
  *
  * @author Alina_Shumel
  */
-public class OpenedMessage extends AbstractPage{
+public class OpenedMessage extends AbstractPage {
 
     public OpenedMessage(WebDriver driver) {
         super(driver);
     }
-     @FindBy(xpath = "//div[@aria-label='Show trimmed content']")
+    @FindBy(xpath = "//div[@aria-label='Show trimmed content']")
     private WebElement showAllContent;
-     
-     
-   @FindBy(xpath = "//span[@class='HOEnZb adL']/font/div/div")
+    @FindBy(xpath = "//span[@class='HOEnZb adL']/font/div/div")
     private WebElement signature;
     @FindBy(xpath = "//div[@class='gs']/div[6]/div")
-   private WebElement messageBody;
-   
-   
-   
-   public String getSignatureText(){
-       waitForElement(showAllContent);
-       showAllContent.click();
-      waitForElement(signature);
-       return signature.getText();
-   }
-   
-   public String getMessageText(){
-       waitForElement(messageBody);
-       return messageBody.getText();
-   }
-   
+    private WebElement messageBody;
+
+    public String getSignatureText() {
+        waitForElement(showAllContent);
+        showAllContent.click();
+        waitForElement(signature);
+        return signature.getText();
+    }
+
+    public String getMessageText() {
+        waitForElement(messageBody);
+        return messageBody.getText();
+    }
 }

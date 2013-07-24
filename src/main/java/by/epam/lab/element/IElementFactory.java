@@ -11,6 +11,6 @@ import org.openqa.selenium.WebElement;
  * @author Alina_Shumel
  */
 public interface IElementFactory {
-    
-    <E extends IElement> E create (Class<E> elementClass, WebElement wrappedElement);
+
+    <E extends IElement> E create(Class<E> elementClass, WebElement wrappedElement);
 }

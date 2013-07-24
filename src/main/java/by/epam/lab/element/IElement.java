@@ -9,6 +9,6 @@ package by.epam.lab.element;
  * @author Alina_Shumel
  */
 public interface IElement {
-    
- boolean isDisplayed();
+
+    boolean isDisplayed();
 }
