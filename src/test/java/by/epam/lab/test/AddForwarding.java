@@ -51,12 +51,12 @@ public class AddForwarding extends MessagePreparation {
                 .logout();
         mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
                 .waitForSuccessfulLogin();
-        mailPage.waitForMessageFrom(NAME, 40);
+        mailPage.waitForMessageFrom(NAME, 60);
         Message message1 = mailPage.getMessage();
         mailPage.logout();
         mailPage = loginPage.Login(CORRECT_EMAIL_TESTEROVSKI, CORRECT_PASSWORD_TESTEROVSKI)
                 .waitForSuccessfulLogin();
-        mailPage.waitForMessageFrom(NAME, 20);
+        mailPage.waitForMessageFrom(NAME, 30);
         Message message2 = mailPage.getMessage();
         Assert.assertTrue(message1.equalsContent(message2));
     }

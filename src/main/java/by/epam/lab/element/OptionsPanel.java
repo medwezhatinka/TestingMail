@@ -64,6 +64,8 @@ public class OptionsPanel extends AbstractContainer {
 
     public void selectMessages(String status, WebDriver driver) {
         new Actions(driver).moveToElement(select).click().perform();
-        driver.findElement(By.xpath(".//div[text()='" + status + "']")).click();
+        String xpath = String.format(".//div[text()='%s']", status);
+        driver.findElement(By.xpath(xpath)).click();
+
     }
 }

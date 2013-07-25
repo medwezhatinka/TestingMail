@@ -73,9 +73,7 @@ public class AbstractPage implements IAbstractPage {
 
     public void acceptAllert() {
         try {
-
             driver.switchTo().alert().accept();
-
         } catch (Exception ex) {
         }
 
@@ -92,23 +90,11 @@ public class AbstractPage implements IAbstractPage {
     }
 
     public WebElement findByName(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return driver.findElement(By.name(name));
     }
 
     public WebElement findByTagName(String tagName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void pause(long timeout) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void waitForClickable(String xpath) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public boolean elementIsPresent(String xpath) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return driver.findElement(By.tagName(tagName));
     }
 
     public void switchTo(WebElement webElement) {
@@ -131,12 +117,41 @@ public class AbstractPage implements IAbstractPage {
     }
 
     public String getAllertTextAndAccept() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        waitfor("//div[@class='Kj-JD']");
+        WebElement allertDialog = findByXpath("//div[@class='Kj-JD']");
+        StringBuilder message = new StringBuilder();
+        message.append(allertDialog.findElement(By.cssSelector("span.Kj-JD-K7-K0")).getText());
+        message.append(allertDialog.findElement(By.cssSelector("div.Kj-JD-Jz")).getText());
+        findByCSS("html.aAX body.aAU div.Kj-JD div.Kj-JD-Jl button.J-at1-auR").click();
+        acceptAllert();
+        return message.toString();
     }
 
     public void timeout(int seconds) {
         long time = System.currentTimeMillis() + seconds * 1000;
         while (time > System.currentTimeMillis()) {
+        }
+    }
+
+    public void pause(long timeout) {
+        long time = System.currentTimeMillis() + timeout;
+        while (System.currentTimeMillis() < time) {
+        }
+
+    }
+
+    public void waitForClickable(String xpath) {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
+
+    }
+
+    public boolean elementIsPresent(String xpath) {
+        try {
+            findByXpath(xpath);
+            return true;
+        } catch (NoSuchFieldError ex) {
+            return false;
         }
     }
 }

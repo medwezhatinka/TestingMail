@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -27,12 +28,16 @@ public abstract class FirefoxTests extends TestData implements Group {
     LoginPage loginPage;
     MailPage mailPage;
 
+    
+    public  static WebDriver getDriver(){
+        return driver;
+    }
+    
     @BeforeSuite(alwaysRun = true)
     public static void tearUpSuite() throws FileNotFoundException, IOException {
         PropertyConfigurator.configure(nameFile);
         driver = new FirefoxDriver();
         TestData.initialize();
-
     }
 
     @AfterSuite(alwaysRun = true)

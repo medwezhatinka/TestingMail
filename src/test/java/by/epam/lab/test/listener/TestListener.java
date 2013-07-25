@@ -4,17 +4,16 @@
  */
 package by.epam.lab.test.listener;
 
-import java.awt.AWTException;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
+import by.epam.lab.test.FirefoxTests;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import javax.imageio.ImageIO;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Priority;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
@@ -29,32 +28,23 @@ public class TestListener extends TestListenerAdapter {
 
     @Override
     public void onTestSuccess(ITestResult tr) {
-
         log.log(Priority.INFO, "Test: '" + tr.getMethod().getTestClass().getName() + "' - PASSED");
     }
 
     @Override
     public void onTestFailure(ITestResult testResult) {
-
-        //log.error(testResult.getMethod().getMethodName());
         log.log(Priority.INFO, "Test: '" + testResult.getMethod().getTestClass().getName() + "' - FAILED");
         try {
-
-            Robot _robot = new Robot();
             Calendar currentDate = Calendar.getInstance();
             String workDir = System.getProperty("user.dir") + "\\screenshos\\";
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMMdd_HH_mm_ss");
             String dateNow = dateFormat.format(currentDate.getTime());
-            BufferedImage screenshot = _robot.createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
-            ImageIO.write(screenshot, "JPG", new File(workDir + dateNow + ".jpg"));
+            WebDriver driver = FirefoxTests.getDriver();
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(scrFile, new File(workDir + dateNow + ".jpg"));
             Reporter.log("<img src=\"file:///" + workDir + dateNow + ".JPG\" alt=\"\"/><br />");
-
-        } catch (AWTException ex) {
-            //    log.log(Priority.ERROR, ex, ex);
-            //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            //    log.log(Priority.ERROR, ex, ex);
-            //  Logger.getLogger(TestListener.class.getName()).log(Level.SEVERE, null, ex);
+            log.log(Priority.ERROR, ex, ex);
         }
     }
 }

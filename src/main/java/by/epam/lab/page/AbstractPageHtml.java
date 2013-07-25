@@ -121,7 +121,6 @@ public class AbstractPageHtml implements IAbstractPage {
         message.append(allertDialog.findElement(By.cssSelector("span.Kj-JD-K7-K0")).getText());
         message.append(allertDialog.findElement(By.cssSelector("div.Kj-JD-Jz")).getText());
         findByCSS("html.aAX body.aAU div.Kj-JD div.Kj-JD-Jl button.J-at1-auR").click();
-        // pause(5000);
         acceptAllert();
         return message.toString();
     }

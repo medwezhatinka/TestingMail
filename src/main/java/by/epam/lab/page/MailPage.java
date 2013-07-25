@@ -52,7 +52,6 @@ public class MailPage extends AbstractPage {
     }
 
     public SendMessagePage composeClick() {
-
         composeButton.click();
         waitfor("//table[@class='cf Ht']/tbody/tr/td/div");
         return new SendMessagePage(getDriver());
@@ -60,7 +59,7 @@ public class MailPage extends AbstractPage {
     }
 
     public WebElement getMessageAddressee() {
-        return messageTabe.findElement(By.xpath("//tr/td[5]/div/span"));//.getAttribute("name");
+        return messageTabe.findElement(By.xpath("//tr/td[5]/div/span"));
 
 
     }
@@ -72,8 +71,6 @@ public class MailPage extends AbstractPage {
     }
 
     public MailPage logout() {
-
-
         wait("gbg4");
         WebElement menu = findByID("gbg4");
         menu.click();
@@ -98,15 +95,12 @@ public class MailPage extends AbstractPage {
     }
 
     public MailPage selectMessage() {
-
         messageTabe.findElement(By.xpath("//tr/td[2]/div/div")).click();
         return this;
     }
 
     public boolean optionsPresent() {
-
         options.moveToSelect(getDriver());
-
         if (options.isDisplayed()) {
             return true;
         } else {
@@ -140,7 +134,6 @@ public class MailPage extends AbstractPage {
         waitForElement(spam);
         spam.click();
         waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
-
         return new SpamPage(getDriver());
 
     }
@@ -156,17 +149,13 @@ public class MailPage extends AbstractPage {
     }
 
     public MailPage deleteMessage() {
-
         options.moveToSelect(getDriver());
-
         options.clickDelete();
         return this;
     }
 
     public MailPage reportSpam() {
-
         options.moveToSelect(getDriver());
-
         options.reportSpam();
         return this;
     }
@@ -180,7 +169,6 @@ public class MailPage extends AbstractPage {
     public boolean checkReadMessageSelected() {
         List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
-
             if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("700")
                     && list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true")) {
                 return false;
@@ -193,7 +181,6 @@ public class MailPage extends AbstractPage {
     public boolean checkUnreadMessageSelected() {
         List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
-
             if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("400")
                     && list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true")) {
                 return false;
@@ -210,19 +197,16 @@ public class MailPage extends AbstractPage {
     }
 
     public void selectUnread() {
-
         options.moveToSelect(getDriver());
         options.selectMessages("Unread", getDriver());
     }
 
     public Settings openSettings() {
-
         new Actions(getDriver())
                 .moveToElement(setting)
                 .click()
                 .moveToElement(setting_setting)
                 .click()
-                .build()
                 .perform();
         return new Settings(getDriver());
     }

@@ -74,13 +74,9 @@ public class Settings extends AbstractPage {
     }
 
     public Settings save_changes() {
-
         ((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView();", save_changes.getWrappedElement());
-
         WebDriverWait wait = new WebDriverWait(getDriver(), 30);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//button[contains(.,'Save Changes')]")));
-
-
         save_changes.click();
         waitForElement(messageTable.getWrappedElement());
         return this;
@@ -90,14 +86,12 @@ public class Settings extends AbstractPage {
         waitForElement(title);
         ((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView();", signature_on);
         switchTo(signature_iframe);
-
         timeout(1);
         signature_input.sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.END));
         timeout(1);
         signature_input.sendKeys(Keys.chord(Keys.DELETE));
         timeout(1);
         switchToDefaultContext();
-
         signature_on.click();
         return this;
 
@@ -106,8 +100,6 @@ public class Settings extends AbstractPage {
     public void openForwardingTab() {
         waitForElement(title);
         tab.click();
-
-
     }
 
     public Settings clickProceed(WebDriver driver) {
@@ -120,12 +112,9 @@ public class Settings extends AbstractPage {
 
     public void addForwardingAddress(String address) {
         add_address.click();
-
         waitfor("//body/div[@class='Kj-JD']");
         emailAddWindow.inputEmail(address)
                 .clickNext();
-
-
         clickProceed(getDriver());
         waitForElement(emailAddWindow.getOk().getWrappedElement());
         emailAddWindow.clickOk();
@@ -143,8 +132,7 @@ public class Settings extends AbstractPage {
                 .moveToElement(verify_code.getWrappedElement())
                 .click()
                 .sendKeys(Keys.chord(Keys.DELETE))
-                .build().
-                perform();
+                .perform();
 
         verify_code.sendKeys(code);
         System.out.println(verify_code.getWrappedElement().getAttribute("value"));

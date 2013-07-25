@@ -30,7 +30,7 @@
      
 </test>
 -->
-
+<!--
     <test name="autentification">
         <groups >
             <run>
@@ -78,8 +78,8 @@
                  
         </classes>
  </test>
+-->
 
-<!--
     <test name="Test2">
         <groups >
             <run>
@@ -87,11 +87,11 @@
             </run>
         </groups>
         <classes>
-   <class name="by.epam.lab.test.AddForwarding"/>
+   <class name="by.epam.lab.test.ReportSpam"/>
           
         </classes>
     </test>
--->
+
 <!--
     <test name="Test3">
         <groups >

@@ -57,7 +57,8 @@ public class SendMessagePage extends AbstractPageHtml {
         newMessage.close();
     }
 
-    private SendMessagePage attachFile(String scriptPath, File attachedFile) throws IOException, InterruptedException {
+    private SendMessagePage attachFile(String scriptPath, File attachedFile)
+            throws IOException, InterruptedException {
 
         File autoIt = new File(scriptPath);
 
@@ -72,7 +73,9 @@ public class SendMessagePage extends AbstractPageHtml {
     }
 
     public SendMessagePage waitforsuccessfulAttach(File attachedFile) {
-        waitfor("//div[text()='" + attachedFile.getName() + "']/following-sibling::div[text()='" + Util.getFormatSize(attachedFile) + "']");
+        String xpath = String.format("//div[text()='%s']/following-sibling::div[text()='%s']",
+                attachedFile.getName(), Util.getFormatSize(attachedFile));
+        waitfor(xpath);
         System.out.println(attachedFile.length());
         return this;
     }

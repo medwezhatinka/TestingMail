@@ -5,8 +5,7 @@
 package by.epam.lab.element;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 
 /**
@@ -15,6 +14,8 @@ import org.openqa.selenium.WebElement;
  */
 public class DefaultElementFactory implements IElementFactory {
 
+    public static final Logger log = Logger.getLogger(DefaultElementFactory.class);
+
     public <E extends IElement> E create(Class<E> elementClass, WebElement wrappedElement) {
         try {
             return elementClass
@@ -22,17 +23,17 @@ public class DefaultElementFactory implements IElementFactory {
                     .newInstance(wrappedElement);
 
         } catch (NoSuchMethodException ex) {
-            Logger.getLogger(DefaultElementFactory.class.getName()).log(Level.SEVERE, null, ex);
+            log.error(ex);
         } catch (SecurityException ex) {
-            Logger.getLogger(DefaultElementFactory.class.getName()).log(Level.SEVERE, null, ex);
+            log.error(ex);
         } catch (InstantiationException ex) {
-            Logger.getLogger(DefaultElementFactory.class.getName()).log(Level.SEVERE, null, ex);
+            log.error(ex);
         } catch (IllegalAccessException ex) {
-            Logger.getLogger(DefaultElementFactory.class.getName()).log(Level.SEVERE, null, ex);
+            log.error(ex);
         } catch (IllegalArgumentException ex) {
-            Logger.getLogger(DefaultElementFactory.class.getName()).log(Level.SEVERE, null, ex);
+            log.error(ex);
         } catch (InvocationTargetException ex) {
-            Logger.getLogger(DefaultElementFactory.class.getName()).log(Level.SEVERE, null, ex);
+            log.error(ex);
         }
         return null;
     }

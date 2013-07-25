@@ -23,9 +23,12 @@ public class ReportSpam extends MessagePreparation {
     public void sendTextMessagests() {
         mailPage.selectMessage();
         Message inputMessage = mailPage.getMessage();
+        log.info(inputMessage.toString());
         mailPage.reportSpam();
         SpamPage spamPage = mailPage.goToSpamPage();
+        log.info(spamPage.getMessage());
         Assert.assertTrue(inputMessage.equals(spamPage.getMessage()));
+        
     }
 
     @BeforeMethod(groups = MESSAGE)

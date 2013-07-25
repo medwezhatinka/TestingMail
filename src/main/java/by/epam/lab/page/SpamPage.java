@@ -16,6 +16,7 @@ import org.openqa.selenium.support.FindBy;
 public class SpamPage extends AbstractPage {
 
     @FindBy(xpath = "//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]")
+   // @FindBy(xpath = "//table[@class='F cf zt']/tbody/tr")
     private MailTable messageTabe;
 
     public SpamPage(WebDriver driver) {
