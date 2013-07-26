@@ -1,7 +1,7 @@
 15:08:59,894  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
 15:57:47,609  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
 16:01:27,991  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
-16:01:43,087 ERROR main FirefoxTests:signAdd:35 - ОПХЬЕК ОХГДЕЖ!!!!!!
+16:01:43,087 ERROR main FirefoxTests:signAdd:35 - О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!
 16:14:47,787  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
 16:15:03,395 ERROR main TestListener:onTestFailure:42 - signAdd
 16:19:29,515  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
@@ -26,17 +26,17 @@
 17:52:55,881 ERROR main TestListener:onTestFailure:42 - signAdd
 17:55:25,542 ERROR main TestListener:onTestFailure:42 - signAdd
 11:42:04,627 ERROR main TestListener:onTestFailure:47 - signAdd
-11:47:22,835 ERROR main TestListener:onTestFailure:47 - бяелс йюоеж!!!! ньхайю!!!ююююююююююююююююююююююююююююююююююююююю!!!!!!!!!!!!!!!
+11:47:22,835 ERROR main TestListener:onTestFailure:47 - О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫!!!! О©╫О©╫О©╫О©╫О©╫О©╫!!!О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!!!!!!!!!!
 11:47:22,835 ERROR main TestListener:onTestFailure:48 - signAdd
-11:50:02,845 ERROR main TestListener:onTestFailure:47 - бяелс йюоеж!!!! ньхайю!!!ююююююююююююююююююююююююююююююююююююююю!!!!!!!!!!!!!!!
+11:50:02,845 ERROR main TestListener:onTestFailure:47 - О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫!!!! О©╫О©╫О©╫О©╫О©╫О©╫!!!О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!!!!!!!!!!
 11:50:02,845 ERROR main TestListener:onTestFailure:48 - signAdd
-11:52:45,818 ERROR main TestListener:onTestFailure:47 - бяелс йюоеж!!!! ньхайю!!!ююююююююююююююююююююююююююююююююююююююю!!!!!!!!!!!!!!!
+11:52:45,818 ERROR main TestListener:onTestFailure:47 - О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫!!!! О©╫О©╫О©╫О©╫О©╫О©╫!!!О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!!!!!!!!!!
 11:52:45,818 ERROR main TestListener:onTestFailure:48 - signAdd
-11:52:45,818 ERROR main TestListener:onTestFailure:49 - бяелс йюоеж!!!! ньхайю!!!ююююююююююююююююююююююююююююююююююююююю!!!!!!!!!!!!!!!
-11:54:27,889 ERROR main TestListener:onTestFailure:47 - бяелс йюоеж!!!! ньхайю!!!ююююююююююююююююююююююююююююююююююююююю!!!!!!!!!!!!!!!
+11:52:45,818 ERROR main TestListener:onTestFailure:49 - О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫!!!! О©╫О©╫О©╫О©╫О©╫О©╫!!!О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!!!!!!!!!!
+11:54:27,889 ERROR main TestListener:onTestFailure:47 - О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫!!!! О©╫О©╫О©╫О©╫О©╫О©╫!!!О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!!!!!!!!!!
 11:54:27,905 ERROR main TestListener:onTestFailure:48 - signAdd
-11:54:27,905 ERROR main TestListener:onTestFailure:49 - бяелс йюоеж!!!! ньхайю!!!ююююююююююююююююююююююююююююююююююююююю!!!!!!!!!!!!!!!
-12:06:20,533 ERROR main TestListener:onTestFailure:47 - бяелс йюоеж!!!! ньхайю!!!ююююююююююююююююююююююююююююююююююююююю!!!!!!!!!!!!!!!
+11:54:27,905 ERROR main TestListener:onTestFailure:49 - О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫!!!! О©╫О©╫О©╫О©╫О©╫О©╫!!!О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!!!!!!!!!!
+12:06:20,533 ERROR main TestListener:onTestFailure:47 - О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫!!!! О©╫О©╫О©╫О©╫О©╫О©╫!!!О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫!!!!!!!!!!!!!!!
 12:06:20,533 ERROR main TestListener:onTestFailure:48 - signAdd
 12:51:39,658 ERROR main TestListener:onTestFailure:48 - signAdd
 12:55:24,944 ERROR main TestListener:onTestFailure:48 - signAdd
