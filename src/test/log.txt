@@ -1,0 +1,644 @@
+15:08:59,894  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+15:57:47,609  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:01:27,991  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:01:43,087 ERROR main FirefoxTests:signAdd:35 - ÔË¯ÂÎ ÔËÁ‰Âˆ!!!!!!
+16:14:47,787  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:15:03,395 ERROR main TestListener:onTestFailure:42 - signAdd
+16:19:29,515  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:26:06,685  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:26:25,143 ERROR main TestListener:onTestFailure:42 - signAdd
+16:27:34,992  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:30:10,643  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:30:29,186 ERROR main TestListener:onTestFailure:42 - signAdd
+16:31:12,395  WARN main FirefoxTests:signAdd:22 - hello! i reporting from log4j
+16:51:13,442 ERROR main TestListener:onTestFailure:42 - signAdd
+16:53:56,754 ERROR main TestListener:onTestFailure:42 - signAdd
+16:55:59,652 ERROR main TestListener:onTestFailure:42 - signAdd
+17:04:41,327 ERROR main TestListener:onTestFailure:42 - signAdd
+17:06:08,709 ERROR main TestListener:onTestFailure:42 - signAdd
+17:09:03,830 ERROR main TestListener:onTestFailure:42 - signAdd
+17:11:50,409 ERROR main TestListener:onTestFailure:42 - signAdd
+17:14:20,081 ERROR main TestListener:onTestFailure:42 - signAdd
+17:16:09,679 ERROR main TestListener:onTestFailure:42 - signAdd
+17:20:01,063 ERROR main TestListener:onTestFailure:42 - signAdd
+17:21:13,546 ERROR main TestListener:onTestFailure:42 - signAdd
+17:50:30,811 ERROR main TestListener:onTestFailure:42 - signAdd
+17:52:55,881 ERROR main TestListener:onTestFailure:42 - signAdd
+17:55:25,542 ERROR main TestListener:onTestFailure:42 - signAdd
+11:42:04,627 ERROR main TestListener:onTestFailure:47 - signAdd
+11:47:22,835 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:47:22,835 ERROR main TestListener:onTestFailure:48 - signAdd
+11:50:02,845 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:50:02,845 ERROR main TestListener:onTestFailure:48 - signAdd
+11:52:45,818 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:52:45,818 ERROR main TestListener:onTestFailure:48 - signAdd
+11:52:45,818 ERROR main TestListener:onTestFailure:49 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:54:27,889 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+11:54:27,905 ERROR main TestListener:onTestFailure:48 - signAdd
+11:54:27,905 ERROR main TestListener:onTestFailure:49 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+12:06:20,533 ERROR main TestListener:onTestFailure:47 - ¬—≈Ã”  ¿œ≈÷!!!! Œÿ»¡ ¿!!!¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿!!!!!!!!!!!!!!!
+12:06:20,533 ERROR main TestListener:onTestFailure:48 - signAdd
+12:51:39,658 ERROR main TestListener:onTestFailure:48 - signAdd
+12:55:24,944 ERROR main TestListener:onTestFailure:48 - signAdd
+13:00:51,078 ERROR main TestListener:onTestFailure:48 - signAdd
+13:04:53,894 ERROR main TestListener:onTestFailure:48 - signAdd
+13:07:15,434 ERROR main TestListener:onTestFailure:48 - signAdd
+13:09:38,435 ERROR main TestListener:onTestFailure:48 - signAdd
+13:15:41,400 ERROR main TestListener:onTestFailure:48 - signAdd
+13:17:22,046 ERROR main TestListener:onTestFailure:48 - signAdd
+13:19:52,366 ERROR main TestListener:onTestFailure:48 - signAdd
+13:37:35,356 ERROR main TestListener:onTestFailure:48 - signAdd
+13:58:24,714 ERROR main TestListener:onTestFailure:48 - signAdd
+14:02:14,998 ERROR main TestListener:onTestFailure:48 - signAdd
+14:04:36,754 ERROR main TestListener:onTestFailure:48 - signAdd
+14:17:59,948 ERROR main TestListener:onTestFailure:48 - signAdd
+14:22:19,991 ERROR main TestListener:onTestFailure:48 - signAdd
+14:24:05,664 ERROR main TestListener:onTestFailure:48 - signAdd
+14:28:29,828 ERROR main TestListener:onTestFailure:48 - signAdd
+14:37:11,835 ERROR main TestListener:onTestFailure:48 - signAdd
+14:42:44,110 ERROR main TestListener:onTestFailure:48 - signAdd
+14:44:50,040 ERROR main TestListener:onTestFailure:48 - signAdd
+14:47:32,538 ERROR main TestListener:onTestFailure:48 - signAdd
+15:48:54,940 ERROR main TestListener:onTestFailure:48 - signAdd
+15:52:42,329 ERROR main TestListener:onTestFailure:48 - signAdd
+16:06:10,875 ERROR main TestListener:onTestFailure:48 - signAdd
+16:09:04,500 ERROR main TestListener:onTestFailure:48 - signAdd
+16:10:23,332 ERROR main TestListener:onTestFailure:48 - signAdd
+16:13:32,551 ERROR main TestListener:onTestFailure:48 - signAdd
+16:16:17,676 ERROR main TestListener:onTestFailure:48 - signAdd
+16:21:17,225 ERROR main TestListener:onTestFailure:48 - signAdd
+16:27:29,024 ERROR main TestListener:onTestFailure:48 - signAdd
+18:02:34,100 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+18:02:48,206 ERROR main TestListener:onTestFailure:48 - autorization
+18:03:02,219 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+18:03:15,591 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:04:05,721 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:04:18,562 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:04:32,700 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+18:05:38,842 ERROR main TestListener:onTestFailure:48 - sendMessageWithAttachedFile
+14:57:35,704 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+14:57:50,542 ERROR main TestListener:onTestFailure:48 - autorization
+14:58:03,525 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+14:58:17,054 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+14:59:11,304 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+14:59:26,070 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+14:59:42,898 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+15:00:59,382 ERROR main TestListener:onTestFailure:48 - sendMessageWithAttachedFile
+15:03:11,412 ERROR main TestListener:onTestFailure:48 - signAdd
+15:11:28,697 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+15:12:05,481 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+15:13:18,518 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+15:14:03,981 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+16:44:42,749 ERROR main TestListener:onTestFailure:48 - autorization
+16:44:52,310 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+16:45:08,532 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+16:46:02,279 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+16:46:16,863 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+16:46:42,988 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+16:50:45,725 ERROR main TestListener:onTestFailure:48 - signAdd
+17:01:29,293 ERROR main TestListener:onTestFailure:48 - autorization
+17:01:42,800 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:05:07,513 ERROR main TestListener:onTestFailure:48 - signAdd
+12:05:56,075 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+12:10:15,695 ERROR main TestListener:onTestFailure:48 - signAdd
+12:20:35,423 ERROR main TestListener:onTestFailure:48 - signAdd
+12:32:16,533 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:32:19,237 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+12:32:22,315 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:32:25,159 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:32:28,206 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:34:39,054 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:34:41,913 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+12:34:45,773 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:35:35,648 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:36:26,491 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:38:57,335 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:38:59,991 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+12:39:03,226 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:39:05,726 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:39:10,023 ERROR main TestListener:onTestFailure:48 - autentificationFailedtst
+12:41:03,474 ERROR main TestListener:onTestFailure:48 - logoutSuccessfultst
+14:36:33,355 ERROR main TestListener:onTestFailure:48 - signAdd
+14:37:27,560 ERROR main TestListener:onTestFailure:48 - signAdd
+14:42:35,096 ERROR main TestListener:onTestFailure:48 - signAdd
+14:44:11,830 ERROR main TestListener:onTestFailure:48 - signAdd
+14:44:53,814 ERROR main TestListener:onTestFailure:48 - signAdd
+15:19:55,859 ERROR main TestListener:onTestFailure:48 - signAdd
+15:31:32,428 ERROR main TestListener:onTestFailure:48 - signAdd
+15:32:40,552 ERROR main TestListener:onTestFailure:48 - signAdd
+15:37:32,331 ERROR main TestListener:onTestFailure:48 - signAdd
+16:12:17,889 ERROR main TestListener:onTestFailure:48 - signAdd
+16:19:36,274 ERROR main TestListener:onTestFailure:48 - signAdd
+18:03:29,185 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+10:04:10,156 ERROR main TestListener:onTestFailure:48 - allertDialogMessageAssertion
+11:51:00,867  INFO main TestListener:onTestSuccess:41 - Test: 'autorization' - PASSED
+11:51:05,698  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:11,400  INFO main TestListener:onTestSuccess:41 - Test: 'logoutSuccessfultst' - PASSED
+11:52:12,758  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:14,240  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:15,953  INFO main TestListener:onTestSuccess:41 - Test: 'autentificationFailedtst' - PASSED
+11:52:27,883  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:52:46,743  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:52:59,445  INFO main TestListener:onTestSuccess:41 - Test: 'allertDialogMessageAssertion' - PASSED
+11:53:21,500  INFO main TestListener:onTestSuccess:41 - Test: 'signAdd' - PASSED
+11:53:45,145  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:03,770  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:22,257  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:40,278  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:54:59,465  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:55:21,139  INFO main TestListener:onTestSuccess:41 - Test: 'sendMessageWithAttachedFile' - PASSED
+11:55:34,837  INFO main TestListener:onTestSuccess:41 - Test: 'sendMessageWithEmptyEmailtst' - PASSED
+11:55:49,733  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:56:11,376  INFO main TestListener:onTestSuccess:41 - Test: 'sendTextMessagests' - PASSED
+11:56:24,903  INFO main TestListener:onTestSuccess:41 - Test: 'sendMessageWithIncorrectEmailtst' - PASSED
+11:58:07,523  INFO Forwarding getElementText on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,523  INFO Forwarding getElementText on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,569  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:07,585  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:09,591  INFO Forwarding findChildElements on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,514  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,514  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,560  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:12,731  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:14,737  INFO Forwarding clickElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:14,737 ERROR main TestListener:onTestFailure:48 - signAdd
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,343  INFO Forwarding findElement on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:15,359  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding isElementDisplayed on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,349  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,349  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:17,365  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:653 - I/O exception (java.net.BindException) caught when connecting to the target host: Address already in use: connect
+11:58:19,355  INFO Forwarding quit on session 72bc9e99-f642-44d6-b7c3-66c2eede3a46 to remote DefaultHttpClient:tryConnect:659 - Retrying connect
+12:04:53,509  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:04:58,166  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:05:05,948  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:05:07,261  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:05:08,698  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:05:10,480  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:05:19,184  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+12:10:58,676  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:11:03,503  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:11:11,094  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:11:12,453  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:11:13,921  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:11:15,576  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:11:38,768  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+12:14:52,018  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:14:56,828  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:15:08,338  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:15:10,025  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:15:11,461  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:15:13,663  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:15:22,222  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:25:58,402  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+12:26:31,510  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+12:26:56,572  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:27:04,915  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:27:11,243  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:27:25,368  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+12:27:45,414  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+12:27:51,039  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:27:52,945  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:27:55,163  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:28:04,851  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:28:26,923  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+12:28:51,900  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+12:29:10,160  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+12:29:48,055  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+12:30:02,035  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+12:30:18,015  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:30:34,619  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+12:30:50,724  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+12:31:10,030  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+12:31:21,074  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:40:52,381  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:40:57,050  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:41:05,359  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:41:07,999  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:41:09,951  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:41:11,731  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:42:34,929  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:42:39,911  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:42:46,908  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:42:48,298  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:42:49,610  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:42:51,188  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:43:02,885  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:46:16,237  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:46:23,703  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:46:31,090  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:46:32,339  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:46:33,636  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:46:35,385  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:46:48,566  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:46:59,327  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:47:01,982  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:49:40,333  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:49:46,986  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:49:55,795  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:49:57,263  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:49:59,262  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:50:01,011  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:51:53,476  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:51:58,271  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:52:05,471  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:52:07,079  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:52:08,594  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:52:10,375  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:52:27,624  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:52:42,304  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:52:49,722  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:55:31,629  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:55:37,733  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:55:46,294  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:55:47,561  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:55:48,970  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:55:51,380  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:56:06,264  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:56:16,233  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:56:18,785  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:57:56,614  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:58:01,632  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:58:08,415  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:58:09,994  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:58:11,838  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:58:13,573  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:58:25,453  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:59:44,373  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+13:04:15,748  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+13:04:34,574  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+13:04:42,730  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+13:05:06,181  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+13:05:50,990  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+13:06:40,564  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+13:09:41,916  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+13:09:46,743  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+13:09:53,992  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+13:09:55,241  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+13:09:56,600  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+13:09:58,178  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+13:10:10,050  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+13:10:29,061  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+13:10:40,730  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+13:11:01,538  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+13:11:25,204  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+13:11:43,887  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+13:12:01,820  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+13:12:19,925  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+13:12:38,060  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+13:13:21,718  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - FAILED
+13:13:35,605  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+13:13:51,256  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+13:14:12,374  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+13:14:26,901  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+13:15:57,998  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+16:54:31,128  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:54:37,795  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:54:46,108  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:54:47,599  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:54:49,058  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:54:51,583  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:55:08,038  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:55:31,709  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:55:45,639  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+16:56:12,620  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+16:56:40,985  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+16:57:05,829  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+16:57:25,652  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+16:57:48,150  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+16:58:12,306  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+16:58:36,587  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+16:58:53,077  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+16:59:29,937  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+16:59:51,168  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+17:00:07,017  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+17:00:22,474  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+17:53:48,227  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+17:53:54,070  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+17:54:02,615  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+17:54:03,974  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+17:54:08,551  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+17:54:10,520  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+17:54:23,814  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+17:54:42,982  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+17:54:57,011  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+17:55:21,787  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+17:55:44,814  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+17:56:05,888  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+17:56:26,290  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+17:56:48,645  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+17:57:09,516  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+17:57:34,980  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+17:57:50,055  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+17:58:09,505  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+17:58:33,969  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+17:58:48,669  INFO main TestListener:onTestSuccess:38 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+18:00:16,129  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+15:34:34,145  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:34:40,162  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:34:47,707  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:34:49,063  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:34:50,420  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:34:52,321  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:35:07,302  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+15:35:43,310  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+15:36:08,454  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+15:36:38,243  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+15:37:06,193  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+15:37:26,769  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+15:37:45,615  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+15:38:05,023  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+15:38:23,464  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+15:38:47,345  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+15:39:00,626  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+15:39:16,401  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+15:39:36,931  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+15:39:52,457  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+15:41:32,829  INFO main TestListener:onTestFailure:40 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+15:43:51,143  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:43:56,131  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:44:03,333  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:44:04,845  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:44:06,201  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:44:08,165  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:44:19,701  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+15:44:39,747  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+15:44:51,438  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+15:45:12,591  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+15:45:38,172  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+15:46:03,549  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+15:46:21,959  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+15:46:43,564  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+15:47:04,187  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+15:47:45,886  INFO main TestListener:onTestFailure:40 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - FAILED
+15:47:59,650  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+15:48:15,472  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+15:48:36,002  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+15:48:53,367  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+15:50:29,640  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+16:09:17,875  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:09:23,207  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:09:32,989  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:09:34,441  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:09:36,208  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:09:38,717  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:09:52,648  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:10:21,363  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:10:35,468  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+16:11:13,270  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+16:11:41,038  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+16:12:06,234  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+16:12:32,567  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+16:12:53,708  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+16:13:18,210  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+16:13:51,721  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+16:14:08,540  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+16:14:43,732  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+16:15:04,606  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+16:15:24,275  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+16:17:21,035  INFO main TestListener:onTestSuccess:33 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+16:32:48,287  INFO main TestListener:onTestFailure:46 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:36:37,948  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:37:21,021  INFO main TestListener:onTestFailure:47 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:39:39,782  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:39:47,392  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:42:26,577  INFO main TestListener:onTestFailure:47 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:43:06,155  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:43:11,457  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:43:19,846  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:43:21,250  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:43:23,620  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:43:25,257  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:43:38,356  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:44:47,469  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:45:22,243  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:45:30,789  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:45:37,978  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:45:39,319  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:45:40,660  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:45:42,734  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:46:00,137  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:46:23,340  INFO main TestListener:onTestSuccess:40 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:46:52,906  INFO main TestListener:onTestFailure:47 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+17:14:40,732  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+17:14:45,598  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+17:14:52,942  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+17:14:54,813  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+17:14:56,887  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+17:14:59,071  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+17:15:18,563  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+17:15:40,191  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+17:15:53,337  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+17:16:16,166  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+17:16:41,677  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+17:17:01,918  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+17:17:28,318  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+17:17:48,238  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+17:18:14,427  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+17:18:36,004  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+17:18:51,002  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+17:19:07,480  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+17:19:31,072  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+17:19:47,864  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+17:21:36,127  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+17:42:37,460  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+17:42:43,513  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+17:42:56,522  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+17:42:58,550  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+17:43:00,157  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+17:43:01,982  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+17:43:14,945  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+17:43:38,826  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+17:43:58,637  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+17:44:38,445  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+17:45:12,466  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+17:45:36,816  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+17:46:01,321  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+17:46:25,468  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+17:46:53,063  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+17:47:23,465  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+17:47:37,129  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+17:47:54,849  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+17:48:17,513  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+17:48:33,049  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+17:50:18,696  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+17:58:11,176  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+17:58:16,511  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+17:58:25,729  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+17:58:27,663  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+17:58:29,410  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+17:58:31,688  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+17:58:46,662  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+17:59:06,190  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ArchiveFunction' - FAILED
+17:59:36,840  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+18:14:56,274  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+18:15:01,031  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+18:15:09,719  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+18:15:10,998  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+18:15:12,542  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+18:15:14,243  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+18:15:26,503  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+18:15:46,998  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ArchiveFunction' - FAILED
+18:16:00,288  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+18:16:22,936  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+18:16:47,721  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+18:17:07,281  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.DeleteFunction' - FAILED
+18:17:27,340  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+18:17:49,894  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+18:18:08,799  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ReportSpam' - FAILED
+18:18:32,305  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+18:18:45,828  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+18:19:01,208  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+18:19:22,187  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+18:19:36,849  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+18:21:13,883  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+18:27:27,609  INFO main FirefoxTests:sendTextMessagests:26 - Message{addressee=me, subject=Subject, text= - some text, time=6:27 pm}
+18:27:29,153  INFO main FirefoxTests:sendTextMessagests:29 - Message{addressee=, subject=, text=, time=}
+18:27:29,278  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ReportSpam' - FAILED
+18:30:14,522  INFO main FirefoxTests:sendTextMessagests:26 - Message{addressee=me, subject=Subject, text= - some text, time=6:30 pm}
+18:30:16,144  INFO main FirefoxTests:sendTextMessagests:29 - Message{addressee=, subject=, text=, time=}
+18:30:16,254  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ReportSpam' - FAILED
+18:33:00,422  INFO main FirefoxTests:sendTextMessagests:26 - Message{addressee=me, subject=Subject, text= - some text, time=6:33 pm}
+18:33:02,012  INFO main FirefoxTests:sendTextMessagests:29 - Message{addressee=me, subject=Subject, text= - some text, time=6:33 pm}
+18:33:02,168  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+18:34:20,002  INFO main FirefoxTests:sendTextMessagests:26 - Message{addressee=me, subject=Subject, text= - some text, time=6:34 pm}
+18:34:21,546  INFO main FirefoxTests:sendTextMessagests:29 - Message{addressee=, subject=, text=, time=}
+18:34:21,687  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ReportSpam' - FAILED
+11:46:08,128  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+11:46:12,782  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+11:46:19,779  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+11:46:20,998  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+11:46:22,294  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+11:46:23,981  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+11:46:35,772  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+11:48:09,383  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+11:48:14,271  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+11:48:21,704  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+11:48:23,000  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+11:48:25,061  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+11:48:27,232  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+11:48:39,131  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+11:51:20,592  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+11:51:26,332  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+11:51:33,198  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+11:51:34,887  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+11:51:36,326  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+11:51:37,921  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+11:51:49,777  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+11:52:08,983  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ArchiveFunction' - FAILED
+11:52:27,235  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+11:52:51,290  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+11:53:18,035  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+11:53:37,789  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.DeleteFunction' - FAILED
+11:53:56,636  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+11:54:14,028  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+11:54:30,497  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=11:54 am}
+11:54:32,061  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=11:54 am}
+11:54:32,202  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+11:54:54,762  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+11:55:08,388  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+11:55:22,904  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+11:55:40,842  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+11:55:53,951  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+11:57:33,376  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+12:22:24,810  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:22:29,934  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:22:36,775  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:22:38,181  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:22:39,524  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:22:42,336  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:22:54,269  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:23:12,342  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.ArchiveFunction' - FAILED
+12:23:24,541  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AttachBigFile' - PASSED
+12:23:44,753  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+12:24:10,510  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+12:24:30,565  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.DeleteFunction' - FAILED
+12:24:49,543  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+12:25:08,115  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+12:25:26,858  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=12:25 pm}
+12:25:28,920  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=12:25 pm}
+12:25:29,092  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+12:25:51,881  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+12:26:06,985  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+12:26:23,230  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+12:26:44,363  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+12:26:59,076  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+12:28:21,954  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+12:47:13,292  INFO main FirefoxTests:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=12:47 pm}
+12:47:14,745  INFO main FirefoxTests:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=12:47 pm}
+12:47:14,745  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+12:47:29,895  INFO main FirefoxTests:deleteSelectedMessage:28 - Message{addressee=me, subject=Subject, text= - some text, time=12:47 pm}
+12:47:31,457  INFO main FirefoxTests:deleteSelectedMessage:32 - Message{addressee=me, subject=Subject, text= - some text, time=12:47 pm}
+12:47:31,457  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+12:47:49,544  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=12:47 pm}
+12:47:51,293  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=12:47 pm}
+12:47:51,449  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+13:25:23,639  INFO main FirefoxTests:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=1:25 pm}
+13:25:25,811  INFO main FirefoxTests:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=1:25 pm}
+13:25:25,826  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+13:25:41,530  INFO main FirefoxTests:deleteSelectedMessage:28 - Message{addressee=me, subject=Subject, text= - some text, time=1:25 pm}
+13:25:43,182  INFO main FirefoxTests:deleteSelectedMessage:32 - Message{addressee=me, subject=Subject, text= - some text, time=1:25 pm}
+13:25:43,182  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+13:25:57,877  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=1:25 pm}
+13:25:59,849  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=1:25 pm}
+13:25:59,987  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+13:40:42,388  INFO main FirefoxTests:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=1:40 pm}
+13:40:48,290  INFO main FirefoxTests:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=1:40 pm}
+13:40:48,305  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+13:41:25,416  INFO main FirefoxTests:deleteSelectedMessage:28 - Message{addressee=me, subject=Subject, text= - some text, time=1:41 pm}
+13:41:31,161  INFO main FirefoxTests:deleteSelectedMessage:32 - Message{addressee=me, subject=Subject, text= - some text, time=1:41 pm}
+13:41:31,161  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+13:41:48,538  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=1:41 pm}
+13:41:54,830  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=1:41 pm}
+13:41:54,986  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
