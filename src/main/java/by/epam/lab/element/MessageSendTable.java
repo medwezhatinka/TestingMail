@@ -2,23 +2,17 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package by.epam.lab.element.html;
+package by.epam.lab.element;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ru.yandex.qatools.htmlelements.annotations.Block;
-import ru.yandex.qatools.htmlelements.element.Button;
-import ru.yandex.qatools.htmlelements.element.HtmlElement;
-import ru.yandex.qatools.htmlelements.element.TextInput;
 
 /**
  *
  * @author Alina_Shumel
  */
-@Block(
-        @FindBy(css = "div.aaZ"))
-public class MessageSendTable extends HtmlElement {
+public class MessageSendTable extends AbstractContainer {
 
     @FindBy(xpath = "//textarea[@name='to']")
     private TextInput toTextBox;
@@ -26,12 +20,16 @@ public class MessageSendTable extends HtmlElement {
     private TextInput subjectTextBox;
     @FindBy(xpath = "//div[text()='Send']")
     private Button sendBtn;
-    @FindBy(xpath = "//div[@aria-label='Compose reply']/iframe")
+    @FindBy(xpath = "//div[@class='Am Al editable']/iframe")
     private WebElement iframe;
     @FindBy(xpath = "//table[@class='cf Ht']/tbody/tr/td[2]/img[@alt='Close']")
     private WebElement closeButton;
     @FindBy(xpath = "//table[@class='IZ']/tbody/tr/td[4]/div")
     private Button attachFile;
+
+    public MessageSendTable(WebElement wrappedElement) {
+        super(wrappedElement);
+    }
 
     public WebElement getIframe() {
         return iframe;

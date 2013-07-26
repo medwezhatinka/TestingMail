@@ -87,9 +87,8 @@
             </run>
         </groups>
         <classes>
-   <class name="by.epam.lab.test.ArchiveFunction"/>
-     <class name="by.epam.lab.test.DeleteFunction"/>
-      <class name="by.epam.lab.test.ReportSpam"/>      
+   <class name="by.epam.lab.test.AddForwarding"/>
+    
         </classes>
     </test>
 

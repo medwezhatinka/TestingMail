@@ -22,7 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  * @author Alina_Shumel
  */
-public class AbstractPage implements IAbstractPage {
+public class AbstractPage {
 
     private WebDriver driver;
     final static String JSstr = "var result = document.evaluate(\"%s\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);"
@@ -63,33 +63,29 @@ public class AbstractPage implements IAbstractPage {
     }
 
     public void wait(final String id) {
-         Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-       .withTimeout(30, TimeUnit.SECONDS)
-       .pollingEvery(5, TimeUnit.SECONDS)
-       .ignoring(NoSuchElementException.class);
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(30, TimeUnit.SECONDS)
+                .pollingEvery(5, TimeUnit.SECONDS)
+                .ignoring(NoSuchElementException.class);
 
-   WebElement element = wait.until(new Function<WebDriver, WebElement>() {
-     public WebElement apply(WebDriver driver) {
-       return driver.findElement(By.id(id));
-     }
-   });
-      //  WebDriverWait wait = new WebDriverWait(driver, 30);
-      //  wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
+        WebElement element = wait.until(new Function<WebDriver, WebElement>() {
+            public WebElement apply(WebDriver driver) {
+                return driver.findElement(By.id(id));
+            }
+        });
     }
 
     public void waitfor(final String xpath) {
-           Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-       .withTimeout(30, TimeUnit.SECONDS)
-       .pollingEvery(5, TimeUnit.SECONDS)
-       .ignoring(NoSuchElementException.class);
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(30, TimeUnit.SECONDS)
+                .pollingEvery(5, TimeUnit.SECONDS)
+                .ignoring(NoSuchElementException.class);
 
-   WebElement element = wait.until(new Function<WebDriver, WebElement>() {
-     public WebElement apply(WebDriver driver) {
-       return driver.findElement(By.xpath(xpath));
-     }
-   });
-      //  WebDriverWait wait = new WebDriverWait(driver, 30);
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+        WebElement element = wait.until(new Function<WebDriver, WebElement>() {
+            public WebElement apply(WebDriver driver) {
+                return driver.findElement(By.xpath(xpath));
+            }
+        });
     }
 
     public void reload() {
@@ -158,7 +154,6 @@ public class AbstractPage implements IAbstractPage {
         }
     }
 
-   
     public void waitForClickable(String xpath) {
         WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));

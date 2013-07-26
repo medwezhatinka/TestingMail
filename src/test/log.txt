@@ -642,3 +642,47 @@
 13:41:48,538  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=1:41 pm}
 13:41:54,830  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=1:41 pm}
 13:41:54,986  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+15:45:53,040  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:46:02,071  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:46:15,133  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:46:16,274  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:46:17,539  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:46:19,508  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:46:28,133  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+15:48:47,523  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:48:51,960  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:49:07,085  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:49:09,210  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:49:10,632  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:49:12,788  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:49:53,616  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+15:55:03,530  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:55:08,155  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:55:20,453  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:55:21,531  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:55:24,500  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:55:27,547  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:55:41,673  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+15:56:01,830  INFO main FirefoxTests:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=3:55 pm}
+15:56:07,971  INFO main FirefoxTests:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=3:55 pm}
+15:56:07,971  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+15:56:23,549  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+15:56:54,004  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+15:57:18,098  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+15:57:40,785  INFO main FirefoxTests:deleteSelectedMessage:28 - Message{addressee=me, subject=Subject, text= - some text, time=3:57 pm}
+15:57:46,926  INFO main FirefoxTests:deleteSelectedMessage:32 - Message{addressee=me, subject=Subject, text= - some text, time=3:57 pm}
+15:57:46,926  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+15:58:09,207  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+15:58:29,817  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+15:58:46,958  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=3:58 pm}
+15:58:55,130  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=3:58 pm}
+15:58:55,364  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+15:59:19,333  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+15:59:35,552  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+15:59:53,536  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+16:00:11,818  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+16:00:32,068  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+16:01:39,287  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+16:12:09,658  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+16:21:20,730  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+16:30:52,129  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
