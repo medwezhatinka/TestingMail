@@ -58,11 +58,7 @@
             <artifactId>selenium-support</artifactId>
             <version>2.33.0</version>
         </dependency>
-        <dependency>
-            <groupId>ru.yandex.qatools.htmlelements</groupId>
-            <artifactId>htmlelements-java</artifactId>
-            <version>1.11</version>
-        </dependency>
+        
         <dependency>
             <groupId>org.easytesting</groupId>
             <artifactId>fest-swing-testng</artifactId>

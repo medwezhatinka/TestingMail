@@ -686,3 +686,5 @@
 16:12:09,658  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
 16:21:20,730  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
 16:30:52,129  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+16:33:36,674  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+16:41:10,886  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
