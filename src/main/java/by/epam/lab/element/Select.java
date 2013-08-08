@@ -14,12 +14,14 @@ import org.openqa.selenium.WebElement;
  */
 public class Select extends AbstractElement {
 
+    public static  final String option = "option";
+    
     public Select(WebElement wrappedElement) {
         super(wrappedElement);
     }
 
     public List<WebElement> getOptions() {
-        return wrappedElement.findElements(By.tagName("option"));
+        return wrappedElement.findElements(By.tagName(option));
     }
 
     public void select(int position) {

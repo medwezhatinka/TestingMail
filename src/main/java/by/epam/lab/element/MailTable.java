@@ -13,13 +13,13 @@ import org.openqa.selenium.support.FindBy;
  */
 public class MailTable extends AbstractContainer {
 
-    @FindBy(xpath = ".//td[@class='yX xY ']/div[@class='yW']/span")
+    @FindBy(xpath = Locator.mailTableAddr)
     public WebElement addressee;
-    @FindBy(xpath = ".//td[@class='xY ']/.//span[@class='y2']/preceding-sibling::span")
+    @FindBy(xpath = Locator.mailTableSubject)
     public WebElement subject;
-    @FindBy(xpath = ".//td[@class='xY ']/.//span[@class='y2']")
+    @FindBy(xpath = Locator.mailTableText)
     public WebElement text;
-    @FindBy(xpath = ".//td[@class='xW xY ']/span")
+    @FindBy(xpath = Locator.mailTableTime)
     public WebElement time;
 
     public MailTable(WebElement wrappedElement) {

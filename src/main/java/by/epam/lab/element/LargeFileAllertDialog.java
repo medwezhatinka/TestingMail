@@ -13,9 +13,9 @@ import org.openqa.selenium.support.FindBy;
  */
 public class LargeFileAllertDialog extends AbstractContainer {
 
-    @FindBy(css = "span.Kj-JD-K7-K0")
+    @FindBy(css = Locator.largeFileAllertMessage)
     private TextInput message;
-    @FindBy(css = "span.Kj-JD-K7-Jq")
+    @FindBy(css = Locator.largeFileAllertCancel)
     private Button cancel;
 
     public LargeFileAllertDialog(WebElement wrappedElement) {

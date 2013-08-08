@@ -33,7 +33,7 @@ public class AddForwarding extends MessagePreparation {
         mailPage = loginPage.Login(CORRECT_EMAIL_TESTEROVSKI, CORRECT_PASSWORD_TESTEROVSKI)
                 .waitForSuccessfulLogin();
         mailPage.openMessage();
-        OpenedMessage openedMessage = new OpenedMessage(driver);
+        OpenedMessage openedMessage = new OpenedMessage(getDriver());
         String code = Util.substringAfter(openedMessage.getMessageText(), CONFIRMATION_CODE, 10);
         mailPage.logout();
         mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)

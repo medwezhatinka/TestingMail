@@ -29,7 +29,7 @@ public class AddSignature extends MessagePreparation {
                 .waitForSuccessfullSending()
                 .reload();
         mailPage.openMessage();
-        OpenedMessage openedMessage = new OpenedMessage(driver);
+        OpenedMessage openedMessage = new OpenedMessage(getDriver());
         Assert.assertEquals(openedMessage.getSignatureText(), SIGNATURE);
     }
 

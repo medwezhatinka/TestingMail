@@ -5,7 +5,6 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
-import static by.epam.lab.test.FirefoxTests.driver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -15,11 +14,11 @@ import org.testng.annotations.BeforeMethod;
  *
  * @author Alina_Shumel
  */
-public class MessagePreparation extends FirefoxTests {
+public class MessagePreparation extends BasePreparation {
 
     @BeforeClass(groups = MESSAGE)
     public void tearUpClass() {
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(getDriver());
         loginPage.open(HOME_PAGE_URL);
         mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
                 .waitForSuccessfulLogin();

@@ -688,3 +688,98 @@
 16:30:52,129  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
 16:33:36,674  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
 16:41:10,886  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+10:34:54,436  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+10:35:41,433  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+10:36:55,682  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+10:38:50,234  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddForwarding' - PASSED
+10:45:50,425  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+10:45:55,143  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+10:46:06,499  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+10:46:07,764  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+10:46:09,217  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+10:46:10,842  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+10:46:24,103  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+10:46:43,582  INFO main FirefoxTests:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=10:46 am}
+10:46:49,784  INFO main FirefoxTests:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=10:46 am}
+10:46:49,784  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+10:47:04,405  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+10:47:30,616  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+10:47:57,390  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+10:48:16,822  INFO main FirefoxTests:deleteSelectedMessage:28 - Message{addressee=me, subject=Subject, text= - some text, time=10:48 am}
+10:48:23,196  INFO main FirefoxTests:deleteSelectedMessage:32 - Message{addressee=me, subject=Subject, text= - some text, time=10:48 am}
+10:48:23,196  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+10:48:49,298  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+10:49:16,306  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+10:49:37,035  INFO main FirefoxTests:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=10:49 am}
+10:49:43,111  INFO main FirefoxTests:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=10:49 am}
+10:49:43,267  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+10:50:07,245  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithAttachedFile' - PASSED
+10:50:23,303  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+10:50:41,955  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+10:51:06,109  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+10:51:29,153  INFO main TestListener:onTestSuccess:31 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+10:51:50,838  INFO main TestListener:onTestFailure:36 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+11:10:14,272  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+11:11:01,239  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=11:10 am}
+11:11:12,614  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=11:10 am}
+11:11:12,614  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+11:11:45,381  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+11:11:45,381  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+11:12:11,957  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+11:12:21,842  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+11:12:39,737  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+11:12:42,751  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+11:12:46,062  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+11:12:49,747  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+11:13:18,714  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+11:13:52,085  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+11:14:26,815  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+11:15:30,262  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+11:16:07,943  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+11:17:18,482  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+11:17:18,482  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+11:23:53,684  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+11:24:15,107  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+11:25:17,199  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+11:25:21,857  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+11:25:25,701  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+11:25:30,843  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+11:26:56,518  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+11:28:37,041  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=11:28 am}
+11:28:56,998  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=11:28 am}
+11:28:56,998  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+11:31:32,547  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+11:31:44,469  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+11:32:16,157  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+11:32:20,704  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+11:32:24,860  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+11:32:30,017  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+11:33:49,861  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+11:35:50,791  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+11:36:08,478  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+11:36:50,475  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+11:36:53,834  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+11:36:57,928  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+11:37:02,740  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+11:55:05,742  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+11:57:34,655  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=11:56 am}
+11:57:55,294  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=11:56 am}
+11:57:55,294  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+11:59:34,477  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+11:59:34,492  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+12:00:34,672  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:00:56,629  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:01:38,681  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:01:42,479  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:01:46,198  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:01:51,043  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:10:50,112  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:36:39,411  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+12:36:51,490  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+12:37:11,725  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+12:37:14,819  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+12:37:18,725  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+12:37:23,194  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+12:38:27,615  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+12:52:21,285  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+12:52:21,660  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED

@@ -12,6 +12,10 @@ import org.openqa.selenium.WebElement;
  */
 public class TextInput extends AbstractElement {
 
+    public static final String textarea = "textarea";
+    public static final String value = "value";
+    public static final String empty = "";
+
     public TextInput(WebElement wrappedElement) {
         super(wrappedElement);
     }
@@ -35,13 +39,13 @@ public class TextInput extends AbstractElement {
      * @return Text entered into the text input.
      */
     public String getText() {
-        if ("textarea".equals(getWrappedElement().getTagName())) {
+        if (textarea.equals(getWrappedElement().getTagName())) {
             return getWrappedElement().getText();
         }
 
-        String enteredText = getWrappedElement().getAttribute("value");
+        String enteredText = getWrappedElement().getAttribute(value);
         if (enteredText == null) {
-            return "";
+            return empty;
         }
         return enteredText;
     }

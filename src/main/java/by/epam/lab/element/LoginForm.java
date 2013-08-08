@@ -13,11 +13,11 @@ import org.openqa.selenium.support.FindBy;
  */
 public class LoginForm extends AbstractContainer {
 
-    @FindBy(id = "Email")
+    @FindBy(id = Locator.loginFormEmail)
     WebElement Email;
-    @FindBy(id = "Passwd")
+    @FindBy(id = Locator.loginFormPassword)
     WebElement Passwd;
-    @FindBy(id = "signIn")
+    @FindBy(id = Locator.loginFormSignInButton)
     Button signIn;
 
     public LoginForm(WebElement wrappedElement) {

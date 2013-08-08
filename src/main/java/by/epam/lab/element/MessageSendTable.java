@@ -14,18 +14,20 @@ import org.openqa.selenium.support.FindBy;
  */
 public class MessageSendTable extends AbstractContainer {
 
-    @FindBy(xpath = "//textarea[@name='to']")
+    @FindBy(xpath = Locator.sendMessageTo)
     private TextInput toTextBox;
-    @FindBy(name = "subjectbox")
+    @FindBy(name = Locator.sendMessageSubject)
     private TextInput subjectTextBox;
-    @FindBy(xpath = "//div[text()='Send']")
+    @FindBy(xpath = Locator.sendMessageSendButton)
     private Button sendBtn;
-    @FindBy(xpath = "//div[@class='Am Al editable']/iframe")
+    @FindBy(xpath = Locator.sendMessageIFrame)
     private WebElement iframe;
-    @FindBy(xpath = "//table[@class='cf Ht']/tbody/tr/td[2]/img[@alt='Close']")
+    @FindBy(xpath = Locator.sendMessageCloseButton)
     private WebElement closeButton;
-    @FindBy(xpath = "//table[@class='IZ']/tbody/tr/td[4]/div")
+    @FindBy(xpath = Locator.sendMessageAttachButton)
     private Button attachFile;
+    
+    private static final String body = "body";
 
     public MessageSendTable(WebElement wrappedElement) {
         super(wrappedElement);
@@ -46,7 +48,7 @@ public class MessageSendTable extends AbstractContainer {
     }
 
     public void fillText(String msgBody) {
-        WebElement text = iframe.findElement(By.tagName("body"));
+        WebElement text = iframe.findElement(By.tagName(body));
         text.sendKeys(msgBody);
 
     }

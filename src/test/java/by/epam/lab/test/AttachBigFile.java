@@ -26,7 +26,7 @@ public class AttachBigFile extends MessagePreparation {
                 .composeClick();
         page.createMessageWithAttachedFile(CORRECT_EMAIL_TEST, SUBJECT,
                 TEXT, SCRIPT_PATH, attachFile);
-        Assert.assertEquals(page.getAllertTextandClose(), LARGE_FILE_MESSAGE);
+        Assert.assertEquals(LARGE_FILE_MESSAGE, page.getAllertTextandClose());
     }
 
     @BeforeMethod(groups = MESSAGE)

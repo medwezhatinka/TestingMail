@@ -13,11 +13,11 @@ import org.openqa.selenium.support.FindBy;
  */
 public class AddEmailWindow extends AbstractContainer {
 
-    @FindBy(xpath = "//div[@class='PN']/input")
+    @FindBy(xpath = Locator.addEmailWindowEmail)
     private TextInput email;
-    @FindBy(name = "next")
+    @FindBy(name = Locator.addEmailWindowNext)
     private Button next;
-    @FindBy(name = "ok")
+    @FindBy(name = Locator.addEmailWindowOk)
     private Button ok;
 
     public AddEmailWindow(WebElement wrappedElement) {

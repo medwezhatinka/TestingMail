@@ -7,7 +7,7 @@ package by.epam.lab.test;
 import by.epam.lab.element.message.Message;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.page.TrashPage;
-import static by.epam.lab.test.FirefoxTests.log;
+import static by.epam.lab.test.BasePreparation.log;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;

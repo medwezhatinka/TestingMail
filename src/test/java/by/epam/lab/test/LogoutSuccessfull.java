@@ -26,7 +26,7 @@ public class LogoutSuccessfull extends LoginPreparation {
     @BeforeClass(groups = Group.AUTENTIFICATION)
     @Override
     public void tearUpClass() {
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(getDriver());
         loginPage.open(HOME_PAGE_URL);
         mailPage = loginPage
                 .Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)

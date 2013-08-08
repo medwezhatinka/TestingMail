@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestSuiteAllGroups" parallel="false"  >
+<suite name="TestSuiteAllGroups" parallel="tests" thread-count="3" >
    
   
 <!--
@@ -9,7 +9,8 @@
                  <class name="by.epam.lab.test.ArchiveFunction"/>
                  <class name="by.epam.lab.test.AttachBigFile"/>
                  <class name="by.epam.lab.test.AutentificationSuccessful"/>
-                 <class name="by.epam.lab.test.LogoutSuccessfull"/>
+                
+     <class name="by.epam.lab.test.LogoutSuccessfull"/>
                  <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
                  <class name="by.epam.lab.test.CheckOptions"/>
                  <class name="by.epam.lab.test.DeleteFunction"/>
@@ -30,17 +31,19 @@
      
 </test>
 -->
-<!--
-    <test name="autentification">
+
+  
+ <test name="autentification">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="platform" value="WINDOWS"/>
         <groups >
             <run>
                 <include name="autentification"/>
-          
             </run>
         </groups>
         <classes>
             <class name="by.epam.lab.test.AutentificationSuccessful"/>
-            <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
+        <class name="by.epam.lab.test.AutentificationWithInvalidPassword"/>
             <class name="by.epam.lab.test.LogoutSuccessfull"/>
             <class name="by.epam.lab.test.LoginWithEmptyCreditations"/>
             <class name="by.epam.lab.test.LoginWithEmptyUsername"/>
@@ -49,7 +52,11 @@
         </classes>
     </test>
 
+
+
  <test name="Test2">
+      <parameter name="browser" value="firefox"/>
+<parameter name="platform" value="WINDOWS"/>
         <groups >
             <run>
                         
@@ -58,28 +65,50 @@
             </run>
         </groups>
         <classes>
-        
             <class name="by.epam.lab.test.SendTextMessage"/> 
             <class name="by.epam.lab.test.ArchiveFunction"/>
             <class name="by.epam.lab.test.AttachBigFile"/>
             <class name="by.epam.lab.test.AddSignature"/>
             <class name="by.epam.lab.test.CheckOptions"/>
+            <class name="by.epam.lab.test.SendMessageWithAttachedFile"/>
             <class name="by.epam.lab.test.DeleteFunction"/>
             <class name="by.epam.lab.test.ReadMessageFont"/>
             <class name="by.epam.lab.test.ReadMessageSelected"/>
             <class name="by.epam.lab.test.ReportSpam"/>
-            <class name="by.epam.lab.test.SendMessageWithAttachedFile"/>
+           <!-- <class name="by.epam.lab.test.SendMessageWithAttachedFile"/>
             <class name="by.epam.lab.test.SendMessageWithEmptyEmail"/>
             <class name="by.epam.lab.test.UnreadMessageFont"/>
             <class name="by.epam.lab.test.SendTextMessage"/>
             <class name="by.epam.lab.test.UnreadMessageSelected"/>
             <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>
-            <class name="by.epam.lab.test.AddForwarding"/>
+            <class name="by.epam.lab.test.AddForwarding"/>-->
                  
-        </classes>
+         </classes>
  </test>
--->
-
+<!--
+ <test name="Test3">
+     <parameter name="browser" value="firefox"/>
+     <parameter name="platform" value="LINUX"/>
+     <groups >
+         <run>
+                        
+             <include name="message"/>
+                     
+         </run>
+     </groups>
+     <classes>
+            
+    
+         <class name="by.epam.lab.test.SendMessageWithEmptyEmail"/>
+         <class name="by.epam.lab.test.UnreadMessageFont"/>
+         <class name="by.epam.lab.test.SendTextMessage"/>
+         <class name="by.epam.lab.test.UnreadMessageSelected"/>
+         <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>
+         <class name="by.epam.lab.test.AddForwarding"/>
+                 
+     </classes>
+ </test>-->
+<!--
     <test name="Test2">
         <groups >
             <run>
@@ -91,7 +120,7 @@
     
         </classes>
     </test>
-
+-->
 <!--
     <test name="Test3">
         <groups >

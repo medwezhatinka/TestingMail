@@ -16,19 +16,21 @@ import org.openqa.selenium.support.FindBy;
  */
 public class OptionsPanel extends AbstractContainer {
 
-    @FindBy(xpath = "//div[@aria-label='Archive']")
+    @FindBy(xpath = Locator.optionsPanelArchive)
     private Button archive;
-    @FindBy(xpath = "//div[@aria-label='Report spam']")
+    @FindBy(xpath = Locator.optionsPanelReportSpam)
     private Button report_spam;
-    @FindBy(xpath = "//div[@aria-label='Delete']")
+    @FindBy(xpath = Locator.optionsPanelDelete)
     private Button delete;
-    @FindBy(xpath = "//div[@aria-label='Labels']")
+    @FindBy(xpath = Locator.optionsPanelLabels)
     private WebElement labels;
-    @FindBy(xpath = "//div[@aria-label='Move to']")
+    @FindBy(xpath = Locator.optionsPanelMoveTo)
     private WebElement move;
-    @FindBy(xpath = "//div[@aria-label='Select']")
+    @FindBy(xpath = Locator.optionsPanelSelect)
     private WebElement select;
 
+    private static final String template = ".//div[text()='%s']";
+    
     public OptionsPanel(WebElement wrappedElement) {
         super(wrappedElement);
     }
@@ -64,7 +66,7 @@ public class OptionsPanel extends AbstractContainer {
 
     public void selectMessages(String status, WebDriver driver) {
         new Actions(driver).moveToElement(select).click().perform();
-        String xpath = String.format(".//div[text()='%s']", status);
+        String xpath = String.format(template, status);
         driver.findElement(By.xpath(xpath)).click();
 
     }
