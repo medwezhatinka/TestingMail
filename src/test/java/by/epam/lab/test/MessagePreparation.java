@@ -9,11 +9,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
 /**
  *
  * @author Alina_Shumel
  */
+@Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class MessagePreparation extends BasePreparation {
 
     @BeforeClass(groups = MESSAGE)

@@ -29,6 +29,7 @@ public class SendTextMessage extends MessagePreparation {
     }
 
     @BeforeMethod(groups = MESSAGE)
+   
     public void tearUpMethod1() {
         page = mailPage.composeClick();
     }

@@ -7,11 +7,13 @@ package by.epam.lab.test;
 import by.epam.lab.page.LoginPage;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 
 /**
  *
  * @author Alina_Shumel
  */
+@Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class LoginPreparation extends BasePreparation {
 
     @BeforeClass(groups = AUTENTIFICATION)

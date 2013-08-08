@@ -783,3 +783,424 @@
 12:38:27,615  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
 12:52:21,285  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
 12:52:21,660  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+14:49:50,793  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+14:50:15,060  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+14:51:01,516  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+14:51:05,688  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+14:51:09,610  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+14:51:15,142  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+14:52:42,194  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+14:54:45,058  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=2:54 pm}
+14:55:06,308  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=2:54 pm}
+14:55:06,308  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+15:06:56,616  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:07:31,709  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:08:13,537  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:08:16,818  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:08:21,927  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:08:29,396  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:10:17,800  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:10:35,706  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:11:14,158  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:11:20,189  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:11:46,392  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:11:51,814  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:18:16,150  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+15:18:16,166  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+15:18:47,306  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:18:59,399  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:19:20,586  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:19:22,711  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:19:25,367  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:19:28,852  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:21:42,209  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+15:21:42,209  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+15:24:48,436  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+15:26:18,070  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=3:25 pm}
+15:26:35,478  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=3:25 pm}
+15:26:35,478  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+15:27:14,622  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:27:27,889  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:28:03,345  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:28:06,548  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:28:10,345  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:28:15,533  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:31:48,475  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+15:31:48,506  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+15:32:53,304  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:33:07,148  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:33:50,023  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:33:53,210  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:33:56,866  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:34:02,804  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:35:16,694  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+15:46:24,498  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+15:46:33,638  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+15:46:45,278  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+15:46:45,278  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+15:46:47,528  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+15:46:51,294  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+15:47:05,544  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+15:47:09,372  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+15:47:22,559  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+15:49:17,494  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+15:49:31,510  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+15:51:49,210  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+15:52:04,163  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+15:52:48,287  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+15:53:49,145  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+15:54:01,989  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+15:54:27,426  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+15:54:52,441  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+15:55:48,049  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+15:55:51,643  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+15:55:55,627  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+15:56:01,190  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+15:56:03,065  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:01:17,902  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+16:01:23,636  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:01:37,917  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:01:41,636  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:01:52,542  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:01:52,558  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:01:54,886  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:01:58,636  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:02:13,323  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:05:41,788  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+16:05:50,834  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:06:20,678  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+16:06:25,553  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:06:33,396  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:06:47,552  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:06:55,286  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:07:12,895  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:07:15,536  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:07:18,755  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:07:22,442  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:07:22,692  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:07:29,348  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:08:01,582  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:08:44,222  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=4:08 pm}
+16:08:56,737  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=4:08 pm}
+16:08:56,753  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:09:01,893  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:10:11,954  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+16:11:30,547  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+16:12:58,529  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+16:13:04,670  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:13:31,263  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+16:13:35,747  INFO TestNG BasePreparation:tearDownTest:88 - AFTER TEST RUNNING!
+16:13:40,044  INFO TestNG BasePreparation:tearUpTest:81 - BEFORE TEST RUNNING!
+16:14:23,965  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:15:05,902  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=4:14 pm}
+16:15:16,199  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=4:14 pm}
+16:15:16,199  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:18:40,648  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUNNING!
+16:18:57,257  INFO TestNG BasePreparation:tearDownTest:92 - AFTER TEST RUNNING!
+16:19:01,194  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUNNING!
+16:19:14,866  INFO TestNG BasePreparation:tearDownTest:92 - AFTER TEST RUNNING!
+16:19:18,538  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUNNING!
+16:19:32,616  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:19:32,647  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:19:34,912  INFO TestNG BasePreparation:tearDownTest:92 - AFTER TEST RUNNING!
+16:20:01,162  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUNNING!
+16:20:18,396  INFO TestNG BasePreparation:tearDownTest:92 - AFTER TEST RUNNING!
+16:20:21,990  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUNNING!
+16:20:36,192  INFO TestNG BasePreparation:tearDownTest:92 - AFTER TEST RUNNING!
+16:20:40,083  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUNNING!
+16:20:53,083  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:20:53,083  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:20:55,239  INFO TestNG BasePreparation:tearDownTest:92 - AFTER TEST RUNNING!
+16:26:17,577  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:26:45,217  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+16:26:49,888  INFO TestNG BasePreparation:tearDownTest:89 - AFTER TEST RUNNING!
+16:26:53,982  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:27:26,731  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:28:08,621  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=4:27 pm}
+16:28:19,715  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=4:27 pm}
+16:28:19,715  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:28:24,730  INFO TestNG BasePreparation:tearDownTest:89 - AFTER TEST RUNNING!
+16:28:31,433  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:28:42,418  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:28:42,714  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:28:54,027  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:28:58,464  INFO TestNG BasePreparation:tearDownTest:89 - AFTER TEST RUNNING!
+16:29:02,808  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:29:12,026  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:29:15,339  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:29:18,948  INFO TestNG BasePreparation:tearDownTest:89 - AFTER TEST RUNNING!
+16:29:19,729  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:29:22,870  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:29:24,229  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:29:24,448  INFO TestNG BasePreparation:tearDownTest:89 - AFTER TEST RUNNING!
+16:29:35,057  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:29:35,167  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:29:36,823  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:29:37,635  INFO TestNG BasePreparation:tearDownTest:89 - AFTER TEST RUNNING!
+16:29:41,463  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:30:02,228  INFO TestNG BasePreparation:tearDownTest:89 - AFTER TEST RUNNING!
+16:30:21,791  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:30:35,993  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:32:11,515  INFO main BasePreparation:tearUpSuite:64 - BEFORE SUITE RUNNING!
+16:32:19,797  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:32:37,346  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUNNING!
+16:32:41,050  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:32:55,067  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUNNING!
+16:32:58,849  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUNNING!
+16:33:10,100  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:33:10,116  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:33:12,054  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUNNING!
+16:36:37,733  INFO TestNG BasePreparation:tearUpTest:75 - BEFORE TEST RUN!
+16:37:10,203  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+16:37:52,079  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=4:37 pm}
+16:38:02,517  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=4:37 pm}
+16:38:02,517  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+16:38:08,877  INFO TestNG BasePreparation:tearDownTest:81 - AFTER TEST RUN!
+16:38:13,705  INFO TestNG BasePreparation:tearUpTest:75 - BEFORE TEST RUN!
+16:38:46,409  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+16:38:51,190  INFO TestNG BasePreparation:tearDownTest:81 - AFTER TEST RUN!
+16:38:57,519  INFO TestNG BasePreparation:tearUpTest:75 - BEFORE TEST RUN!
+16:39:10,504  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+16:39:18,629  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+16:39:35,004  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+16:39:37,661  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+16:39:40,708  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+16:39:44,192  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+16:39:44,380  INFO TestNG BasePreparation:tearDownTest:81 - AFTER TEST RUN!
+16:41:42,070  INFO TestNG BasePreparation:tearUpTest:75 - BEFORE TEST RUN!
+16:41:53,945  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:41:53,960  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+16:41:56,117  INFO TestNG BasePreparation:tearDownTest:81 - AFTER TEST RUN!
+16:41:59,898  INFO TestNG BasePreparation:tearUpTest:75 - BEFORE TEST RUN!
+16:42:18,726  INFO TestNG BasePreparation:tearDownTest:81 - AFTER TEST RUN!
+16:42:22,304  INFO TestNG BasePreparation:tearUpTest:75 - BEFORE TEST RUN!
+16:42:39,054  INFO TestNG BasePreparation:tearDownTest:81 - AFTER TEST RUN!
+17:35:46,593  INFO TestNG BasePreparation:tearUpTest:83 - BEFORE TEST RUN!
+17:38:03,794  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+17:41:59,017  INFO TestNG BasePreparation:tearUpTest:68 - Browser=internet explorer
+17:41:59,017  INFO TestNG BasePreparation:tearUpTest:68 - Browser=firefox
+17:41:59,032  INFO TestNG BasePreparation:tearUpTest:70 - Platform=WINDOWS
+17:41:59,017  INFO TestNG BasePreparation:tearUpTest:68 - Browser=firefox
+17:41:59,032  INFO TestNG BasePreparation:tearUpTest:70 - Platform=LINUX
+17:41:59,032  INFO TestNG BasePreparation:tearUpTest:70 - Platform=WINDOWS
+17:46:58,233  INFO TestNG BasePreparation:tearUpTest:68 - Browser=internet explorer
+17:46:58,233  INFO TestNG BasePreparation:tearUpTest:70 - Platform=WINDOWS
+17:46:58,233  INFO TestNG BasePreparation:tearUpTest:68 - Browser=firefox
+17:46:58,233  INFO TestNG BasePreparation:tearUpTest:70 - Platform=WINDOWS
+17:46:58,233  INFO TestNG BasePreparation:tearUpTest:68 - Browser=firefox
+17:46:58,233  INFO TestNG BasePreparation:tearUpTest:70 - Platform=LINUX
+18:23:46,851  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:24:01,445  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+18:24:12,458  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+18:24:32,167  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+18:24:34,951  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+18:24:38,268  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+18:24:42,022  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+18:24:42,491  INFO TestNG BasePreparation:tearDownTest:91 - AFTER TEST RUN!
+18:24:49,702  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:25:19,891  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+18:26:04,768  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=6:25 pm}
+18:26:15,382  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=6:25 pm}
+18:26:15,382  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+18:26:20,853  INFO TestNG BasePreparation:tearDownTest:91 - AFTER TEST RUN!
+18:26:28,121  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:26:50,162  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+18:26:55,101  INFO TestNG BasePreparation:tearDownTest:91 - AFTER TEST RUN!
+18:28:46,244  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:29:00,777  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:29:00,792  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:29:02,839  INFO TestNG BasePreparation:tearDownTest:91 - AFTER TEST RUN!
+18:29:06,183  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:29:18,685  INFO TestNG BasePreparation:tearDownTest:91 - AFTER TEST RUN!
+18:29:22,013  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:29:34,342  INFO TestNG BasePreparation:tearDownTest:91 - AFTER TEST RUN!
+18:33:56,142  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+18:34:49,831  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:34:49,846  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:34:52,034  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:35:07,597  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:35:22,675  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:36:56,068  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:36:56,084  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:36:57,990  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:38:29,787  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+18:40:15,099  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=6:39 pm}
+18:40:32,552  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=6:39 pm}
+18:40:32,552  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+18:40:40,583  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:41:12,130  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+18:41:16,943  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:42:55,785  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:42:55,785  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:42:57,989  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:44:06,706  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+18:45:42,967  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=6:45 pm}
+18:46:01,189  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=6:45 pm}
+18:46:01,189  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+18:46:08,815  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:46:36,866  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+18:46:41,960  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:47:28,810  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:47:28,810  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:47:31,139  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:48:01,362  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+18:48:06,769  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:48:33,491  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+18:50:11,032  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=6:49 pm}
+18:50:28,845  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=6:49 pm}
+18:50:28,845  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+18:50:35,767  INFO TestNG BasePreparation:tearDownTest:101 - AFTER TEST RUN!
+18:52:42,132  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:52:45,382  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:52:50,789  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+18:52:59,383  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:52:59,383  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+18:53:04,274  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+18:53:20,650  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+18:53:25,962  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+18:54:01,308  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+18:55:52,154  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=6:55 pm}
+18:56:10,841  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=6:55 pm}
+18:56:10,841  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+18:56:19,045  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:01:39,500  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:01:53,953  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:01:58,516  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:02:19,516  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+19:02:19,579  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+19:02:24,438  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:02:29,422  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:02:42,954  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:03:30,095  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+19:05:09,361  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=7:04 pm}
+19:05:29,127  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=7:04 pm}
+19:05:29,127  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+19:05:37,611  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:07:06,986  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:07:10,580  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:07:14,846  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:07:34,439  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:07:42,143  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+19:07:44,174  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:07:49,471  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:07:59,830  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+19:08:43,471  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+19:08:46,783  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+19:08:50,502  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+19:08:55,189  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+19:08:55,689  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:10:22,502  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:10:26,689  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:10:35,455  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:10:58,908  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:11:04,721  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:11:09,830  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:11:24,518  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+19:11:24,518  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AutentificationSuccessful' - FAILED
+19:11:27,627  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:15:07,922  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:15:11,516  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:15:23,063  INFO TestNG BasePreparation:tearUpTest:85 - BEFORE TEST RUN!
+19:15:41,360  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:15:51,141  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:15:56,078  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:16:00,781  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+19:16:24,516  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+19:17:10,859  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+19:17:14,422  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+19:17:18,453  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+19:17:23,015  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+19:17:24,093  INFO TestNG BasePreparation:tearDownTest:93 - AFTER TEST RUN!
+19:18:49,531  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:18:53,062  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:19:05,203  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:19:30,062  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:19:35,406  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:19:40,109  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:19:44,984  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+19:20:09,813  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+19:20:57,828  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+19:21:01,094  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+19:21:05,391  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+19:21:10,657  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+19:21:11,594  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:24:30,282  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:24:33,782  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:24:38,235  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:25:11,672  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:25:23,719  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+19:25:27,110  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:25:32,688  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+19:25:32,719  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+19:25:45,453  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+19:26:17,750  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:26:26,969  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+19:26:30,719  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+19:26:34,094  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+19:26:38,859  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+19:26:39,359  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:27:31,843  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:27:40,859  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:27:44,453  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:28:17,531  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:28:23,843  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:28:30,687  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+19:28:38,062  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+19:28:38,155  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.SendTextMessage' - FAILED
+19:28:50,296  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:28:56,280  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+19:29:39,983  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+19:29:43,264  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+19:29:47,983  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+19:29:54,217  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+19:29:54,764  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:31:10,717  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:31:14,092  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:31:18,873  INFO TestNG BasePreparation:tearUpTest:82 - BEFORE TEST RUN!
+19:31:38,295  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+19:31:51,248  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:31:55,342  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+19:32:06,357  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:32:18,779  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+19:32:21,138  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+19:32:24,029  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+19:32:27,717  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+19:32:29,138  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:32:44,591  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+19:34:23,997  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=7:33 pm}
+19:34:42,606  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=7:33 pm}
+19:34:42,606  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ArchiveFunction' - PASSED
+19:34:50,575  INFO TestNG BasePreparation:tearDownTest:90 - AFTER TEST RUN!
+19:41:39,040  INFO TestNG BasePreparation:tearUpTest:78 - BEFORE TEST RUN!
+19:41:42,790  INFO TestNG BasePreparation:tearUpTest:78 - BEFORE TEST RUN!
+19:41:54,040  INFO TestNG BasePreparation:tearUpTest:78 - BEFORE TEST RUN!
+19:42:20,181  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationSuccessful' - PASSED
+19:42:41,150  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AutentificationWithInvalidPassword' - PASSED
+19:43:11,868  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ReadMessageSelected' - PASSED
+19:43:30,181  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LogoutSuccessfull' - PASSED
+19:43:34,509  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyCreditations' - PASSED
+19:43:41,494  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithEmptyUsername' - PASSED
+19:43:46,603  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+19:43:50,697  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.LoginWithQuotedUsername' - PASSED
+19:43:52,291  INFO TestNG BasePreparation:tearDownTest:86 - AFTER TEST RUN!
+19:44:14,509  INFO TestNG BasePreparation:reportSpam:26 - Message{addressee=me, subject=Subject, text= - some text, time=7:43 pm}
+19:44:25,760  INFO TestNG BasePreparation:reportSpam:29 - Message{addressee=me, subject=Subject, text= - some text, time=7:43 pm}
+19:44:27,228  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ReportSpam' - PASSED
+19:44:59,557  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendMessageWithEmptyEmail' - PASSED
+19:45:40,541  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.UnreadMessageFont' - PASSED
+19:46:04,104  INFO TestNG BasePreparation:sendTextMessagests:27 - Message{addressee=me, subject=Subject, text= - some text, time=7:45 pm}
+19:46:23,869  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SendTextMessage' - PASSED
+19:46:28,651  INFO TestNG BasePreparation:sendTextMessagests:31 - Message{addressee=me, subject=Subject, text= - some text, time=7:46 pm}
+19:46:28,651  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.ArchiveFunction' - FAILED
+19:47:34,869  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.UnreadMessageSelected' - PASSED
+19:48:05,979  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AttachBigFile' - FAILED
+19:48:10,854  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.SengMessageWithIncorrectEmail' - PASSED
+19:51:43,150  INFO TestNG TestListener:onTestFailure:35 - Test: 'by.epam.lab.test.AddForwarding' - FAILED
+19:51:58,916  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.AddSignature' - PASSED
+19:52:24,556  INFO TestNG BasePreparation:tearDownTest:86 - AFTER TEST RUN!
+19:54:45,212  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.CheckOptions' - PASSED
+19:57:24,572  INFO TestNG BasePreparation:deleteSelectedMessage:28 - Message{addressee=me, subject=Subject, text= - some text, time=7:56 pm}
+19:57:48,619  INFO TestNG BasePreparation:deleteSelectedMessage:32 - Message{addressee=me, subject=Subject, text= - some text, time=7:56 pm}
+19:57:48,619  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.DeleteFunction' - PASSED
+19:59:54,181  INFO TestNG TestListener:onTestSuccess:30 - Test: 'by.epam.lab.test.ReadMessageFont' - PASSED
+20:01:37,072  INFO TestNG BasePreparation:tearDownTest:86 - AFTER TEST RUN!

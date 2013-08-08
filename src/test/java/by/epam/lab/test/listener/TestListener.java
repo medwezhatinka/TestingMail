@@ -27,13 +27,14 @@ public class TestListener extends TestListenerAdapter {
 
     @Override
     public void onTestSuccess(ITestResult tr) {
-        log.info( "Test: '" + tr.getMethod().getTestClass().getName() + "' - PASSED");
+        log.info("Test: '" + tr.getMethod().getTestClass().getName() + "' - PASSED");
     }
 
     @Override
     public void onTestFailure(ITestResult testResult) {
         log.info("Test: '" + testResult.getMethod().getTestClass().getName() + "' - FAILED");
         try {
+            BasePreparation.setAugmenter();
             Calendar currentDate = Calendar.getInstance();
             String workDir = System.getProperty("user.dir") + "\\screenshos\\";
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMMdd_HH_mm_ss");
@@ -43,7 +44,7 @@ public class TestListener extends TestListenerAdapter {
             FileUtils.copyFile(scrFile, new File(workDir + dateNow + ".jpg"));
             Reporter.log("<img src=\"file:///" + workDir + dateNow + ".JPG\" alt=\"\"/><br />");
         } catch (IOException ex) {
-            log.error( ex);
+            log.error(ex);
         }
     }
 }
