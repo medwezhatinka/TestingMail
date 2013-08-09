@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.page.SendMessagePage;
 import static by.epam.lab.test.datareader.TestData.data;
 import java.io.File;

@@ -4,7 +4,7 @@
  */
 package by.epam.lab.test.listener;
 
-import by.epam.lab.test.BasePreparation;
+import by.epam.lab.test.preparation.BasePreparation;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;

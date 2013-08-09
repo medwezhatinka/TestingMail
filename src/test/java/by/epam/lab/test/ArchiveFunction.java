@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.element.message.Message;
 import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;

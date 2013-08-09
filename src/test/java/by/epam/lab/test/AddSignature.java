@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.page.OpenedMessage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.page.Settings;

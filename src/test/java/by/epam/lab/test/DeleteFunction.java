@@ -4,10 +4,11 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.element.message.Message;
 import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;
-import static by.epam.lab.test.BasePreparation.log;
+import static by.epam.lab.test.preparation.BasePreparation.log;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;

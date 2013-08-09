@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.preparation.LoginPreparation;
 import junit.framework.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Listeners;

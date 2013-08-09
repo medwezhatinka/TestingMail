@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package by.epam.lab.page;
+package by.epam.lab.util;
 
 import java.io.File;
 

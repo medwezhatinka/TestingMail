@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.test.preparation.LoginPreparation;
 import by.epam.lab.page.LoginPage;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;

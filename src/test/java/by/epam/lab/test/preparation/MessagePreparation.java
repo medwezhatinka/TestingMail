@@ -2,10 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package by.epam.lab.test;
+package by.epam.lab.test.preparation;
 
+import by.epam.lab.test.preparation.BasePreparation;
 import by.epam.lab.page.LoginPage;
-import static by.epam.lab.test.BasePreparation.log;
+import static by.epam.lab.test.preparation.BasePreparation.log;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;

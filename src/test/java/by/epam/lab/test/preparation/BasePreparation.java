@@ -2,11 +2,12 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package by.epam.lab.test;
+package by.epam.lab.test.preparation;
 
 import by.epam.lab.test.datareader.TestData;
 import by.epam.lab.page.LoginPage;
 import by.epam.lab.page.MailPage;
+import by.epam.lab.test.Group;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
