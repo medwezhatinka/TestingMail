@@ -6,6 +6,7 @@ package by.epam.lab.test;
 
 import by.epam.lab.page.SendMessagePage;
 import static by.epam.lab.test.Group.MESSAGE;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,10 +22,10 @@ public class SengMessageWithIncorrectEmail extends MessagePreparation {
 
     SendMessagePage page;
 
-    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})
     public void sendMessageWithIncorrectEmailtst() {
-        page.sendMessage(INCORRECT_EMAIL, SUBJECT, TEXT);
-        Assert.assertEquals(page.getAllertTextAndAccept(), INCORRECT_EMAIL_MESSAGE);
+        page.sendMessage(data.get(Key.INCORRECT_EMAIL), data.get(Key.SUBJECT), data.get(Key.TEXT));
+        Assert.assertEquals(page.getAllertTextAndAccept(), data.get(Key.INCORRECT_EMAIL_MESSAGE));
     }
 
     @BeforeMethod(groups = MESSAGE)

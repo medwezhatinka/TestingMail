@@ -5,6 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.SendMessagePage;
+import static by.epam.lab.test.datareader.TestData.data;
 import java.io.File;
 import org.junit.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -20,18 +21,18 @@ public class AttachBigFile extends MessagePreparation {
 
     File attachFile;
 
-    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})
     public void allertDialogMessageAssertion() {
         SendMessagePage page = mailPage
                 .composeClick();
-        page.createMessageWithAttachedFile(CORRECT_EMAIL_TEST, SUBJECT,
-                TEXT, SCRIPT_PATH, attachFile);
-        Assert.assertEquals(LARGE_FILE_MESSAGE, page.getAllertTextandClose());
+        page.createMessageWithAttachedFile(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT),
+                data.get(Key.TEXT), data.get(Key.SCRIPT_PATH), attachFile);
+        Assert.assertEquals(data.get(Key.LARGE_FILE_MESSAGE), page.getAllertTextandClose());
     }
 
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-        attachFile = new File(LARGE_FILE_PATH);
+        attachFile = new File(data.get(Key.LARGE_FILE_PATH));
     }
 }

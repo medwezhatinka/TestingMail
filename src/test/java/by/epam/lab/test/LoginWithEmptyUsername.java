@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -17,9 +18,9 @@ public class LoginWithEmptyUsername extends LoginPreparation {
 
     @Test(enabled = true, groups = {AUTENTIFICATION})
     public void autentificationFailedtst() {
-        loginPage.inputPassword(CORRECT_PASSWORD_TEST)
+        loginPage.inputPassword(data.get(Key.CORRECT_PASSWORD_TEST))
                 .loginClick();
-        Assert.assertEquals(loginPage.getErrorEmailMessage(), ENTER_EMAIL_MESSAGE);
+        Assert.assertEquals(loginPage.getErrorEmailMessage(), data.get(Key.ENTER_EMAIL_MESSAGE));
 
     }
 }

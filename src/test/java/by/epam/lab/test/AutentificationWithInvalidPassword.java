@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -18,9 +19,9 @@ public class AutentificationWithInvalidPassword extends LoginPreparation {
     @Test(enabled = true, groups = {AUTENTIFICATION})
     public void autentificationFailedtst() {
 
-        loginPage.Login(CORRECT_EMAIL_TEST, INCORRECT_PASSWORD_TEST);
+        loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.INCORRECT_PASSWORD_TEST));
         Assert.assertEquals(loginPage.getErrorPasswordMessage(),
-                MESSAGE_INCORRECT_PASSWORD_OR_EMAIL);
+                data.get(Key.MESSAGE_INCORRECT_PASSWORD_OR_EMAIL));
 
     }
 }

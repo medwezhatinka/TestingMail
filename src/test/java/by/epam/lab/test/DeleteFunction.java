@@ -8,6 +8,7 @@ import by.epam.lab.element.message.Message;
 import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;
 import static by.epam.lab.test.BasePreparation.log;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -38,7 +39,7 @@ public class DeleteFunction extends MessagePreparation {
     public void tearUpMethod() {
 
         SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
+        page.sendMessage(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT))
                 .waitForSuccessfullSending()
                 .reload();
     }

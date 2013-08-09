@@ -7,6 +7,7 @@ package by.epam.lab.test;
 import by.epam.lab.page.OpenedMessage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.page.Settings;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,22 +23,22 @@ public class AddSignature extends MessagePreparation {
 
     private Settings settings;
 
-    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})
     public void signatureAdd() {
         SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
+        page.sendMessage(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT))
                 .waitForSuccessfullSending()
                 .reload();
         mailPage.openMessage();
         OpenedMessage openedMessage = new OpenedMessage(getDriver());
-        Assert.assertEquals(openedMessage.getSignatureText(), SIGNATURE);
+        Assert.assertEquals(openedMessage.getSignatureText(), data.get(Key.SIGNATURE));
     }
 
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
         settings = mailPage.openSettings();
-        settings.addSignature(SIGNATURE)
+        settings.addSignature(data.get(Key.SIGNATURE))
                 .save_changes();
     }
 

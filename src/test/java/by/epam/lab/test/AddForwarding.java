@@ -9,6 +9,7 @@ import by.epam.lab.page.Util;
 import by.epam.lab.page.OpenedMessage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.page.Settings;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.junit.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
@@ -24,39 +25,39 @@ public class AddForwarding extends MessagePreparation {
     Settings settings;
     SendMessagePage page;
 
-    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})
     public void forwarding() throws InterruptedException, Exception {
         settings = mailPage.openSettings();
         settings.openForwardingTab();
-        settings.addForwardingAddress(CORRECT_EMAIL_TESTEROVSKI);
+        settings.addForwardingAddress(data.get(Key.CORRECT_EMAIL_TESTEROVSKI));
         mailPage.logout();
-        mailPage = loginPage.Login(CORRECT_EMAIL_TESTEROVSKI, CORRECT_PASSWORD_TESTEROVSKI)
+        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TESTEROVSKI), data.get(Key.CORRECT_PASSWORD_TESTEROVSKI))
                 .waitForSuccessfulLogin();
         mailPage.openMessage();
         OpenedMessage openedMessage = new OpenedMessage(getDriver());
-        String code = Util.substringAfter(openedMessage.getMessageText(), CONFIRMATION_CODE, 10);
+        String code = Util.substringAfter(openedMessage.getMessageText(), data.get(Key.CONFIRMATION_CODE), 10);
         mailPage.logout();
-        mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
+        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
                 .waitForSuccessfulLogin();
         settings = mailPage.openSettings();
         settings.openForwardingTab();
         settings.verifyCode(code);
         settings.forwardOn();
         mailPage.logout();
-        mailPage = loginPage.Login(CORRECT_EMAIL_TESTOID, CORRECT_PASSWORD_TESTOID)
+        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TESTOID), data.get(Key.CORRECT_PASSWORD_TESTOID))
                 .waitForSuccessfulLogin();
         page = mailPage.composeClick();
-        page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
+        page.sendMessage(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT))
                 .waitForSuccessfullSending()
                 .logout();
-        mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
+        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
                 .waitForSuccessfulLogin();
-        mailPage.waitForMessageFrom(NAME, 60);
+        mailPage.waitForMessageFrom(data.get(Key.NAME), 60);
         Message message1 = mailPage.getMessage();
         mailPage.logout();
-        mailPage = loginPage.Login(CORRECT_EMAIL_TESTEROVSKI, CORRECT_PASSWORD_TESTEROVSKI)
+        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TESTEROVSKI), data.get(Key.CORRECT_PASSWORD_TESTEROVSKI))
                 .waitForSuccessfulLogin();
-        mailPage.waitForMessageFrom(NAME, 30);
+        mailPage.waitForMessageFrom(data.get(Key.NAME), 30);
         Message message2 = mailPage.getMessage();
         Assert.assertTrue(message1.equalsContent(message2));
     }
@@ -65,7 +66,7 @@ public class AddForwarding extends MessagePreparation {
     @Override
     public void tearDownMethod() {
         mailPage.logout();
-        mailPage = loginPage.Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
+        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
                 .waitForSuccessfulLogin();
         settings = mailPage.openSettings();
         settings.openForwardingTab();

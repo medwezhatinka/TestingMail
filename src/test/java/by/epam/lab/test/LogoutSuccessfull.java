@@ -5,6 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -17,19 +18,19 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class LogoutSuccessfull extends LoginPreparation {
 
-    @Test(enabled = true, groups = {AUTENTIFICATION})//, dependsOnMethods = {"by.epam.lab.test.AutentificationSuccessfull.autentificationSuccesfulltst"})
+    @Test(enabled = true, groups = {AUTENTIFICATION})
     public void logoutSuccessfultst() {
         mailPage.logout();
-        Assert.assertTrue(mailPage.getLocation().contains(MAIL_PAGE_LOCATION), "location : " + mailPage.getLocation());
+        Assert.assertTrue(mailPage.getLocation().contains(data.get(Key.MAIL_PAGE_LOCATION)), "location : " + mailPage.getLocation());
     }
 
     @BeforeClass(groups = Group.AUTENTIFICATION)
     @Override
     public void tearUpClass() {
         loginPage = new LoginPage(getDriver());
-        loginPage.open(HOME_PAGE_URL);
+        loginPage.open(data.get(Key.HOME_PAGE_URL));
         mailPage = loginPage
-                .Login(CORRECT_EMAIL_TEST, CORRECT_PASSWORD_TEST)
+                .Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
                 .waitForSuccessfulLogin();
     }
 }

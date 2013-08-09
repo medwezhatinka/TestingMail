@@ -20,9 +20,13 @@ public class TestNGAppender extends AppenderSkeleton {
     }
 
     public void close() {
+        Reporter.log("Close <br/>");
     }
 
     public boolean requiresLayout() {
+        Reporter.log("requiresLayout run <br/>");
         return true;
     }
+
+   
 }

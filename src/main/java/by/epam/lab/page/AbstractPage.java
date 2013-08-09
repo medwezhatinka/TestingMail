@@ -28,6 +28,8 @@ public class AbstractPage {
     private WebDriver driver;
     public static final Logger log = Logger.getLogger(AbstractPage.class);
     public static final String scrollJS = "arguments[0].scrollIntoView();";
+    public static final int forWait = 30;
+    public static final int timeout = 5;
 
     public AbstractPage(WebDriver driver) {
         this.driver = driver;
@@ -67,8 +69,8 @@ public class AbstractPage {
 
     public void wait(final String id) {
         Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-                .withTimeout(30, TimeUnit.SECONDS)
-                .pollingEvery(5, TimeUnit.SECONDS)
+                .withTimeout(forWait, TimeUnit.SECONDS)
+                .pollingEvery(timeout, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class);
 
         WebElement element = wait.until(new Function<WebDriver, WebElement>() {
@@ -80,8 +82,8 @@ public class AbstractPage {
 
     public void waitfor(final String xpath) {
         Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-                .withTimeout(30, TimeUnit.SECONDS)
-                .pollingEvery(5, TimeUnit.SECONDS)
+                .withTimeout(forWait, TimeUnit.SECONDS)
+                .pollingEvery(timeout, TimeUnit.SECONDS)
                 .ignoring(NoSuchElementException.class);
 
         WebElement element = wait.until(new Function<WebDriver, WebElement>() {
@@ -104,12 +106,12 @@ public class AbstractPage {
     }
 
     public void waitforPresentText(String xpath, String text) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, forWait);
         wait.until(ExpectedConditions.textToBePresentInElement(By.xpath(xpath), text));
     }
 
     public void waitforNotVisible(String css) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, forWait);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(css)));
     }
 
@@ -134,7 +136,7 @@ public class AbstractPage {
     }
 
     public void waitForElement(WebElement webElement) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, forWait);
         wait.until(ExpectedConditions.visibilityOf(webElement));
     }
 
@@ -156,7 +158,7 @@ public class AbstractPage {
     }
 
     public void waitForClickable(String xpath) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(driver, forWait);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
 
     }

@@ -5,6 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.LoginPage;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -18,18 +19,12 @@ public class LoginPreparation extends BasePreparation {
 
     @BeforeClass(groups = AUTENTIFICATION)
     public void tearUpClass() {
-        
         loginPage = new LoginPage(getDriver());
-        loginPage.open(HOME_PAGE_URL);
-
+        loginPage.open(data.get(Key.HOME_PAGE_URL));
     }
 
     @AfterClass(groups = AUTENTIFICATION)
     public void tearDownClass() {
-        /*
-         * nothing to do
-         * before/after class not work 
-         * without override annotation
-         */
+        log.info("After class run");
     }
 }

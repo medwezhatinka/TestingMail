@@ -5,6 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.page.SendMessagePage;
+import static by.epam.lab.test.datareader.TestData.data;
 import java.io.File;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -16,24 +17,17 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class SendMessageWithAttachedFile extends MessagePreparation {
 
-    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {AUTENTIFICATION}, description = "not ready")
+    @Test(enabled = true, groups = {MESSAGE})
     public void sendMessageWithAttachedFile() throws InterruptedException {
-        File attachFile = new File(SMALL_FILE_PATH);
-
-
+        File attachFile = new File(data.get(Key.SMALL_FILE_PATH));
         SendMessagePage page = mailPage
                 .composeClick();
-        page.createMessageWithAttachedFile(CORRECT_EMAIL_TEST, SUBJECT,
-                TEXT, SCRIPT_PATH, attachFile)
+        page.createMessageWithAttachedFile(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT),
+                data.get(Key.TEXT), data.get(Key.SCRIPT_PATH), attachFile)
                 .waitforsuccessfulAttach(attachFile)
                 .send()
                 .waitForSuccessfullSending()
                 .reload();
-
-        org.testng.Assert.assertEquals(mailPage.getMessageAddressee().getText(), ME);
-
-
-
-
+        org.testng.Assert.assertEquals(mailPage.getMessageAddressee().getText(), data.get(Key.ME));
     }
 }

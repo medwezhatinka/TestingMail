@@ -26,9 +26,9 @@ public class AutentificationSuccessful extends LoginPreparation {
     public void autorization() {
 
         mailPage = loginPage
-                .Login(CORRECT_EMAIL_PART_TEST, CORRECT_PASSWORD_TEST)
+                .Login(data.get(Key.CORRECT_EMAIL_PART_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
                 .waitForSuccessfulLogin();
-        Assert.assertTrue(mailPage.getLocation().contains(MAIL_PAGE_LOCATION));
+        Assert.assertTrue(mailPage.getLocation().contains(data.get(Key.MAIL_PAGE_LOCATION)));
 
     }
 }

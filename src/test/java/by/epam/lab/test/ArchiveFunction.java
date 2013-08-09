@@ -8,6 +8,7 @@ import by.epam.lab.element.message.Message;
 import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.test.datareader.TestData;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -22,7 +23,7 @@ public class ArchiveFunction extends MessagePreparation {
 
     Message inputMessage;
 
-    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})
     public void sendTextMessagests() {
         log.info(inputMessage.toString());
         mailPage.archiveMessage();
@@ -30,15 +31,13 @@ public class ArchiveFunction extends MessagePreparation {
         Message moveMessage = allMailPage.getMessage();
         log.info(moveMessage.toString());
         Assert.assertTrue(inputMessage.equals(moveMessage));
-        
-        
     }
 
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
         SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(TestData.CORRECT_EMAIL_TEST, TestData.SUBJECT, TestData.TEXT)
+        page.sendMessage(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT),data.get(Key.TEXT))
                 .waitForSuccessfullSending()
                 .reload();
         mailPage.selectMessage();

@@ -7,6 +7,7 @@ package by.epam.lab.test;
 import by.epam.lab.element.message.Message;
 import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;
+import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -19,7 +20,7 @@ import org.testng.annotations.Test;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public class ReportSpam extends MessagePreparation {
 
-    @Test(enabled = true, groups = {MESSAGE})//, dependsOnGroups = {"autentification"})
+    @Test(enabled = true, groups = {MESSAGE})
     public void reportSpam() {
         mailPage.selectMessage();
         Message inputMessage = mailPage.getMessage();
@@ -35,7 +36,7 @@ public class ReportSpam extends MessagePreparation {
     @Override
     public void tearUpMethod() {
         SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(CORRECT_EMAIL_TEST, SUBJECT, TEXT)
+        page.sendMessage(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT))
                 .waitForSuccessfullSending()
                 .reload();
 
