@@ -5,7 +5,7 @@
 package by.epam.lab.test;
 
 import by.epam.lab.element.message.Message;
-import by.epam.lab.page.AllMailPage;
+import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;
 import by.epam.lab.test.datareader.TestData;
 import org.testng.Assert;
@@ -26,7 +26,7 @@ public class ArchiveFunction extends MessagePreparation {
     public void sendTextMessagests() {
         log.info(inputMessage.toString());
         mailPage.archiveMessage();
-        AllMailPage allMailPage = mailPage.goToAllMailPage();
+        MailTablePage allMailPage = mailPage.goToAllMailPage();
         Message moveMessage = allMailPage.getMessage();
         log.info(moveMessage.toString());
         Assert.assertTrue(inputMessage.equals(moveMessage));

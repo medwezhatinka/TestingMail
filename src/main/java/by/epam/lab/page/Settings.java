@@ -27,35 +27,35 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class Settings extends AbstractPage {
 
-    @FindBy(xpath = "//h2[text()='Settings']")
+    @FindBy(xpath = PageLocator.SETTINGS_TITLE)
     private WebElement title;
-    @FindBy(xpath = "//input[@name='sx_sg']")
+    @FindBy(xpath = PageLocator.SIGNATURE_ON)
     private WebElement signature_on;
-    @FindBy(xpath = "//div[@aria-label='Signature']/iframe")
+    @FindBy(xpath = PageLocator.SIGNATURE_IFRAME)
     private WebElement signature_iframe;
-    @FindBy(tagName = "body")
+    @FindBy(tagName = PageLocator.SIGNATURE_INPUT)
     private TextInput signature_input;
-    @FindBy(how = How.XPATH, using = ".//button[contains(.,'Save Changes')]")
+    @FindBy(how = How.XPATH, using = PageLocator.SAVE_CHANGES_BUTTON)
     private Button save_changes;
-    @FindBy(how = How.XPATH, using = "//a[text()='Forwarding and POP/IMAP']")
+    @FindBy(how = How.XPATH, using = PageLocator.FORWARDING_TAB)
     private WebElement tab;
-    @FindBy(xpath = "//input[@value='Add a forwarding address']")
+    @FindBy(xpath = PageLocator.ADD_ADDRESS_BUTTON)
     private Button add_address;
-    @FindBy(xpath = "//body/div[@class='Kj-JD']")
+    @FindBy(xpath = PageLocator.ADD_ADDDRESS_WINDOW)
     private AddEmailWindow emailAddWindow;
-    @FindBy(xpath = "//div[@class='nH Tv1JD']/div/table/tbody/tr[1]/td[2]/div/div[3]/table/tbody/tr[4]/td[2]/input[@value='Verify']")
+    @FindBy(xpath = PageLocator.VERIFY_BUTTON)
     private Button verify;
-    @FindBy(xpath = "//div[@class='nH Tv1JD']/div/table/tbody/tr[1]/td[2]/div/div[3]/table/tbody/tr[4]/td[2]/input[1]")
+    @FindBy(xpath = PageLocator.VERIFY_CODE_INPUT)
     private TextInput verify_code;
-    @FindBy(xpath = "//input[@value='Proceed']")
+    @FindBy(xpath = PageLocator.PROCEED_BUTTON)
     private Button proceed;
-    @FindBy(xpath = "//div[@class='Kj-JD-Jz']/iframe")
+    @FindBy(xpath = PageLocator.FORM_WITH_EMAIL)
     private WebElement form;
-    @FindBy(xpath = "//table[@class='F cf zt']")
+    @FindBy(xpath = PageLocator.MESSAGES)
     private Table messageTable;
-    @FindBy(xpath = "//div/table[2]/tbody/tr/td/input[@name='sx_em']")
+    @FindBy(xpath = PageLocator.FORWARDING_ON)
     private WebElement forwarding_on;
-    @FindBy(xpath = "//table[@class='cf']/tbody/tr/td[2]/div/div/table[2]/tbody/tr/td[2]/span/select[1]")
+    @FindBy(xpath = PageLocator.REMOVE_FORWARDING)
     private Select remove_forwarding;
 
     public Settings(WebDriver driver) {
@@ -64,7 +64,7 @@ public class Settings extends AbstractPage {
 
     public Settings addSignature(String signature) {
         waitForElement(title);
-        ((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView();", signature_on);
+        ((JavascriptExecutor) getDriver()).executeScript(scrollJS, signature_on);
         signature_on.click();
         switchTo(signature_iframe);
         signature_input.sendKeys(signature);
@@ -75,9 +75,9 @@ public class Settings extends AbstractPage {
 
     public Settings save_changes() {
         ((JavascriptExecutor) getDriver())
-                .executeScript("arguments[0].scrollIntoView();", save_changes.getWrappedElement());
+                .executeScript(scrollJS, save_changes.getWrappedElement());
         WebDriverWait wait = new WebDriverWait(getDriver(), 30);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//button[contains(.,'Save Changes')]")));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PageLocator.SAVE_CHANGES_BUTTON)));
         save_changes.click();
         waitForElement(messageTable.getWrappedElement());
         return this;
@@ -86,7 +86,7 @@ public class Settings extends AbstractPage {
     public Settings deleteSignature() {
         waitForElement(title);
         ((JavascriptExecutor) getDriver())
-                .executeScript("arguments[0].scrollIntoView();", signature_on);
+                .executeScript(scrollJS, signature_on);
         switchTo(signature_iframe);
         timeout(1);
         signature_input.sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.END));
@@ -114,19 +114,18 @@ public class Settings extends AbstractPage {
 
     public void addForwardingAddress(String address) {
         add_address.click();
-        waitfor("//body/div[@class='Kj-JD']");
+        waitfor(PageLocator.FORWARD_DIALOD);
         emailAddWindow.inputEmail(address)
                 .clickNext();
         clickProceed(getDriver());
         waitForElement(emailAddWindow.getOk().getWrappedElement());
         emailAddWindow.clickOk();
         waitForElement(verify.getWrappedElement());
-
     }
 
     public void removeForwarding() {
         remove_forwarding.select(3);
-        acceptAllert();
+        acceptAlert();
     }
 
     public void verifyCode(String code) {
@@ -135,7 +134,6 @@ public class Settings extends AbstractPage {
                 .click()
                 .sendKeys(Keys.chord(Keys.DELETE))
                 .perform();
-
         verify_code.sendKeys(code);
         verify.click();
         waitForElement(forwarding_on);
@@ -144,7 +142,7 @@ public class Settings extends AbstractPage {
     public void forwardOn() {
         waitForElement(forwarding_on);
         forwarding_on.click();
-        javaScriptClick("//button[text()='Save Changes']", getDriver());
+        javaScriptClick(PageLocator.SAVE_CHANGES_BUTTON, getDriver());
         waitForElement(messageTable.getWrappedElement());
     }
 }

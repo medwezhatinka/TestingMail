@@ -92,7 +92,7 @@
 
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>test.xml</suiteXmlFile>
+                        <suiteXmlFile>test_local.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <property>

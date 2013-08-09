@@ -14,15 +14,16 @@ import org.openqa.selenium.support.FindBy;
  */
 public class OpenedMessage extends AbstractPage {
 
+    @FindBy(xpath = PageLocator.SHOW_ALL_CONTENT)
+    private WebElement showAllContent;
+    @FindBy(xpath = PageLocator.SIGNATURE)
+    private WebElement signature;
+    @FindBy(xpath = PageLocator.MESSAGE_BODY)
+    private WebElement messageBody;
+
     public OpenedMessage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//div[@aria-label='Show trimmed content']")
-    private WebElement showAllContent;
-    @FindBy(xpath = "//span[@class='HOEnZb adL']/font/div/div")
-    private WebElement signature;
-    @FindBy(xpath = "//div[@class='gs']/div[6]/div")
-    private WebElement messageBody;
 
     public String getSignatureText() {
         waitForElement(showAllContent);

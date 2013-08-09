@@ -16,17 +16,17 @@ import org.openqa.selenium.support.FindBy;
  */
 public class OptionsPanel extends AbstractContainer {
 
-    @FindBy(xpath = Locator.optionsPanelArchive)
+    @FindBy(xpath = Locator.OPTIONSPANEL_ARCHIVE)
     private Button archive;
-    @FindBy(xpath = Locator.optionsPanelReportSpam)
+    @FindBy(xpath = Locator.OPTIONSPANEL_REPORT_SPAM)
     private Button report_spam;
-    @FindBy(xpath = Locator.optionsPanelDelete)
+    @FindBy(xpath = Locator.OPTIONSPANEL_DELETE)
     private Button delete;
-    @FindBy(xpath = Locator.optionsPanelLabels)
+    @FindBy(xpath = Locator.OPTIONSPANEL_LABELS)
     private WebElement labels;
-    @FindBy(xpath = Locator.optionsPanelMoveTo)
+    @FindBy(xpath = Locator.OPTIONSPANEL_MOVE_TO)
     private WebElement move;
-    @FindBy(xpath = Locator.optionsPanelSelect)
+    @FindBy(xpath = Locator.OPTIONSPANEL_SELECT)
     private WebElement select;
 
     private static final String template = ".//div[text()='%s']";

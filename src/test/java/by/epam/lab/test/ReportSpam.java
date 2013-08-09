@@ -5,8 +5,8 @@
 package by.epam.lab.test;
 
 import by.epam.lab.element.message.Message;
+import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;
-import by.epam.lab.page.SpamPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -25,7 +25,7 @@ public class ReportSpam extends MessagePreparation {
         Message inputMessage = mailPage.getMessage();
         log.info(inputMessage.toString());
         mailPage.reportSpam();
-        SpamPage spamPage = mailPage.goToSpamPage();
+        MailTablePage spamPage = mailPage.goToSpamPage();
         log.info(spamPage.getMessage());
         Assert.assertTrue(inputMessage.equals(spamPage.getMessage()));
         

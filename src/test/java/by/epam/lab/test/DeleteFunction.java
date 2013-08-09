@@ -5,8 +5,8 @@
 package by.epam.lab.test;
 
 import by.epam.lab.element.message.Message;
+import by.epam.lab.page.MailTablePage;
 import by.epam.lab.page.SendMessagePage;
-import by.epam.lab.page.TrashPage;
 import static by.epam.lab.test.BasePreparation.log;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -27,7 +27,7 @@ public class DeleteFunction extends MessagePreparation {
         Message inputMessage = mailPage.getMessage();
          log.info(inputMessage.toString());
         mailPage.deleteMessage();
-        TrashPage trashPage = mailPage.goToTrashPage();
+        MailTablePage trashPage = mailPage.goToTrashPage();
         Message moveMessage = trashPage.getMessage();
          log.info(moveMessage.toString());
         Assert.assertTrue(inputMessage.equals(moveMessage));

@@ -13,13 +13,12 @@ import org.openqa.selenium.support.FindBy;
  *
  * @author Alina_Shumel
  */
-public class AllMailPage extends AbstractPage {
+public class MailTablePage extends AbstractPage {
 
-   @FindBy(xpath = ".//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]")
- //   @FindBy(xpath = "//table[@class='F cf zt']/tbody/tr[1]")
+    @FindBy(xpath = PageLocator.MAILTABLE)
     private MailTable messageTabe;
 
-    public AllMailPage(WebDriver driver) {
+    public MailTablePage(WebDriver driver) {
         super(driver);
     }
 

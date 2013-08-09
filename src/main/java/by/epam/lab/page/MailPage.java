@@ -22,30 +22,36 @@ import org.openqa.selenium.support.FindBy;
  */
 public class MailPage extends AbstractPage {
 
-    @FindBy(xpath = "//div[text()='COMPOSE']")
+    @FindBy(xpath = PageLocator.COMPOSE_BUTTON)
     @CacheLookup
     private Button composeButton;
-    @FindBy(xpath = "//table[@class='F cf zt']")
+    @FindBy(xpath = PageLocator.MESSAGE_TABLE)
     private WebElement messageTabe;
-    @FindBy(xpath = "//div[@class='ajl aib lKgBkb']/div/div/div/div/div/div/div/div/span/a")
+    @FindBy(xpath = PageLocator.INBOX)
     @CacheLookup
     private Button inbox;
-    @FindBy(xpath = "//div[@class='nH aqK']")
+    @FindBy(xpath = PageLocator.OPTIONS)
     private OptionsPanel options;
-    @FindBy(css = "div.n6 span")
+    @FindBy(css = PageLocator.MORE)
     private WebElement more;
-    @FindBy(xpath = "//a[@title='Trash']")
+    @FindBy(xpath = PageLocator.TRASH)
     private WebElement trash;
-    @FindBy(xpath = "//div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div/div/span[@class='nU n1']/a")
+    @FindBy(xpath = PageLocator.SPAM)
     private WebElement spam;
-    @FindBy(xpath = "//div/div/div/div[2]/div/div/div/span/a[@title='All Mail']")
+    @FindBy(xpath = PageLocator.ALL_MAIL)
     private WebElement allMail;
-    @FindBy(xpath = "//div[@class='nH']/div/div[2]/div/div[2]/div/div/div/div/div/div/div[2]/div[2]/div")
+    @FindBy(xpath = PageLocator.SETTINGS)
     private WebElement setting;
-    @FindBy(xpath = "//div[@id='ms']/div")
+    @FindBy(xpath = PageLocator.SETTINGS_SETTINGS)
     private WebElement setting_setting;
-    @FindBy(xpath = "//table[@class='F cf zt']")
+    @FindBy(xpath = PageLocator.MESSAGES)
     private Table messages;
+    
+    private String bold = "700";
+    private String normal = "400";
+    private String read = "Read";
+    private String unread = "Unread";
+    private String str_true = "true";
 
     public MailPage(WebDriver driver) {
         super(driver);
@@ -53,34 +59,28 @@ public class MailPage extends AbstractPage {
 
     public SendMessagePage composeClick() {
         composeButton.click();
-        waitfor("//table[@class='cf Ht']/tbody/tr/td/div");
+        waitfor(PageLocator.NEW_MESSAGE_WINDOW);
         return new SendMessagePage(getDriver());
-
     }
 
     public WebElement getMessageAddressee() {
-        return messageTabe.findElement(By.xpath("//tr/td[5]/div/span"));
-
-
+        return messageTabe.findElement(By.xpath(PageLocator.ADDRESSEE));
     }
 
     public String getText(WebElement webElement) {
         webElement.getText();
         return null;
-
     }
 
     public MailPage logout() {
-        wait("gbg4");
-        WebElement menu = findByID("gbg4");
+        wait(PageLocator.LOGOUT_BUTTON_PANEL);
+        WebElement menu = findByID(PageLocator.LOGOUT_BUTTON_PANEL);
         menu.click();
-        WebElement logout = findByID("gb_71");
+        WebElement logout = findByID(PageLocator.LOGOUT_BUTTON);
         logout.click();
-        acceptAllert();
-        wait("gaia_loginform");
+        acceptAlert();
+        wait(PageLocator.LOGINFORM);
         return this;
-
-
     }
 
     public MailPage openMessage() {
@@ -95,7 +95,7 @@ public class MailPage extends AbstractPage {
     }
 
     public MailPage selectMessage() {
-        messageTabe.findElement(By.xpath("//tr/td[2]/div/div")).click();
+        messageTabe.findElement(By.xpath(PageLocator.MESSAGE_CHECKBOX)).click();
         return this;
     }
 
@@ -106,45 +106,42 @@ public class MailPage extends AbstractPage {
         } else {
             return false;
         }
-
     }
 
     public Message getMessage() {
         Message message = new Message();
-        message.setAddressee(messageTabe.findElement(By.xpath("//tr/td[5]/div/span")).getText());
-        message.setSubject(messageTabe.findElement(By.xpath("//tr/td[6]/div//div/div/span")).getText());
-        message.setText(messageTabe.findElement(By.xpath("//tr/td[6]/div//div/div/span[2]")).getText());
-        message.setTime(messageTabe.findElement(By.xpath("//tr/td[8]/span")).getText());
+        message.setAddressee(messageTabe.findElement(By.xpath(PageLocator.ADDRESSEE)).getText());
+        message.setSubject(messageTabe.findElement(By.xpath(PageLocator.SUBJECT)).getText());
+        message.setText(messageTabe.findElement(By.xpath(PageLocator.TEXT)).getText());
+        message.setTime(messageTabe.findElement(By.xpath(PageLocator.TIME)).getText());
 
         return message;
 
     }
 
-    public TrashPage goToTrashPage() {
+    public MailTablePage goToTrashPage() {
         more.click();
         waitForElement(trash);
         trash.click();
-        waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
-        return new TrashPage(getDriver());
-
+        waitfor(PageLocator.MESSAGE_MOVE);
+        return new MailTablePage(getDriver());
     }
 
-    public SpamPage goToSpamPage() {
+    public MailTablePage goToSpamPage() {
         more.click();
         waitForElement(spam);
         spam.click();
-        waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
-        return new SpamPage(getDriver());
+        waitfor(PageLocator.MESSAGE_MOVE);
+        return new MailTablePage(getDriver());
 
     }
 
-    public AllMailPage goToAllMailPage() {
+    public MailTablePage goToAllMailPage() {
         more.click();
         waitForElement(allMail);
         allMail.click();
-        waitfor("//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]");
-
-        return new AllMailPage(getDriver());
+        waitfor(PageLocator.MESSAGE_MOVE);
+        return new MailTablePage(getDriver());
 
     }
 
@@ -169,36 +166,34 @@ public class MailPage extends AbstractPage {
     public boolean checkReadMessageSelected() {
         List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
-            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("700")
-                    && list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true")) {
+            if (list.get(4).findElement(By.xpath(PageLocator.SPAN)).getCssValue(PageLocator.FONT_WEIGHT).equals(bold)
+                    && list.get(1).findElement(By.xpath(PageLocator.DIV)).getAttribute(PageLocator.ARIA_CHECKED).equals(str_true)) {
                 return false;
             }
         }
-
         return true;
     }
 
     public boolean checkUnreadMessageSelected() {
         List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
-            if (list.get(4).findElement(By.xpath(".//span")).getCssValue("font-weight").equals("400")
-                    && list.get(1).findElement(By.xpath(".//div")).getAttribute("aria-checked").equals("true")) {
+            if (list.get(4).findElement(By.xpath(PageLocator.SPAN)).getCssValue(PageLocator.FONT_WEIGHT).equals(normal)
+                    && list.get(1).findElement(By.xpath(PageLocator.DIV)).getAttribute(PageLocator.ARIA_CHECKED).equals(str_true)) {
                 return false;
             }
         }
-
         return true;
     }
 
     public void selectRead() {
 
         options.moveToSelect(getDriver());
-        options.selectMessages("Read", getDriver());
+        options.selectMessages(read, getDriver());
     }
 
     public void selectUnread() {
         options.moveToSelect(getDriver());
-        options.selectMessages("Unread", getDriver());
+        options.selectMessages(unread, getDriver());
     }
 
     public Settings openSettings() {
@@ -214,7 +209,9 @@ public class MailPage extends AbstractPage {
     public void waitForMessageFrom(String addressee, long seconds) {
         long time = System.currentTimeMillis() + seconds * 1000;
         while (time > System.currentTimeMillis()) {
-            if (!addressee.equals(messages.getCellAt(0, 4).findElement(By.xpath(".//span")).getText())) {
+            if (!addressee.equals(messages.getCellAt(0, 4)
+                    .findElement(By.xpath(PageLocator.SPAN))
+                    .getText())) {
             } else {
                 break;
             }

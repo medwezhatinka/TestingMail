@@ -14,17 +14,17 @@ import org.openqa.selenium.support.FindBy;
  */
 public class MessageSendTable extends AbstractContainer {
 
-    @FindBy(xpath = Locator.sendMessageTo)
+    @FindBy(xpath = Locator.SENDMESSAGE_TO)
     private TextInput toTextBox;
-    @FindBy(name = Locator.sendMessageSubject)
+    @FindBy(name = Locator.SENDMESSAGE_SUBJECT)
     private TextInput subjectTextBox;
-    @FindBy(xpath = Locator.sendMessageSendButton)
+    @FindBy(xpath = Locator.SENDMESSAGE_SEND_BUTTON)
     private Button sendBtn;
-    @FindBy(xpath = Locator.sendMessageIFrame)
+    @FindBy(xpath = Locator.SENDMESSAGE_IFRAME)
     private WebElement iframe;
-    @FindBy(xpath = Locator.sendMessageCloseButton)
+    @FindBy(xpath = Locator.SENDMESSAGE_CLOSE_BUTTON)
     private WebElement closeButton;
-    @FindBy(xpath = Locator.sendMessageAttachButton)
+    @FindBy(xpath = Locator.SENDMESSAGE_ATTACH_BUTTON)
     private Button attachFile;
     
     private static final String body = "body";

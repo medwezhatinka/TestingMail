@@ -16,7 +16,6 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -33,63 +32,63 @@ import org.testng.annotations.Listeners;
 @Listeners(value = by.epam.lab.test.listener.TestListener.class)
 public abstract class BasePreparation extends TestData implements Group {
 
-    public static final Logger log = Logger.getLogger(BasePreparation.class);
+    
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+    private static boolean parallel = false;
+    private static DesiredCapabilities capability;
+    private static String path = "http://localhost:4444/wd/hub";
+    
     protected static String nameFile = "log4j.properties";
-    //protected static WebDriver driver;
-    static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
-    private static boolean  parallel=false;
-    LoginPage loginPage;
-    MailPage mailPage;
+    protected LoginPage loginPage;
+    protected MailPage mailPage;
     
-    static DesiredCapabilities capability;
-    static String path = "http://localhost:4444/wd/hub";
+    public static final Logger log = Logger.getLogger(BasePreparation.class);
 
-    
-    public  static WebDriver getDriver() {
-           return driver.get();
+    public static WebDriver getDriver() {
+        return driver.get();
     }
-    
+
     @BeforeSuite(alwaysRun = true)
     public static void tearUpSuite() throws FileNotFoundException, IOException {
         PropertyConfigurator.configure(nameFile);
         TestData.initialize();
     }
-    
-     @BeforeTest(alwaysRun = true)
+
+    @BeforeTest(alwaysRun = true)
     public static synchronized void tearUpTest(ITestContext context) throws FileNotFoundException, IOException {
         PropertyConfigurator.configure(nameFile);
-           TestData.initialize();
-          if (!context.getSuite().getParallel().equals("false")) {
-             parallel=true;
-              capability = new DesiredCapabilities();
-        String browser =  context.getCurrentXmlTest().getParameter("browser");
-         String platform = context.getCurrentXmlTest().getParameter("platform");
-         capability.setBrowserName(browser);
-        capability.setPlatform(Platform.valueOf(platform));
-        try {
-            driver.set(new RemoteWebDriver(new URL(path),capability));
-        } catch (MalformedURLException e) {
-            log.error(e);
-        }
+        TestData.initialize();
+        if (!context.getSuite().getParallel().equals("false")) {
+            parallel = true;
+            capability = new DesiredCapabilities();
+            String browser = context.getCurrentXmlTest().getParameter("browser");
+            String platform = context.getCurrentXmlTest().getParameter("platform");
+            capability.setBrowserName(browser);
+            capability.setPlatform(Platform.valueOf(platform));
+            try {
+                driver.set(new RemoteWebDriver(new URL(path), capability));
+            } catch (MalformedURLException e) {
+                log.error(e);
+            }
         } else {
-             driver.set(new FirefoxDriver());
+            driver.set(new FirefoxDriver());
         }
-      
-         log.info("BEFORE TEST RUN!");
-         
-       
+
+        log.info("BEFORE TEST RUN!");
+
+
     }
 
     @AfterTest(alwaysRun = true)
     public static void tearDownTest() {
         driver.get().quit();
-            log.info("AFTER TEST RUN!");
+        log.info("AFTER TEST RUN!");
     }
-    
-    public static void setAugmenter(){
+
+    public static void setAugmenter() {
         if (parallel) {
             driver.set(new Augmenter().augment(driver.get()));
         }
-        
+
     }
 }

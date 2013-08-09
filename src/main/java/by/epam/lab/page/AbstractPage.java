@@ -7,6 +7,7 @@ package by.epam.lab.page;
 import by.epam.lab.element.ExtendedDecorator;
 import com.google.common.base.Function;
 import java.util.concurrent.TimeUnit;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -25,9 +26,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AbstractPage {
 
     private WebDriver driver;
-    final static String JSstr = "var result = document.evaluate(\"%s\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);"
-            + "result.singleNodeValue.click(); "
-            + "return;";
+    public static final Logger log = Logger.getLogger(AbstractPage.class);
+    public static final String scrollJS = "arguments[0].scrollIntoView();";
 
     public AbstractPage(WebDriver driver) {
         this.driver = driver;
@@ -35,6 +35,9 @@ public class AbstractPage {
     }
 
     public static void javaScriptClick(String xPath, WebDriver driver) {
+        String JSstr = "var result = document.evaluate(\"%s\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);"
+                + "result.singleNodeValue.click(); "
+                + "return;";
         ((JavascriptExecutor) driver).executeScript(String.format(JSstr, xPath));
     }
 
@@ -92,12 +95,12 @@ public class AbstractPage {
         driver.navigate().refresh();
     }
 
-    public void acceptAllert() {
+    public void acceptAlert() {
         try {
             driver.switchTo().alert().accept();
         } catch (Exception ex) {
+            log.warn("Alert is not present.", ex);
         }
-
     }
 
     public void waitforPresentText(String xpath, String text) {
@@ -119,12 +122,10 @@ public class AbstractPage {
     }
 
     public void switchTo(WebElement webElement) {
-
         driver.switchTo().frame(webElement);
     }
 
     public void switchToDefaultContext() {
-
         driver.switchTo().defaultContent();
     }
 
@@ -138,13 +139,13 @@ public class AbstractPage {
     }
 
     public String getAllertTextAndAccept() {
-        waitfor("//div[@class='Kj-JD']");
-        WebElement allertDialog = findByXpath("//div[@class='Kj-JD']");
+        waitfor(PageLocator.ALERT_DIALOG);
+        WebElement allertDialog = findByXpath(PageLocator.ALERT_DIALOG);
         StringBuilder message = new StringBuilder();
-        message.append(allertDialog.findElement(By.cssSelector("span.Kj-JD-K7-K0")).getText());
-        message.append(allertDialog.findElement(By.cssSelector("div.Kj-JD-Jz")).getText());
-        findByCSS("html.aAX body.aAU div.Kj-JD div.Kj-JD-Jl button.J-at1-auR").click();
-        acceptAllert();
+        message.append(allertDialog.findElement(By.cssSelector(PageLocator.ALERTDIALOG_ALERT_TEXT)).getText());
+        message.append(allertDialog.findElement(By.cssSelector(PageLocator.ALERTDIALOG_TEXT)).getText());
+        findByCSS(PageLocator.ALERTDIALOG_ACCEPT_BUTTON).click();
+        acceptAlert();
         return message.toString();
     }
 
@@ -165,6 +166,7 @@ public class AbstractPage {
             findByXpath(xpath);
             return true;
         } catch (NoSuchFieldError ex) {
+            log.warn(String.format("element by xpath= %s not present", xpath));
             return false;
         }
     }
