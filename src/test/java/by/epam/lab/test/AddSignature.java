@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.driver.Driver;
 import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.page.OpenedMessage;
 import by.epam.lab.page.SendMessagePage;
@@ -31,7 +32,7 @@ public class AddSignature extends MessagePreparation {
                 .waitForSuccessfullSending()
                 .reload();
         mailPage.openMessage();
-        OpenedMessage openedMessage = new OpenedMessage(getDriver());
+        OpenedMessage openedMessage = new OpenedMessage(Driver.getDriver());
         Assert.assertEquals(openedMessage.getSignatureText(), data.get(Key.SIGNATURE));
     }
 

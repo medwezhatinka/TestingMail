@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.driver.Driver;
 import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.element.message.Message;
 import by.epam.lab.util.Util;
@@ -35,7 +36,7 @@ public class AddForwarding extends MessagePreparation {
         mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TESTEROVSKI), data.get(Key.CORRECT_PASSWORD_TESTEROVSKI))
                 .waitForSuccessfulLogin();
         mailPage.openMessage();
-        OpenedMessage openedMessage = new OpenedMessage(getDriver());
+        OpenedMessage openedMessage = new OpenedMessage(Driver.getDriver());
         String code = Util.substringAfter(openedMessage.getMessageText(), data.get(Key.CONFIRMATION_CODE), 10);
         mailPage.logout();
         mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))

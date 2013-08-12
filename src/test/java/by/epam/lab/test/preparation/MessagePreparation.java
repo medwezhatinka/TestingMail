@@ -4,7 +4,7 @@
  */
 package by.epam.lab.test.preparation;
 
-import by.epam.lab.test.preparation.BasePreparation;
+import by.epam.lab.driver.Driver;
 import by.epam.lab.page.LoginPage;
 import static by.epam.lab.test.preparation.BasePreparation.log;
 import static by.epam.lab.test.datareader.TestData.data;
@@ -23,7 +23,7 @@ public class MessagePreparation extends BasePreparation {
 
     @BeforeClass(groups = MESSAGE)
     public void tearUpClass() {
-        loginPage = new LoginPage(getDriver());
+        loginPage = new LoginPage(Driver.getDriver());
         loginPage.open(data.get(Key.HOME_PAGE_URL));
         mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
                 .waitForSuccessfulLogin();
