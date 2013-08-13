@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 
 /**
  *
@@ -40,7 +41,7 @@ public class MailPage extends AbstractPage {
     private WebElement spam;
     @FindBy(xpath = PageLocator.ALL_MAIL)
     private WebElement allMail;
-    @FindBy(xpath = PageLocator.SETTINGS)
+    @FindBy(how = How.XPATH, using = PageLocator.SETTINGS)
     private WebElement setting;
     @FindBy(xpath = PageLocator.SETTINGS_SETTINGS)
     private WebElement setting_setting;

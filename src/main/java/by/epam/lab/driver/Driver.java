@@ -40,6 +40,8 @@ public class Driver {
     public static final int forWait = Integer.valueOf(resource.getString("forWait"));
     public static final int timeout = Integer.valueOf(resource.getString("timeout"));
 
+   
+    
     public static WebDriver getDriver() {
         return driver.get();
     }
@@ -73,9 +75,6 @@ public class Driver {
     }
 
     public static void javaScriptClick(String xPath) {
-//        String JSstr = "var result = document.evaluate(\"%s\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);"
-//                + "result.singleNodeValue.click(); "
-//                + "return;";
           String JSstr = resource.getString("JSstr");
         ((JavascriptExecutor) driver.get()).executeScript(String.format(JSstr, xPath));
     }
