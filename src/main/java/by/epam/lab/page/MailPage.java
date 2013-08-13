@@ -4,13 +4,13 @@
  */
 package by.epam.lab.page;
 
+import by.epam.lab.driver.Driver;
 import by.epam.lab.element.Button;
 import by.epam.lab.element.OptionsPanel;
 import by.epam.lab.element.Table;
 import by.epam.lab.element.message.Message;
 import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
@@ -46,21 +46,20 @@ public class MailPage extends AbstractPage {
     private WebElement setting_setting;
     @FindBy(xpath = PageLocator.MESSAGES)
     private Table messages;
-    
     private String bold = "700";
     private String normal = "400";
     private String read = "Read";
     private String unread = "Unread";
     private String str_true = "true";
 
-    public MailPage(WebDriver driver) {
-        super(driver);
+    public MailPage() {
+        super();
     }
 
     public SendMessagePage composeClick() {
         composeButton.click();
-        waitfor(PageLocator.NEW_MESSAGE_WINDOW);
-        return new SendMessagePage(getDriver());
+        Driver.waitfor(PageLocator.NEW_MESSAGE_WINDOW);
+        return new SendMessagePage();
     }
 
     public WebElement getMessageAddressee() {
@@ -73,18 +72,18 @@ public class MailPage extends AbstractPage {
     }
 
     public MailPage logout() {
-        wait(PageLocator.LOGOUT_BUTTON_PANEL);
-        WebElement menu = findByID(PageLocator.LOGOUT_BUTTON_PANEL);
+        Driver.wait(PageLocator.LOGOUT_BUTTON_PANEL);
+        WebElement menu = Driver.findByID(PageLocator.LOGOUT_BUTTON_PANEL);
         menu.click();
-        WebElement logout = findByID(PageLocator.LOGOUT_BUTTON);
+        WebElement logout = Driver.findByID(PageLocator.LOGOUT_BUTTON);
         logout.click();
-        acceptAlert();
-        wait(PageLocator.LOGINFORM);
+        Driver.acceptAlert();
+        Driver.wait(PageLocator.LOGINFORM);
         return this;
     }
 
     public MailPage openMessage() {
-        waitForElement(getMessageAddressee());
+        Driver.waitForElement(getMessageAddressee());
         getMessageAddressee().click();
         return this;
     }
@@ -100,7 +99,7 @@ public class MailPage extends AbstractPage {
     }
 
     public boolean optionsPresent() {
-        options.moveToSelect(getDriver());
+        options.moveToSelect();
         if (options.isDisplayed()) {
             return true;
         } else {
@@ -121,44 +120,44 @@ public class MailPage extends AbstractPage {
 
     public MailTablePage goToTrashPage() {
         more.click();
-        waitForElement(trash);
+        Driver.waitForElement(trash);
         trash.click();
-        waitfor(PageLocator.MESSAGE_MOVE);
-        return new MailTablePage(getDriver());
+        Driver.waitfor(PageLocator.MESSAGE_MOVE);
+        return new MailTablePage();
     }
 
     public MailTablePage goToSpamPage() {
         more.click();
-        waitForElement(spam);
+        Driver.waitForElement(spam);
         spam.click();
-        waitfor(PageLocator.MESSAGE_MOVE);
-        return new MailTablePage(getDriver());
+        Driver.waitfor(PageLocator.MESSAGE_MOVE);
+        return new MailTablePage();
 
     }
 
     public MailTablePage goToAllMailPage() {
         more.click();
-        waitForElement(allMail);
+        Driver.waitForElement(allMail);
         allMail.click();
-        waitfor(PageLocator.MESSAGE_MOVE);
-        return new MailTablePage(getDriver());
+        Driver.waitfor(PageLocator.MESSAGE_MOVE);
+        return new MailTablePage();
 
     }
 
     public MailPage deleteMessage() {
-        options.moveToSelect(getDriver());
+        options.moveToSelect();
         options.clickDelete();
         return this;
     }
 
     public MailPage reportSpam() {
-        options.moveToSelect(getDriver());
+        options.moveToSelect();
         options.reportSpam();
         return this;
     }
 
     public MailPage archiveMessage() {
-        options.moveToSelect(getDriver());
+        options.moveToSelect();
         options.archiveClick();
         return this;
     }
@@ -187,23 +186,23 @@ public class MailPage extends AbstractPage {
 
     public void selectRead() {
 
-        options.moveToSelect(getDriver());
-        options.selectMessages(read, getDriver());
+        options.moveToSelect();
+        options.selectMessages(read);
     }
 
     public void selectUnread() {
-        options.moveToSelect(getDriver());
-        options.selectMessages(unread, getDriver());
+        options.moveToSelect();
+        options.selectMessages(unread);
     }
 
     public Settings openSettings() {
-        new Actions(getDriver())
+        new Actions(Driver.getDriver())
                 .moveToElement(setting)
                 .click()
                 .moveToElement(setting_setting)
                 .click()
                 .perform();
-        return new Settings(getDriver());
+        return new Settings();
     }
 
     public void waitForMessageFrom(String addressee, long seconds) {

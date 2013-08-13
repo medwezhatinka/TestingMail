@@ -4,8 +4,7 @@
  */
 package by.epam.lab.element;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import by.epam.lab.driver.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -35,8 +34,8 @@ public class OptionsPanel extends AbstractContainer {
         super(wrappedElement);
     }
 
-    public void moveToSelect(WebDriver driver) {
-        new Actions(driver).moveToElement(select).perform();
+    public void moveToSelect() {
+        new Actions(Driver.getDriver()).moveToElement(select).perform();
     }
 
     @Override
@@ -64,10 +63,10 @@ public class OptionsPanel extends AbstractContainer {
         archive.click();
     }
 
-    public void selectMessages(String status, WebDriver driver) {
-        new Actions(driver).moveToElement(select).click().perform();
+    public void selectMessages(String status) {
+        new Actions(Driver.getDriver()).moveToElement(select).click().perform();
         String xpath = String.format(template, status);
-        driver.findElement(By.xpath(xpath)).click();
+        Driver.findByXpath(xpath).click();
 
     }
 }

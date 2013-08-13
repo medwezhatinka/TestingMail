@@ -6,7 +6,6 @@ package by.epam.lab.page;
 
 import by.epam.lab.element.MailTable;
 import by.epam.lab.element.message.Message;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 /**
@@ -18,8 +17,8 @@ public class MailTablePage extends AbstractPage {
     @FindBy(xpath = PageLocator.MAILTABLE)
     private MailTable messageTabe;
 
-    public MailTablePage(WebDriver driver) {
-        super(driver);
+    public MailTablePage() {
+        super();
     }
 
     public Message getMessage() {

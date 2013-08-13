@@ -33,7 +33,7 @@ public abstract class BasePreparation extends TestData implements Group {
 
     @BeforeSuite(alwaysRun = true)
     public static void tearUpSuite() throws FileNotFoundException, IOException {
-        String nameFile = ResourceBundle.getBundle("propertie/settings.properties").getString("log_properties");
+        String nameFile = ResourceBundle.getBundle("settings").getString("log_properties");
         PropertyConfigurator.configure(nameFile);
         TestData.initialize();
     }

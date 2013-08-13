@@ -4,12 +4,12 @@
  */
 package by.epam.lab.page;
 
+import by.epam.lab.driver.Driver;
 import by.epam.lab.element.AddEmailWindow;
 import by.epam.lab.element.Button;
 import by.epam.lab.element.Select;
 import by.epam.lab.element.Table;
 import by.epam.lab.element.TextInput;
-import static by.epam.lab.page.AbstractPage.javaScriptClick;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -58,91 +58,91 @@ public class Settings extends AbstractPage {
     @FindBy(xpath = PageLocator.REMOVE_FORWARDING)
     private Select remove_forwarding;
 
-    public Settings(WebDriver driver) {
-        super(driver);
+    public Settings() {
+        super();
     }
 
     public Settings addSignature(String signature) {
-        waitForElement(title);
-        ((JavascriptExecutor) getDriver()).executeScript(scrollJS, signature_on);
+        Driver.waitForElement(title);
+        ((JavascriptExecutor) Driver.getDriver()).executeScript(Driver.scrollJS, signature_on);
         signature_on.click();
-        switchTo(signature_iframe);
+        Driver.switchTo(signature_iframe);
         signature_input.sendKeys(signature);
         timeout(1);
-        switchToDefaultContext();
+        Driver.switchToDefaultContext();
         return this;
     }
 
     public Settings save_changes() {
-        ((JavascriptExecutor) getDriver())
-                .executeScript(scrollJS, save_changes.getWrappedElement());
-        WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+        ((JavascriptExecutor) Driver.getDriver())
+                .executeScript(Driver.scrollJS, save_changes.getWrappedElement());
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 30);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PageLocator.SAVE_CHANGES_BUTTON)));
         save_changes.click();
-        waitForElement(messageTable.getWrappedElement());
+        Driver.waitForElement(messageTable.getWrappedElement());
         return this;
     }
 
     public Settings deleteSignature() {
-        waitForElement(title);
-        ((JavascriptExecutor) getDriver())
-                .executeScript(scrollJS, signature_on);
-        switchTo(signature_iframe);
+        Driver.waitForElement(title);
+        ((JavascriptExecutor) Driver.getDriver())
+                .executeScript(Driver.scrollJS, signature_on);
+        Driver.switchTo(signature_iframe);
         timeout(1);
         signature_input.sendKeys(Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.END));
         timeout(1);
         signature_input.sendKeys(Keys.chord(Keys.DELETE));
         timeout(1);
-        switchToDefaultContext();
+        Driver.switchToDefaultContext();
         signature_on.click();
         return this;
 
     }
 
     public void openForwardingTab() {
-        waitForElement(title);
+        Driver.waitForElement(title);
         tab.click();
     }
 
-    public Settings clickProceed(WebDriver driver) {
-        waitForElement(form);
-        driver.switchTo().frame(form);
+    public Settings clickProceed() {
+        Driver.waitForElement(form);
+        Driver.switchTo(form);
         proceed.click();
-        driver.switchTo().defaultContent();
+       Driver.switchToDefaultContext();
         return this;
     }
 
     public void addForwardingAddress(String address) {
         add_address.click();
-        waitfor(PageLocator.FORWARD_DIALOD);
+        Driver.waitfor(PageLocator.FORWARD_DIALOD);
         emailAddWindow.inputEmail(address)
                 .clickNext();
-        clickProceed(getDriver());
-        waitForElement(emailAddWindow.getOk().getWrappedElement());
+        clickProceed();
+        Driver.waitForElement(emailAddWindow.getOk().getWrappedElement());
         emailAddWindow.clickOk();
-        waitForElement(verify.getWrappedElement());
+        Driver.waitForElement(verify.getWrappedElement());
     }
 
     public void removeForwarding() {
         remove_forwarding.select(3);
-        acceptAlert();
+        Driver.acceptAlert();
     }
 
     public void verifyCode(String code) {
-        new Actions(getDriver())
+        new Actions(Driver.getDriver())
                 .moveToElement(verify_code.getWrappedElement())
                 .click()
                 .sendKeys(Keys.chord(Keys.DELETE))
                 .perform();
         verify_code.sendKeys(code);
         verify.click();
-        waitForElement(forwarding_on);
+        Driver.waitForElement(forwarding_on);
     }
 
     public void forwardOn() {
-        waitForElement(forwarding_on);
+        Driver.waitForElement(forwarding_on);
         forwarding_on.click();
-        javaScriptClick(PageLocator.SAVE_CHANGES_BUTTON, getDriver());
-        waitForElement(messageTable.getWrappedElement());
+        Driver.javaScriptClick(PageLocator.SAVE_CHANGES_BUTTON);
+        Driver.waitForElement(messageTable.getWrappedElement());
     }
 }

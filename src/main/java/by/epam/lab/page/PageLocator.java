@@ -16,6 +16,11 @@ public interface PageLocator {
     public static final String ALERTDIALOG_TEXT = "div.Kj-JD-Jz";
     public static final String ALERTDIALOG_ACCEPT_BUTTON = "html.aAX body.aAU div.Kj-JD div.Kj-JD-Jl button.J-at1-auR";
     
+    //LoginPage
+    public static final String LOGINFORM = "gaia_loginform";
+    public static final String EMAIL_ERROR ="errormsg_0_Email";
+    public static final String PASSWORD_ERROR="errormsg_0_Passwd";
+    
     //MailTablePage
     public static final String MAILTABLE = "table[@class='F cf zt']/tbody/tr[1]";
    
@@ -37,7 +42,6 @@ public interface PageLocator {
     public static final String TIME = "//tr/td[8]/span";
     public static final String LOGOUT_BUTTON_PANEL = "gbg4";
     public static final String LOGOUT_BUTTON = "gb_71";
-    public static final String LOGINFORM = "gaia_loginform";
     public static final String MESSAGE_MOVE = "//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]";
     public static final String MESSAGE_CHECKBOX="//tr/td[2]/div/div"; 
     public static final String SPAN = ".//span";

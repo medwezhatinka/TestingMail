@@ -20,7 +20,7 @@ public class LoginPreparation extends BasePreparation {
 
     @BeforeClass(groups = AUTENTIFICATION)
     public void tearUpClass() {
-        loginPage = new LoginPage(Driver.getDriver());
+        loginPage = new LoginPage();
         loginPage.open(data.get(Key.HOME_PAGE_URL));
     }
 

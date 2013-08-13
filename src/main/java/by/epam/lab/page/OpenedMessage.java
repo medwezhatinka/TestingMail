@@ -4,6 +4,7 @@
  */
 package by.epam.lab.page;
 
+import by.epam.lab.driver.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,19 +22,19 @@ public class OpenedMessage extends AbstractPage {
     @FindBy(xpath = PageLocator.MESSAGE_BODY)
     private WebElement messageBody;
 
-    public OpenedMessage(WebDriver driver) {
-        super(driver);
+    public OpenedMessage() {
+        super();
     }
 
     public String getSignatureText() {
-        waitForElement(showAllContent);
+        Driver.waitForElement(showAllContent);
         showAllContent.click();
-        waitForElement(signature);
+        Driver.waitForElement(signature);
         return signature.getText();
     }
 
     public String getMessageText() {
-        waitForElement(messageBody);
+        Driver.waitForElement(messageBody);
         return messageBody.getText();
     }
 }

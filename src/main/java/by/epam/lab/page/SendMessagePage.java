@@ -4,12 +4,12 @@
  */
 package by.epam.lab.page;
 
+import by.epam.lab.driver.Driver;
 import by.epam.lab.util.Util;
 import by.epam.lab.element.LargeFileAllertDialog;
 import by.epam.lab.element.MessageSendTable;
 import java.io.File;
 import java.io.IOException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 /**
@@ -18,37 +18,35 @@ import org.openqa.selenium.support.FindBy;
  */
 public class SendMessagePage extends AbstractPage {
 
-   
     @FindBy(css = PageLocator.NEW_EMAIL)
     private MessageSendTable newMessage;
     @FindBy(css = PageLocator.LARGE_FILE_ALERT)
     private LargeFileAllertDialog dialog;
-
     private String str_body = "body";
-    
-    public SendMessagePage(WebDriver driver) {
-        super(driver);
+
+    public SendMessagePage() {
+        super();
     }
 
     public SendMessagePage sendMessage(String toEmail, String subject, String body) {
         newMessage.fillTo(toEmail).fillSubject(subject);
-        switchTo(newMessage.getIframe());
-        findByTagName(str_body).sendKeys(body);
-        switchToDefaultContext();
+        Driver.switchTo(newMessage.getIframe());
+        Driver.findByTagName(str_body).sendKeys(body);
+        Driver.switchToDefaultContext();
         newMessage.send();
         return this;
     }
 
     public MailPage waitForSuccessfullSending() {
-        waitforPresentText(PageLocator.SUCCESSFUL_SEND, PageLocator.SUCCESSFUL_SEND_TEXT);
-        return new MailPage(getDriver());
+        Driver.waitforPresentText(PageLocator.SUCCESSFUL_SEND, PageLocator.SUCCESSFUL_SEND_TEXT);
+        return new MailPage();
     }
 
     public SendMessagePage sendMessageWithoutAdresse(String subject, String body) {
         newMessage.fillSubject(subject);
-        switchTo(newMessage.getIframe());
-        findByTagName(str_body).sendKeys(body);
-        switchToDefaultContext();
+        Driver.switchTo(newMessage.getIframe());
+        Driver.findByTagName(str_body).sendKeys(body);
+        Driver.switchToDefaultContext();
         newMessage.send();
         return this;
 
@@ -71,16 +69,16 @@ public class SendMessagePage extends AbstractPage {
     public SendMessagePage waitforsuccessfulAttach(File attachedFile) {
         String xpath = String.format(PageLocator.SUCCESSFUL_ATTACH,
                 attachedFile.getName(), Util.getFormatSize(attachedFile));
-        waitfor(xpath);
+        Driver.waitfor(xpath);
         return this;
     }
 
     public SendMessagePage createMessageWithAttachedFile(String toEmail, String subject,
             String body, String script, File attachFile) {
         newMessage.fillTo(toEmail).fillSubject(subject);
-        switchTo(newMessage.getIframe());
-        findByTagName(str_body).sendKeys(body);
-        switchToDefaultContext();
+        Driver.switchTo(newMessage.getIframe());
+        Driver.findByTagName(str_body).sendKeys(body);
+        Driver.switchToDefaultContext();
         newMessage.attachFileClick();
         try {
             attachFile(script, attachFile);
