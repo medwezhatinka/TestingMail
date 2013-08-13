@@ -26,7 +26,8 @@ public class TestData {
         NO_RECIPIENT_MESSAGE, SCRIPT_PATH, SMALL_FILE_PATH, LARGE_FILE_PATH,
         LARGE_FILE_MESSAGE, BOLD, NORMAL, SIGNATURE, ENTER_EMAIL_MESSAGE, QUOTED_USERNAME,
         CORRECT_EMAIL_TESTOID, CORRECT_PASSWORD_TESTOID, CORRECT_EMAIL_TESTEROVSKI,
-        CORRECT_PASSWORD_TESTEROVSKI, NAME, CONFIRMATION_CODE, FONT_WEIGHT
+        CORRECT_PASSWORD_TESTEROVSKI, NAME, CONFIRMATION_CODE, FONT_WEIGHT, WAIT_FOR_MESSAGE,
+        CODE_LENGTH
     }
 
     public static void initialize() throws FileNotFoundException, IOException {
@@ -35,6 +36,6 @@ public class TestData {
     }
 
     public static String get(Key key) {
-        return data.get(Key.CORRECT_EMAIL_TEST);
+        return data.get(key);
     }
 }

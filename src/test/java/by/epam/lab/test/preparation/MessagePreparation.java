@@ -4,7 +4,7 @@
  */
 package by.epam.lab.test.preparation;
 
-import by.epam.lab.page.LoginPage;
+import by.epam.lab.logic.Login;
 import static by.epam.lab.test.preparation.BasePreparation.log;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.annotations.AfterClass;
@@ -22,10 +22,11 @@ public class MessagePreparation extends BasePreparation {
 
     @BeforeClass(groups = MESSAGE)
     public void tearUpClass() {
-        loginPage = new LoginPage();
-        loginPage.open(data.get(Key.HOME_PAGE_URL));
-        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
-                .waitForSuccessfulLogin();
+//        loginPage = new LoginPage();
+//        loginPage.open(data.get(Key.HOME_PAGE_URL));
+//        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
+//                .waitForSuccessfulLogin();
+      mailPage =  Login.SignIn(data.get(Key.HOME_PAGE_URL), data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST));
     }
 
     @AfterClass(groups = MESSAGE)

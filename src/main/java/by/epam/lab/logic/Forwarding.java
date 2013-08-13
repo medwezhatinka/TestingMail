@@ -18,11 +18,12 @@ import by.epam.lab.util.Util;
  */
 public class Forwarding {
 
-    public static void addEmail(MailPage mailPage, String email) {
+    public static LoginPage addEmail(MailPage mailPage, String email) {
         Settings settings = mailPage.openSettings();
         settings.openForwardingTab();
         settings.addForwardingAddress(email);
         mailPage.logout();
+        return new LoginPage();
     }
 
     public static String getConfirmationCode(LoginPage loginPage, String email,
@@ -33,10 +34,11 @@ public class Forwarding {
         OpenedMessage openedMessage = new OpenedMessage();
         String code = Util.substringAfter(openedMessage.getMessageText(), codeName, length);
         mailPage.logout();
+        loginPage = new LoginPage();
         return code;
     }
 
-    public static void verifyCode(LoginPage loginPage, String email, String password, String code) {
+    public static LoginPage verifyCode(LoginPage loginPage, String email, String password, String code) {
         MailPage mailPage = loginPage.Login(email, password)
                 .waitForSuccessfulLogin();
         Settings settings = mailPage.openSettings();
@@ -44,9 +46,10 @@ public class Forwarding {
         settings.verifyCode(code);
         settings.forwardOn();
         mailPage.logout();
+        return new LoginPage();
     }
 
-    public static void sendMessage(LoginPage loginPage, String email,
+    public static LoginPage sendMessage(LoginPage loginPage, String email,
             String password, String addressee, String subject, String text) {
         MailPage mailPage = loginPage.Login(email, password)
                 .waitForSuccessfulLogin();
@@ -54,6 +57,7 @@ public class Forwarding {
         page.sendMessage(addressee, subject, text)
                 .waitForSuccessfullSending()
                 .logout();
+        return new LoginPage();
     }
 
     public static Message checkMessagePresent(LoginPage loginPage, String email, String password, String name, int seconds) {
@@ -62,6 +66,7 @@ public class Forwarding {
         mailPage.waitForMessageFrom(name, seconds);
         Message message = mailPage.getMessage();
         mailPage.logout();
+        loginPage = new LoginPage();
         return message;
     }
 

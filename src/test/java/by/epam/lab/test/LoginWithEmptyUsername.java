@@ -19,8 +19,7 @@ public class LoginWithEmptyUsername extends LoginPreparation {
 
     @Test(enabled = true, groups = {AUTENTIFICATION})
     public void autentificationFailedtst() {
-        loginPage.inputPassword(data.get(Key.CORRECT_PASSWORD_TEST))
-                .loginClick();
+        loginPage.inputPassword(data.get(Key.CORRECT_PASSWORD_TEST)).loginClick();
         Assert.assertEquals(loginPage.getErrorEmailMessage(), data.get(Key.ENTER_EMAIL_MESSAGE));
 
     }

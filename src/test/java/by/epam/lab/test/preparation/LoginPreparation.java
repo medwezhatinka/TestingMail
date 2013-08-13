@@ -4,8 +4,7 @@
  */
 package by.epam.lab.test.preparation;
 
-import by.epam.lab.driver.Driver;
-import by.epam.lab.page.LoginPage;
+import by.epam.lab.logic.Login;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -20,8 +19,7 @@ public class LoginPreparation extends BasePreparation {
 
     @BeforeClass(groups = AUTENTIFICATION)
     public void tearUpClass() {
-        loginPage = new LoginPage();
-        loginPage.open(data.get(Key.HOME_PAGE_URL));
+        loginPage = Login.openLoginPage(data.get(Key.HOME_PAGE_URL));
     }
 
     @AfterClass(groups = AUTENTIFICATION)

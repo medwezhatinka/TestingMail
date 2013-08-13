@@ -24,7 +24,7 @@
             </run>
         </groups>
         <classes>
-            
+            <!--
             <class name="by.epam.lab.test.SendTextMessage"/> 
             <class name="by.epam.lab.test.ArchiveFunction"/>
             <class name="by.epam.lab.test.AttachBigFile"/>
@@ -40,6 +40,7 @@
             <class name="by.epam.lab.test.SendTextMessage"/>
             <class name="by.epam.lab.test.UnreadMessageSelected"/>
             <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>
+            -->
             <class name="by.epam.lab.test.AddForwarding"/>
         </classes>
     </test>

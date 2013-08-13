@@ -28,7 +28,7 @@ public class UnreadMessageSelected extends MessagePreparation {
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-        SendMessage.sendCorrectMessage(mailPage, 
+        SendMessage.sendCorrectMessage(mailPage,
                 data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT));
     }
 }

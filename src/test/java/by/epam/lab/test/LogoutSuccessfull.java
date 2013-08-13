@@ -4,8 +4,8 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.logic.Login;
 import by.epam.lab.test.preparation.LoginPreparation;
-import by.epam.lab.page.LoginPage;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -28,10 +28,7 @@ public class LogoutSuccessfull extends LoginPreparation {
     @BeforeClass(groups = Group.AUTENTIFICATION)
     @Override
     public void tearUpClass() {
-        loginPage = new LoginPage();
-        loginPage.open(data.get(Key.HOME_PAGE_URL));
-        mailPage = loginPage
-                .Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
-                .waitForSuccessfulLogin();
+        mailPage = Login.correctLogin(loginPage, data.get(Key.CORRECT_EMAIL_PART_TEST),
+                data.get(Key.CORRECT_PASSWORD_TEST));
     }
 }
