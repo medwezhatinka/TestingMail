@@ -52,7 +52,7 @@ public abstract class BasePreparation extends TestData implements Group {
 
     @AfterTest(alwaysRun = true)
     public static void tearDownTest() {
-       Driver.close();
+        Driver.close();
         log.info("AFTER TEST RUN!");
     }
 }

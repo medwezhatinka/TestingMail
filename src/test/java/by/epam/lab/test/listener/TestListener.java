@@ -35,7 +35,7 @@ public class TestListener extends TestListenerAdapter {
         try {
             Driver.setAugmenter();
             Calendar currentDate = Calendar.getInstance();
-            String workDir = System.getProperty("user.dir") + "\\screenshos\\";
+            String workDir = System.getProperty("user.dir") + "\\screenshots\\";
             SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMMdd_HH_mm_ss");
             String dateNow = dateFormat.format(currentDate.getTime());
             File scrFile = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.FILE);

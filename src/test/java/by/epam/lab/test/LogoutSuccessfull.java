@@ -28,7 +28,7 @@ public class LogoutSuccessfull extends LoginPreparation {
     @BeforeClass(groups = Group.AUTENTIFICATION)
     @Override
     public void tearUpClass() {
-        mailPage = Login.correctLogin(loginPage, data.get(Key.CORRECT_EMAIL_PART_TEST),
+        mailPage = Login.SignIn(data.get(Key.HOME_PAGE_URL),data.get(Key.CORRECT_EMAIL_PART_TEST),
                 data.get(Key.CORRECT_PASSWORD_TEST));
     }
 }

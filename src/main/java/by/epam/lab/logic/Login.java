@@ -19,7 +19,8 @@ public class Login {
         return loginPage;
     }
 
-    public static MailPage correctLogin(LoginPage loginPage, String email, String password) {
+    public static MailPage correctLogin(String email, String password) {
+        LoginPage loginPage = new LoginPage();
         MailPage mailPage = loginPage.Login(email, password)
                 .waitForSuccessfulLogin();
         return mailPage;

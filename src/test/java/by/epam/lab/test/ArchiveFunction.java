@@ -36,7 +36,8 @@ public class ArchiveFunction extends MessagePreparation {
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-        SendMessage.sendCorrectMessage(mailPage, data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT));
+        SendMessage.sendCorrectMessage(mailPage, data.get(Key.CORRECT_EMAIL_TEST),
+                data.get(Key.SUBJECT), data.get(Key.TEXT));
         mailPage.selectMessage();
         inputMessage = mailPage.getMessage();
     }

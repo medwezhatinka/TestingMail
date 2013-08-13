@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.logic.MessageView;
 import by.epam.lab.logic.SendMessage;
 import by.epam.lab.test.preparation.MessagePreparation;
 import static by.epam.lab.test.datareader.TestData.data;
@@ -21,7 +22,8 @@ public class UnreadMessageFont extends MessagePreparation {
 
     @Test(enabled = true, groups = {MESSAGE})
     public void checkUnreadMessageFont() {
-        Assert.assertEquals(mailPage.getMessageAddressee().getCssValue(data.get(Key.FONT_WEIGHT)), data.get(Key.BOLD));
+        Assert.assertEquals(MessageView.getUnreadMessageCSSValue(mailPage,
+                data.get(Key.FONT_WEIGHT)), data.get(Key.BOLD));
     }
 
     @BeforeMethod(groups = MESSAGE)

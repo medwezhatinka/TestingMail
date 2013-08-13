@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test;
 
+import by.epam.lab.logic.MessageView;
 import by.epam.lab.logic.SendMessage;
 import by.epam.lab.test.preparation.MessagePreparation;
 import static by.epam.lab.test.datareader.TestData.data;
@@ -21,16 +22,14 @@ public class ReadMessageFont extends MessagePreparation {
 
     @Test(enabled = true, groups = {MESSAGE})
     public void chechReadMessageFont() {
-        mailPage.openMessage().inboxClick().getMessageAddressee().getCssValue(data.get(Key.FONT_WEIGHT));
-        Assert.assertEquals(mailPage.openMessage()
-                .inboxClick()
-                .getMessageAddressee()
-                .getCssValue(data.get(Key.FONT_WEIGHT)), data.get(Key.NORMAL));
+        Assert.assertEquals(MessageView.getReadMessageCSSValue(mailPage,
+                data.get(Key.FONT_WEIGHT)), data.get(Key.NORMAL));
     }
 
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-        SendMessage.sendCorrectMessage(mailPage, data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT));
+        SendMessage.sendCorrectMessage(mailPage, data.get(Key.CORRECT_EMAIL_TEST),
+                data.get(Key.SUBJECT), data.get(Key.TEXT));
     }
 }

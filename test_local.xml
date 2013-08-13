@@ -16,7 +16,7 @@
             <class name="by.epam.lab.test.LoginWithQuotedUsername"/>
         </classes>
     </test>
--->
+    -->
     <test name="message">
         <groups >
             <run>
@@ -39,10 +39,9 @@
             <class name="by.epam.lab.test.UnreadMessageFont"/>
             <class name="by.epam.lab.test.SendTextMessage"/>
             <class name="by.epam.lab.test.UnreadMessageSelected"/>
-            <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>
-            -->
+            <class name="by.epam.lab.test.SengMessageWithIncorrectEmail"/>-->
             <class name="by.epam.lab.test.AddForwarding"/>
         </classes>
     </test>
-    
+  
 </suite>

@@ -22,11 +22,8 @@ public class MessagePreparation extends BasePreparation {
 
     @BeforeClass(groups = MESSAGE)
     public void tearUpClass() {
-//        loginPage = new LoginPage();
-//        loginPage.open(data.get(Key.HOME_PAGE_URL));
-//        mailPage = loginPage.Login(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST))
-//                .waitForSuccessfulLogin();
-      mailPage =  Login.SignIn(data.get(Key.HOME_PAGE_URL), data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST));
+        mailPage = Login.SignIn(data.get(Key.HOME_PAGE_URL),
+                data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.CORRECT_PASSWORD_TEST));
     }
 
     @AfterClass(groups = MESSAGE)

@@ -20,7 +20,8 @@ public class SendTextMessage extends MessagePreparation {
 
     @Test(enabled = true, groups = {MESSAGE})
     public void sendTextMessagests() {
-        SendMessage.sendCorrectMessage(mailPage, data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT));
+        SendMessage.sendCorrectMessage(mailPage, data.get(Key.CORRECT_EMAIL_TEST),
+                data.get(Key.SUBJECT), data.get(Key.TEXT));
         Assert.assertEquals(mailPage.getMessageAddressee().getText(), data.get(Key.ME));
 
     }

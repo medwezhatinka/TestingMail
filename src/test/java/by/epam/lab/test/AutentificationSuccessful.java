@@ -26,7 +26,7 @@ public class AutentificationSuccessful extends LoginPreparation {
 
     @Test(enabled = true, groups = {AUTENTIFICATION})
     public void autorization() {
-        mailPage = Login.correctLogin(loginPage, data.get(Key.CORRECT_EMAIL_PART_TEST),
+        mailPage = Login.correctLogin( data.get(Key.CORRECT_EMAIL_PART_TEST),
                 data.get(Key.CORRECT_PASSWORD_TEST));
         Assert.assertTrue(mailPage.getLocation().contains(data.get(Key.MAIL_PAGE_LOCATION)));
 
