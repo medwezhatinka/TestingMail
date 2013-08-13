@@ -4,6 +4,7 @@
  */
 package by.epam.lab.test.datareader;
 
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.EnumMap;
@@ -31,5 +32,9 @@ public class TestData {
     public static void initialize() throws FileNotFoundException, IOException {
         data = new EnumMap<Key, String>(Key.class);
         XLSReader.getData("testdata.xlsx", "data", data);
+    }
+
+    public static String get(Key key) {
+        return data.get(Key.CORRECT_EMAIL_TEST);
     }
 }

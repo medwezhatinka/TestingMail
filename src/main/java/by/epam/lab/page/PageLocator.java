@@ -22,7 +22,7 @@ public interface PageLocator {
     public static final String PASSWORD_ERROR="errormsg_0_Passwd";
     
     //MailTablePage
-    public static final String MAILTABLE = "table[@class='F cf zt']/tbody/tr[1]";
+    public static final String MAILTABLE = ".//div[@class='AO']/div/div/div[1]/div[2]/div[4]/div[@class='Cp']/div/table[1]/tbody/tr[1]";
    
     //MailPage
     public static final String COMPOSE_BUTTON = "//div[text()='COMPOSE']";

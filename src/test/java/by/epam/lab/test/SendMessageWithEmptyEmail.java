@@ -20,11 +20,8 @@ public class SendMessageWithEmptyEmail extends MessagePreparation {
 
     @Test(enabled = true, groups = {MESSAGE})
     public void sendMessageWithEmptyEmailtst() {
-
-
         SendMessagePage page = mailPage.composeClick();
         page.sendMessageWithoutAdresse(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.TEXT));
         Assert.assertEquals(page.getAllertTextAndAccept(), data.get(Key.NO_RECIPIENT_MESSAGE));
-
     }
 }

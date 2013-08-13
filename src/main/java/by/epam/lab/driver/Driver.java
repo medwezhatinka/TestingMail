@@ -35,9 +35,10 @@ public class Driver {
     private static boolean parallel = false;
     private static DesiredCapabilities capability;
     public static final Logger log = Logger.getLogger(Driver.class);
-    public static final String scrollJS = "arguments[0].scrollIntoView();";
-    public static final int forWait = 30;
-    public static final int timeout = 5;
+    public static ResourceBundle resource = ResourceBundle.getBundle("settings");
+    public static final String scrollJS = resource.getString("scrollJS");
+    public static final int forWait = Integer.valueOf(resource.getString("forWait"));
+    public static final int timeout = Integer.valueOf(resource.getString("timeout"));
 
     public static WebDriver getDriver() {
         return driver.get();
@@ -56,7 +57,7 @@ public class Driver {
         capability.setBrowserName(browser);
         capability.setPlatform(Platform.valueOf(platform));
         try {
-            String path = ResourceBundle.getBundle("settings").getString("path");
+            String path = resource.getString("path");
             driver.set(new RemoteWebDriver(new URL(path), capability));
         } catch (MalformedURLException e) {
             log.error(e);
@@ -72,9 +73,10 @@ public class Driver {
     }
 
     public static void javaScriptClick(String xPath) {
-        String JSstr = "var result = document.evaluate(\"%s\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);"
-                + "result.singleNodeValue.click(); "
-                + "return;";
+//        String JSstr = "var result = document.evaluate(\"%s\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);"
+//                + "result.singleNodeValue.click(); "
+//                + "return;";
+          String JSstr = resource.getString("JSstr");
         ((JavascriptExecutor) driver.get()).executeScript(String.format(JSstr, xPath));
     }
 

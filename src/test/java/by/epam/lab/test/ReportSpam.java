@@ -6,8 +6,8 @@ package by.epam.lab.test;
 
 import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.element.message.Message;
+import by.epam.lab.logic.SendMessage;
 import by.epam.lab.page.MailTablePage;
-import by.epam.lab.page.SendMessagePage;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -30,16 +30,14 @@ public class ReportSpam extends MessagePreparation {
         MailTablePage spamPage = mailPage.goToSpamPage();
         log.info(spamPage.getMessage());
         Assert.assertTrue(inputMessage.equals(spamPage.getMessage()));
-        
+
     }
 
     @BeforeMethod(groups = MESSAGE)
     @Override
     public void tearUpMethod() {
-        SendMessagePage page = mailPage.composeClick();
-        page.sendMessage(data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT))
-                .waitForSuccessfullSending()
-                .reload();
+        SendMessage.sendCorrectMessage(mailPage, 
+                data.get(Key.CORRECT_EMAIL_TEST), data.get(Key.SUBJECT), data.get(Key.TEXT));
 
     }
 }
