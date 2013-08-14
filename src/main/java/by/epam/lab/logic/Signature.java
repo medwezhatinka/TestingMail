@@ -4,6 +4,7 @@
  */
 package by.epam.lab.logic;
 
+import by.epam.lab.driver.Driver;
 import by.epam.lab.page.MailPage;
 import by.epam.lab.page.Settings;
 
@@ -20,6 +21,7 @@ public class Signature {
     }
 
     public static void removeSignature(MailPage mailPage) {
+        mailPage.timeout(1);
         mailPage.inboxClick();
         Settings settings = mailPage.openSettings();
         settings.deleteSignature()

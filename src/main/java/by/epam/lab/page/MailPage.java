@@ -22,7 +22,7 @@ import org.openqa.selenium.support.How;
  * @author Alina_Shumel
  */
 public class MailPage extends AbstractPage {
-
+    
     @FindBy(xpath = PageLocator.COMPOSE_BUTTON)
     @CacheLookup
     private Button composeButton;
@@ -52,26 +52,26 @@ public class MailPage extends AbstractPage {
     private String read = "Read";
     private String unread = "Unread";
     private String str_true = "true";
-
+    
     public MailPage() {
         super();
     }
-
+    
     public SendMessagePage composeClick() {
         composeButton.click();
         Driver.waitfor(PageLocator.NEW_MESSAGE_WINDOW);
         return new SendMessagePage();
     }
-
+    
     public WebElement getMessageAddressee() {
         return messageTabe.findElement(By.xpath(PageLocator.ADDRESSEE));
     }
-
+    
     public String getText(WebElement webElement) {
         webElement.getText();
         return null;
     }
-
+    
     public MailPage logout() {
         Driver.wait(PageLocator.LOGOUT_BUTTON_PANEL);
         WebElement menu = Driver.findByID(PageLocator.LOGOUT_BUTTON_PANEL);
@@ -82,23 +82,23 @@ public class MailPage extends AbstractPage {
         Driver.wait(PageLocator.LOGINFORM);
         return this;
     }
-
+    
     public MailPage openMessage() {
         Driver.waitForElement(getMessageAddressee());
         getMessageAddressee().click();
         return this;
     }
-
+    
     public MailPage inboxClick() {
         inbox.click();
         return this;
     }
-
+    
     public MailPage selectMessage() {
         messageTabe.findElement(By.xpath(PageLocator.MESSAGE_CHECKBOX)).click();
         return this;
     }
-
+    
     public boolean optionsPresent() {
         options.moveToSelect();
         if (options.isDisplayed()) {
@@ -107,62 +107,65 @@ public class MailPage extends AbstractPage {
             return false;
         }
     }
-
+    
     public Message getMessage() {
         Message message = new Message();
         message.setAddressee(messageTabe.findElement(By.xpath(PageLocator.ADDRESSEE)).getText());
         message.setSubject(messageTabe.findElement(By.xpath(PageLocator.SUBJECT)).getText());
         message.setText(messageTabe.findElement(By.xpath(PageLocator.TEXT)).getText());
         message.setTime(messageTabe.findElement(By.xpath(PageLocator.TIME)).getText());
-
+        
         return message;
-
+        
     }
-
+    
     public MailTablePage goToTrashPage() {
         more.click();
         Driver.waitForElement(trash);
         trash.click();
         Driver.waitfor(PageLocator.MESSAGE_MOVE);
+        timeout(2);
         return new MailTablePage();
     }
-
+    
     public MailTablePage goToSpamPage() {
         more.click();
         Driver.waitForElement(spam);
         spam.click();
         Driver.waitfor(PageLocator.MESSAGE_MOVE);
+        timeout(2);
         return new MailTablePage();
-
+        
     }
-
+    
     public MailTablePage goToAllMailPage() {
         more.click();
         Driver.waitForElement(allMail);
         allMail.click();
         Driver.waitfor(PageLocator.MESSAGE_MOVE);
+        timeout(2);
         return new MailTablePage();
-
+        
     }
-
+    
     public MailPage deleteMessage() {
         options.moveToSelect();
         options.clickDelete();
         return this;
     }
-
+    
     public MailPage reportSpam() {
         options.moveToSelect();
         options.reportSpam();
         return this;
     }
-
+    
     public MailPage archiveMessage() {
         options.moveToSelect();
         options.archiveClick();
         return this;
     }
-
+    
     public boolean checkReadMessageSelected() {
         List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
@@ -173,7 +176,7 @@ public class MailPage extends AbstractPage {
         }
         return true;
     }
-
+    
     public boolean checkUnreadMessageSelected() {
         List<List<WebElement>> messageList = messages.getRows();
         for (List<WebElement> list : messageList) {
@@ -184,18 +187,18 @@ public class MailPage extends AbstractPage {
         }
         return true;
     }
-
+    
     public void selectRead() {
-
+        
         options.moveToSelect();
         options.selectMessages(read);
     }
-
+    
     public void selectUnread() {
         options.moveToSelect();
         options.selectMessages(unread);
     }
-
+    
     public Settings openSettings() {
         new Actions(Driver.getDriver())
                 .moveToElement(setting)
@@ -205,7 +208,7 @@ public class MailPage extends AbstractPage {
                 .perform();
         return new Settings();
     }
-
+    
     public void waitForMessageFrom(String addressee, long seconds) {
         long time = System.currentTimeMillis() + seconds * 1000;
         while (time > System.currentTimeMillis()) {

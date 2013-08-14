@@ -31,7 +31,7 @@ public interface PageLocator {
     public static final String OPTIONS = "//div[@class='nH aqK']";
     public static final String MORE = "div.n6 span";
     public static final String TRASH = "//a[@title='Trash']";
-    public static final String SPAM = "///a[contains(.,'Spam')]";
+    public static final String SPAM = "//a[contains(.,'Spam')]";
     public static final String ALL_MAIL = "//a[@title='All Mail']";
     public static final String SETTINGS = ".//div[@class='T-I J-J5-Ji ash T-I-ax7 L3']";
     public static final String SETTINGS_SETTINGS = "//div[@id='ms']/div";

@@ -8,6 +8,7 @@ import by.epam.lab.logic.SendMessage;
 import by.epam.lab.logic.Signature;
 import by.epam.lab.test.preparation.MessagePreparation;
 import by.epam.lab.page.OpenedMessage;
+import by.epam.lab.page.Settings;
 import static by.epam.lab.test.datareader.TestData.data;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -27,6 +28,7 @@ public class AddSignature extends MessagePreparation {
     @Test(enabled = true, groups = {MESSAGE})
     public void signatureAdd() {
         Assert.assertEquals(openedMessage.getSignatureText(), data.get(Key.SIGNATURE));
+          mailPage.inboxClick();
     }
 
     @BeforeMethod(groups = MESSAGE)

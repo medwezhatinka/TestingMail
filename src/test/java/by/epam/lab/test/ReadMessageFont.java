@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 public class ReadMessageFont extends MessagePreparation {
 
     @Test(enabled = true, groups = {MESSAGE})
-    public void chechReadMessageFont() {
+    public void checkReadMessageFont() {
         Assert.assertEquals(MessageView.getReadMessageCSSValue(mailPage,
                 data.get(Key.FONT_WEIGHT)), data.get(Key.NORMAL));
     }
